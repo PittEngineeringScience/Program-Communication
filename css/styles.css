@@ -1,0 +1,270 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+
+
+
+body {
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  color:#000080;
+  width: 100%;
+    height: 100%;
+     
+}
+.crucial
+{
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.block{
+	
+	min-height: 8px;
+	background: #ffcc00;
+	border: 0px;
+	
+}
+.blockf{
+	min-height: 4px;
+	background: #dde7ed;
+	border: 0px;
+	
+	
+	
+	
+}
+.blockg{
+	
+	min-height: 8px;
+	background: white;
+	border: 0px;
+	
+}
+/*for flexable menu*/
+.blockm{
+	
+	height: 50px;
+	width:100%;
+	background: white;
+	border: 0px;
+	
+}
+.gridcontainer {
+	
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: 50px;
+	justify-items: center;
+	align-self:center;
+	/*background:linear-gradient(#005ce6, #1a75ff);*/
+	background:#1a75ff;
+}
+.grid-items{
+	align-self: center;
+	
+	padding: 10px;
+	
+}
+.gridcontainer2 {
+	
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 100px;
+	
+	background:#1a75ff
+}
+.grid-items2{
+	
+	align-self: center;
+	padding: 10px;
+	
+}
+header>div>a {
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	
+}
+header>div>a:link{
+	text-decoration:none;
+}
+header>div>a:hover{
+	color: red;
+	text-decoration:none;
+}
+
+header>h1{
+    position: relative;
+    $random-text: 'quick turnover';
+    $stroke-width: $extra-large * 0.05;
+     font-size: 35px;
+     text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Catamaran', sans-serif;
+    
+	background: linear-gradient(white, #cce5ff);
+    padding: 10px;
+	margin:0px;
+	color:#000080;
+	
+  }
+ .section-wraper
+ {
+	 
+	padding: 25px 50px;
+	font-weight: bold;
+	background: white;
+}
+
+footer>div>h2
+{
+	background: #1a75ff;
+	margin:0px;
+	color: white;
+	
+	padding-left: 30px;
+}
+.fontdiff
+{
+	font-size:15px;
+}
+footer>div>img {  
+	max-height: 100px;
+
+	width: auto; 
+	padding-left: 10px; 
+	
+}
+
+<!-- Grid container for pie charts in program requirement section-->
+
+.gridcontainer3
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 300px 300px;
+	flex-wrap: nowrap;
+	background:#ffcc00
+	
+}
+svg > g > g:last-child { pointer-events: none }
+
+.gridcontainer4
+{
+	display: grid;
+	
+	grid-template-columns: 7fr 1fr;
+	grid-template-row: 130px;
+	
+	
+	
+	
+}
+.gridcontainer5
+{
+	display: grid;
+	
+	grid-template-columns: 1fr 3fr;
+	grid-template-row: 130px;
+	
+	
+}
+
+/*contacts grid*/
+.gridcontainer6
+{
+	display: grid;
+	
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: auto;
+	
+	
+}
+.inlinegrid1
+{
+	display: grid;
+	
+	grid-template-columns: 1fr;
+	grid-template-rows: 4fr 1fr 1fr 1fr;
+	align-items: center;
+	justify-items: center;
+	margin: 7px 0px
+}
+
+/*Drop down menu package*/
+
+/* Style The Dropdown Button */
+.dropbtn {
+  
+  color: white;
+	font-size: 12px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	padding: 18px 15px;
+	background:#1a75ff;
+	margin: auto;
+	
+}
+.dropbtn:hover
+{
+	color: #bae4f7;
+	text-decoration:none;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  justify-self:center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  
+  padding: 12px 16px;
+  color: #000080;
+	font-size: 10px;
+	font-weight: none;
+	text-decoration:none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	
+	font-weight: bold;
+	text-decoration:none;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  position: fixed;
+   width:100%
+   
+}

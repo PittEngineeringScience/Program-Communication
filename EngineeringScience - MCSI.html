@@ -1,0 +1,141 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Science at University of Pittsburgh</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	<script>
+  $(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 90.67) {
+      $('#nav_bar').addClass('navbar-fixed');
+	  $('#bugfix').addClass('blockm');
+    }
+    else  {
+      $('#nav_bar').removeClass('navbar-fixed');
+	  $('#bugfix').removeClass('blockm');
+    }
+  });
+});
+</script>
+  </head>
+  <body>
+	<main>
+		<!--*************Title and drop down menu*****************-->
+		<header>
+			<h1 > Engineering Science <span style = "color:#fcba03">@ PITT</span> </h1>
+			<div class="block"> </div>
+			<div id="bugfix"></div>
+			<div class="navbar gridcontainer"id = "nav_bar">
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Research</button>
+					<div class="dropdown-content">
+						<a href="#">Mascaro Center for Sustainable Innovation (MCSI) </a>
+						<a href="#">University Honors College</a>
+						<a href="https://www.engineering.pitt.edu/Research/">SSOE Research Center</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">People</button>
+					<div class="dropdown-content">
+						<a href="https://www.engineering.pitt.edu/People/Faculty-Search/">Faculty</a>
+						<a href="https://www.engineering.pitt.edu/People/Staff-Listing/">Complete Staff Directory</a>
+						<a href="#">Administrative Contacts</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Students</button>
+					<div class="dropdown-content">
+						<a href="#">Prospective Students</a>
+						<a href="#">Current Students</a>
+						<a href="#">Scholarships and Awards</a>
+						<a href="#">FAQs</a>
+						<a href="#">Student Life</a>
+						<a href="#">Minors and Certificates</a>
+						
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Industry</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Alumni</button>
+					<div class="dropdown-content">
+						<a href="#">Alumni spotlight</a>
+						
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Life@ES</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Links</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				
+			
+				
+			</div>
+		</header>
+		
+		<div class = "section-wraper">
+			<h2>Mascaro Center for Sustainable Innovation</h2>
+			<h3>Introduction</h3>
+			<p> Mascaro Center for Sustainable Innovation carries out the commitment of Pitt towards Sustainability. The center is dedicated to sustainability research and education, and students are able to find the suitable programs and research opportunities related to sustainability in the Center.</p>
+			<ul>
+			<li><a href="https://www.engineering.pitt.edu/MCSI/Research-Strengths/">Research Strengths</a></li>
+			<li><a href="https://www.engineering.pitt.edu/MCSI/Funded-Research/">MCSI funded researches</a></li>					
+			<li><a href="https://www.engineering.pitt.edu/MCSI/Summer-Research-Opportunities/">Summer research opportunities</a></li>
+			</ul>
+		</div>
+			
+			
+			<div class="container">
+  
+  
+			
+			<img src="images/MCSI_pic1.png" alt="Engineering Science icon" style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+			
+			<div class="blockg"> </div>
+		
+		</body>
+		<footer>
+		<div class="gridcontainer2">
+			
+				
+				<img src="images/icon.png" alt="Engineering Science icon">
+			
+			
+			</div>
+		</footer>
+	</main>
+  
+ 
+</html>
+		

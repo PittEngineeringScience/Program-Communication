@@ -1,0 +1,449 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Science at University of Pittsburgh</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+	<script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+	
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Mechanics',11],
+          ['Math',2],
+          ['Humanities&Social Sciences',2],
+          ['Solid State Physics/Materials',2],
+          ['Applied Electromagnetics/Circuits',7],
+		  ['Inorganic Chemistry',7],
+		  ['Senior Design',7],
+		  ['Programming',7]
+        ]);
+
+        var options = {
+          title: 'Engineering Mechanics-Topics'
+		  
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+	  google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart2);
+
+      function drawChart2() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Mechanical Engineering',     11],
+          ['Math',      2],
+          ['Humanities&Social Sciences',  2],
+          ['Engineering', 2],
+          ['Physics',    7],
+		  ['Material Sicence and Engineering',2],
+		  ['Chemistry',2]
+        ]);
+
+        var options = {
+          title: 'Engineering Mechanics-Departments'
+		  
+		  
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+        chart.draw(data, options);
+      }
+	  
+	  <!--Engineering Physics-->
+	  google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart3);
+
+      function drawChart3() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Applied Electromagnetics/Circuits',11],
+          ['Solid State Physics/Materials',2],
+          ['Math',2],
+          ['Humanities&Social Sciences',2],
+          ['Mechanics',7],
+		  ['Programming',7],
+		  ['Inorganic Chemistry',7],
+		  ['Senior Design',7]
+        ]);
+
+        var options = {
+          title: 'Engineering Physics-Topics'
+		  
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
+
+        chart.draw(data, options);
+      }
+	  google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart4);
+
+      function drawChart4() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+		  ['Electrical and Computer Engineering',2],
+          ['Physics',     11],
+          ['Math',      2],
+          ['Humanities&Social Sciences',  2],
+          ['Engineering', 2],
+		  ['Material Sicence and Engineering',2],
+		  ['Mechanical Engineering', 2],
+		  ['Chemistry',2]
+        ]);
+
+        var options = {
+          title: 'Engineering Physics-Departments'
+		  
+		  
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart4'));
+
+        chart.draw(data, options);
+      }
+	  
+	  <!--Nano-Bio/chem-->
+	  google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart5);
+
+      function drawChart5() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Solid State Physics/Materials',11],
+          ['Organic Chemsitry and Biology',2],
+          ['Math',2],
+          ['Humanities&Social Sciences',2],
+          ['Applied Electromagnetics/Circuits',7],
+		  ['Inorganic Chemistry',7],
+		  ['Programming',7],
+		  ['Senior Design',7]
+        ]);
+
+        var options = {
+          title: 'Nanotechnology – Chemistry and BioEngineering-Topics'
+		  
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart5'));
+
+        chart.draw(data, options);
+      }
+	  google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart6);
+
+      function drawChart6() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Math',     11],
+          
+          ['Humanities&Social Sciences',  2],
+          ['Chemsitry', 2],
+          ['Nanotechnology',    7],
+		  ['Engineering',2],
+		  ['Materials Science and Engineering',2],
+		  ['Electrical and Computer Engineering',2],
+		  ['Physics',2],
+		  ['Mechanical Engineering',2],
+		  ['BioEngineering',2],
+		  ['Biology',2]
+        ]);
+
+        var options = {
+          title: 'Nanotechnology – Chemistry and BioEngineering-Departments'
+		  
+		  
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart6'));
+
+        chart.draw(data, options);
+      }
+	  
+      <!--Nano-Phy/Material sci-->
+	  google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart7);
+
+      function drawChart7() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Solid State Physics/Materials',11],
+          ['Mechanics',2],
+          ['Math',2],
+          ['Humanities&Social Sciences',2],
+          ['Applied Electromagnetics/Circuits',7],
+		  ['Programming',7],
+		  ['Inorganic Chemistry',7],
+		  ['Senior Design',7]
+        ]);
+
+        var options = {
+          title: 'Nanotechnology – Physics and Materials Science-Topics'
+		  
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart7'));
+
+        chart.draw(data, options);
+      }
+	  google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart8);
+
+      function drawChart8() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Physics',     11],
+          
+          ['Materials Science and Engineering',  2],
+          ['Math', 2],
+          ['Humanities&Social Sciences',    7],
+		  ['Nanotechnology',2],
+		  ['Engineering',2],
+		  ['Electrical and Computer Engineering',2],
+		  
+		  ['Mechanical Engineering',2],
+		  ['Chemistry',2],
+		  
+        ]);
+
+        var options = {
+          title: 'Nanotechnology – Physics and Materials Science-Departments'
+		  
+		  
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart8'));
+
+        chart.draw(data, options);
+      }
+    </script>
+	<script>
+  $(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 90.67) {
+      $('#nav_bar').addClass('navbar-fixed');
+	  $('#bugfix').addClass('blockm');
+    }
+    else  {
+      $('#nav_bar').removeClass('navbar-fixed');
+	  $('#bugfix').removeClass('blockm');
+    }
+  });
+});
+</script>
+  </head>
+  <style>
+ .collapsible {
+  background-color: #1a75ff;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+.active, .collapsible:hover {
+  background-color: #005ce6;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 50px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  
+}</style>
+  <body>
+	<main>
+		<!--*************Title and drop down menu*****************-->
+		<header>
+			<h1 > Engineering Science <span style = "color:#fcba03">@ PITT</span> </h1>
+			<div class="block"> </div>
+			<div id="bugfix"></div>
+			<div class="navbar gridcontainer" id="nav_bar">
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Research</button>
+					<div class="dropdown-content">
+						<a href="#">Mascaro Center for Sustainable Innovation (MCSI) </a>
+						<a href="#">University Honors College</a>
+						<a href="#">SSOE Research Center</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">People</button>
+					<div class="dropdown-content">
+						<a href="https://www.engineering.pitt.edu/People/Faculty-Search/">Faculty</a>
+						<a href="https://www.engineering.pitt.edu/People/Staff-Listing/">Complete Staff Directory</a>
+						<a href="#">Administrative Contacts</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Students</button>
+					<div class="dropdown-content">
+						<a href="#">Prospective Students</a>
+						<a href="#">Current Students</a>
+						<a href="#">Scholarships and Awards</a>
+						<a href="#">FAQs</a>
+						<a href="#">Student Life</a>
+						<a href="#">Minors and Certificates</a>
+						
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Industry</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Alumni</button>
+					<div class="dropdown-content">
+						<a href="#">Alumni spotlight</a>
+						
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Life@ES</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Links</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				
+			
+				
+			</div>
+		</header>
+		<!--mission of the program-->
+		<div class = "section-wraper">
+			<h2>Program Requirement:</h2>
+			<ul>
+				<li>Minimum 48 hours Engineering</li>
+				<li>Minimum 44 hours Science + Math (minimum 18 hours of Math)</li>
+				<li>Minimum 15 hours concentrated in a single Engineering program</li>
+				<li>Minimum 101 hours total ‘STEM’ classes (Science + Engineering + Math) </li>
+				<li>Minimum 18 hours (six courses) of H/SS electives including one W course (per approved SSOE H/SS courses)</li>
+			<ul>
+		
+		</div>
+		<button class="collapsible">Course Distribution for Engineering Mechanics</button>
+		<div class="content section-wraper gridcontainer3">
+			<div id="piechart" style="width: 50%; grid-area: 1/1"></div>
+			<div id="piechart2" style="width: 50%; grid-area: 2/1 "></div>
+			
+		</div>
+		
+		<div class="blockg"> </div>
+		
+		<button class="collapsible">Course Distribution for Engineering Physics</button>
+		<div class="content section-wraper gridcontainer3">
+			<div id="piechart3" style="width: 50%; grid-area: 1/1"></div>
+			<div id="piechart4" style="width: 50%; grid-area: 2/1 "></div>
+			
+		</div>
+		
+		<div class="blockg"> </div>
+		
+		<button class="collapsible">Course Distribution for Nanotechnology – Chemistry and BioEngineering</button>
+		<div class="content section-wraper gridcontainer3">
+			<div id="piechart5" style="width: 50%; grid-area: 1/1"></div>
+			<div id="piechart6" style="width: 50%; grid-area: 2/1 "></div>
+			
+		</div>
+		
+		<div class="blockg"> </div>
+		
+		<button class="collapsible">Course Distribution for Nanotechnology – Physics and Materials Science</button>
+		<div class="content section-wraper gridcontainer3">
+			<div id="piechart7" style="width: 50%; grid-area: 1/1"></div>
+			<div id="piechart8" style="width: 50%; grid-area: 2/1 "></div>
+			
+		</div>
+		<div class="blockg"> </div>
+		<footer>
+		<div class="gridcontainer2">
+			
+				
+				<img src="images/icon.png" alt="Engineering Science icon">
+			
+			
+			
+		</footer>
+	</main>
+  </body>
+  <script>
+  
+	  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</html>
+		
