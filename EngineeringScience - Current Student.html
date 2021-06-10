@@ -1,0 +1,224 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Science at University of Pittsburgh</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+	<script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+	<script>
+  $(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 105) {
+      $('#nav_bar').addClass('navbar-fixed');
+	  $('#bugfix').addClass('blockm');
+    }
+    else  {
+      $('#nav_bar').removeClass('navbar-fixed');
+	  $('#bugfix').removeClass('blockm');
+    }
+  });
+});
+</script>
+
+  </head>
+  <style>
+ .collapsible {
+  background-color: #1a75ff;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+.active, .collapsible:hover {
+  background-color: #005ce6;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 50px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #d9edfa;
+  
+}</style>
+  <body>
+	<main>
+		<!--*************Title and drop down menu*****************-->
+		<header>
+			<div class="gridcontainer8" style="">
+			<h1 style = "color:#fcba03; font-size:54px; margin:auto;margin:auto;font-weight:850;">PITT</h1>
+			<img src="images/verticalbar.png" alt="verticalbar" style = "max-width:15px; height:53.33px;justify-self:center;align-self:center;"></img>
+ 
+			<h1 style = " font-size:15px; grid-column:3/4; margin:auto; font-weight:bold;">Swanson School of Engineering<br>Engineering Science</h1>
+			
+			
+			</div>
+			<div class="block"> </div>
+			<div id="bugfix"></div>
+			<div class="navbar gridcontainer"id = "nav_bar">
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Research</button>
+					<div class="dropdown-content">
+						<a href="#">Mascaro Center for Sustainable Innovation (MCSI) </a>
+						<a href="#">University Honors College</a>
+						<a href="#">SSOE Research Center</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">People</button>
+					<div class="dropdown-content">
+						<a href="https://www.engineering.pitt.edu/People/Faculty-Search/">Faculty</a>
+						<a href="https://www.engineering.pitt.edu/People/Staff-Listing/">Complete Staff Directory</a>
+						<a href="#">Administrative Contacts</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Students</button>
+					<div class="dropdown-content">
+						<a href="#">Prospective Students</a>
+						<a href="#">Current Students</a>
+						<a href="#">Scholarships and Awards</a>
+						<a href="#">FAQs</a>
+						<a href="#">Student Life</a>
+						<a href="#">Minors and Certificates</a>
+						
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Industry</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Alumni</button>
+					<div class="dropdown-content">
+						<a href="#">Alumni spotlight</a>
+						
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Life@ES</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Links</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				
+			
+				
+			</div>
+		</header>
+		<div class="box">
+		<div class = "section-wraper">
+		 <h1 style="font-size: 32px">Undergraduate Resources</h1>
+		 <!--
+			<button class="collapsible">Math Assistance Center</button>
+			<div class="content">
+			<p>Math Assistance Center provides walk-in math assistance with no appointment needed. Guaduate teaching assistants there will be able to assist students in any undergraduate courses.(Math assistance Center does not operate during summer and fall-semester plan will depend on the University's operational postures)</p>
+			<p>For more detailed information and contacts, please click the link below:</p>
+			<a href="http://www.ieee-iri.org/mathematics_subdomain/about/math-assistance-center.html">Math Assistance Center</a>
+			</div>
+			<div class="blockg"> </div>
+			<button class="collapsible">Writing Center</button>
+			<div class="content">
+			<p>The Writing Cneter provides appointments for students who seek assistance about their writing. Currently, students can make online appointments or eTutoring appointments via the following website:</p>
+			<a href="https://pitt.mywconline.com/index.php?logout=YES">Make a appointment at the Writing Center</a>
+			<p>For more detailed information and contacts, please click the link below:</p>
+			<a href="https://www.writingcenter.pitt.edu/">The Writing Center</a>
+			</div>
+			<div class="blockg"> </div>
+			<button class="collapsible">Career Center</button>
+			<div class="content">
+			<p>The Career Cneter provides appointments for students who have questions related to career. It also offers opportunties to students who are seeking a job. For more information, please visit the link below:</p>
+			<a href="https://www.studentaffairs.pitt.edu/cdpa/">The Career Center</a>
+			
+			</div>
+			<div class="blockg"> </div>
+		-->
+			<div class="gridcontainer7">
+				<a href="https://admissions.pitt.edu/transfer/transfer-credit-gpa-guidelines/" style="grid-column:1/2"><img src="images/Transfercredit.jpg" alt="Transfer credit icon" style="max-width: 100%; height:auto"></a>
+				<a href="https://www.engineering.pitt.edu/Student/Student-Programs/International/" style="grid-column:3/4"><img src="images/Studyabroad.jpg" alt="Study abroad icon" style="max-width: 100%; height:auto"></a>
+				<a href="https://financialaid.pitt.edu/" style="grid-column:5/6"><img src="images/aid.jpg" alt="aid icon" style="max-width: 100%; height:auto"></a>
+				<a href="https://www.studentaffairs.pitt.edu/shs/online-portal-services/" style="grid-column:7/8"><img src="images/wellnesscenter.jpg" alt="wellness center icon" style="max-width: 100%; height:auto"></a>
+				<a href="https://www.studentaffairs.pitt.edu/cdpa/" style="grid-row:3/4; grid-column:1/2"><img src="images/Careercenter.jpg" alt="Career center icon" style="max-width: 100%; height:auto"></a>
+				<a href="https://www.writingcenter.pitt.edu/" style="grid-row:3/4; grid-column:3/4"><img src="images/writingcenter.jpg" alt="Career center icon" style="max-width: 100%; height:auto"></a>
+				<a href="http://www.ieee-iri.org/mathematics_subdomain/about/math-assistance-center.html" style="grid-row:3/4; grid-column:5/6"><img src="images/mac.jpg" alt="Career center icon" style="max-width: 100%; height:auto"></a>
+				<a href="EngineeringScience - minor.html" style="grid-row:3/4; grid-column:7/8"><img src="images/Minorc.jpg" alt="Career center icon" style="max-width: 100%; height:auto"></a>
+				<a href="EngineeringScience - Form.html" style="grid-row:5/6; grid-column:1/2"><img src="images/form.jpg" alt="Forms icon" style="max-width: 100%; height:auto"></a>
+			</div>
+		</div>
+		</div>
+		<footer>
+		<div class="gridcontainer2">
+			
+				
+				<img src="images/icon.png" alt="Engineering Science icon">
+			
+			
+			</div>
+		</footer>
+	</main>
+  </body>
+  <script>
+  
+	  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</html>
+		

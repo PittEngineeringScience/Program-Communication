@@ -21,7 +21,7 @@
       //.log to determine when you want the 
       //nav bar to stick.  
       console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 90.67) {
+    if ($(window).scrollTop() > 105) {
       $('#nav_bar').addClass('navbar-fixed');
 	  $('#bugfix').addClass('blockm');
     }
@@ -75,7 +75,14 @@
 	<main>
 		<!--*************Title and drop down menu*****************-->
 		<header>
-			<h1 > Engineering Science <span style = "color:#fcba03">@ PITT</span> </h1>
+			<div class="gridcontainer8" style="">
+			<h1 style = "color:#fcba03; font-size:54px; margin:auto;margin:auto;font-weight:850;">PITT</h1>
+			<img src="images/verticalbar.png" alt="verticalbar" style = "max-width:15px; height:53.33px;justify-self:center;align-self:center;"></img>
+ 
+			<h1 style = " font-size:15px; grid-column:3/4; margin:auto; font-weight:bold;">Swanson School of Engineering<br>Engineering Science</h1>
+			
+			
+			</div>
 			<div class="block"> </div>
 			<div id="bugfix"></div>
 			<div class="navbar gridcontainer" id = "nav_bar">
@@ -150,7 +157,7 @@
 </head>
 
 	<body>
-
+		<div class='box'>
 		<div class = "section-wraper">
 			<h2>PATHWAY FOR ENGINEERING SCIENCE STUDENTS TO GET A MINOR OR CERTIFICATE</h2>
 			
@@ -160,7 +167,7 @@
 
 			<p>Note: Many courses have prerequisites. For some additional classes in the minor or certificate that are not included in the Engineering Science Program, it is possible that more classes are needed to meet the prerequisite requirements even that these classes themselves do not counted as required courses for that program. Students are suggested to take a closer look at the prerequisite requirements of the required classes of the program before committing to pursue it.</p>
 		
-		</div>
+		
 		<button class="collapsible">MINOR IN PHYSICS</button>
 			<div class="content section-wraper">
 				<p>
@@ -537,7 +544,8 @@
 			<a href="https://www.engineering.pitt.edu/MCSI/Sustainability-Certificate/">Link</a>
 			</div>
 			<div class="blockg"> </div>
-			
+			</div>
+			</div>
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;

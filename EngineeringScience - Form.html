@@ -7,33 +7,10 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-	<script
-	src="https://code.jquery.com/jquery-3.6.0.min.js"
-	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-	crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
-        ]);
-
-        var options = {
-          title: 'My Daily Activities',
-          pieHole: 0.4,
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        chart.draw(data, options);
-      }
-    </script>
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
 	<script>
   $(document).ready(function() {
   
@@ -42,7 +19,7 @@
       //.log to determine when you want the 
       //nav bar to stick.  
       console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 90.67) {
+    if ($(window).scrollTop() > 105) {
       $('#nav_bar').addClass('navbar-fixed');
 	  $('#bugfix').addClass('blockm');
     }
@@ -58,18 +35,30 @@
 	<main>
 		<!--*************Title and drop down menu*****************-->
 		<header>
-			<h1 > Engineering Science <span style = "color:#fcba03">@ PITT</span> </h1>
+			<div class="gridcontainer8" style="">
+			<h1 style = "color:#fcba03; font-size:54px; margin:auto;margin:auto;font-weight:850;">PITT</h1>
+			<img src="images/verticalbar.png" alt="verticalbar" style = "max-width:15px; height:53.33px;justify-self:center;align-self:center;"></img>
+ 
+			<h1 style = " font-size:15px; grid-column:3/4; margin:auto; font-weight:bold;">Swanson School of Engineering<br>Engineering Science</h1>
+			
+			
+			</div>
 			<div class="block"> </div>
 			<div id="bugfix"></div>
 			<div class="navbar gridcontainer"id = "nav_bar">
-				<div class="dropdown">
+			
+				
+				<div class="dropdown " >
 					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Research</button>
 					<div class="dropdown-content">
 						<a href="#">Mascaro Center for Sustainable Innovation (MCSI) </a>
 						<a href="#">University Honors College</a>
-						<a href="#">SSOE Research Center</a>
+						<a href="https://www.engineering.pitt.edu/Research/">SSOE Research Center</a>
 					</div>
 				</div>
+				
+				
+				
 				<div class="dropdown">
 					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">People</button>
 					<div class="dropdown-content">
@@ -126,15 +115,28 @@
 				
 			</div>
 		</header>
-		
+		<div class="box">
 		<div class = "section-wraper">
-			<h2>Career outlook for Engineering Science students:</h2>
-			<div id="donutchart" style="width: 100%; height: auto;"></div>
-			
-			
-		
+			<h1>Forms</h1>
+			<h2>Checklists</h2>
+			<ul>
+			<li><a href = "documents/Engineering Mechanics checklist.pdf">Engineering Mechanics checklist</a></li>
+			<li><a href = "documents/Engineering Physics checklist.pdf" >Engineering Physics checklist</a></li>
+			<li><a href = "ESCI Nanotech Chem_Bio.pdf" >ESCI Nanotech Chem_Bio checklist</a></li>
+			<li><a href = "documents/ESCI Nanotech Physics.pdf" >ESCI Nanotech Physics checklist</a></li>
+			</ul>
+			<h2>Program Manual</h2>
+			<ul>
+			<li>
+			<a href = "documents/ESCI Undergrad Manual.pdf" >ESCI Undergrad Manual</a>
+			</li>
+			</ul>
 		</div>
+		</div>
+			
+			
 		
+		</body>
 		<footer>
 		<div class="gridcontainer2">
 			
@@ -145,6 +147,7 @@
 			</div>
 		</footer>
 	</main>
-  </body>
+  
+ 
 </html>
 		

@@ -19,7 +19,7 @@
       //.log to determine when you want the 
       //nav bar to stick.  
       console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 90.67) {
+    if ($(window).scrollTop() > 105) {
       $('#nav_bar').addClass('navbar-fixed');
 	  $('#bugfix').addClass('blockm');
     }
@@ -35,7 +35,14 @@
 	<main>
 		<!--*************Title and drop down menu*****************-->
 		<header>
-			<h1 > Engineering Science <span style = "color:#fcba03">@ PITT</span> </h1>
+			<div class="gridcontainer8" style="">
+			<h1 style = "color:#fcba03; font-size:54px; margin:auto;margin:auto;font-weight:850;">PITT</h1>
+			<img src="images/verticalbar.png" alt="verticalbar" style = "max-width:15px; height:53.33px;justify-self:center;align-self:center;"></img>
+ 
+			<h1 style = " font-size:15px; grid-column:3/4; margin:auto; font-weight:bold;">Swanson School of Engineering<br>Engineering Science</h1>
+			
+			
+			</div>
 			<div class="block"> </div>
 			<div id="bugfix"></div>
 			<div class="navbar gridcontainer"id = "nav_bar">
@@ -103,7 +110,7 @@
 				
 			</div>
 		</header>
-		
+		<div class='box'>
 		<div class = "section-wraper">
 			<h2>Mascaro Center for Sustainable Innovation</h2>
 			<h3>Introduction</h3>
@@ -113,7 +120,7 @@
 			<li><a href="https://www.engineering.pitt.edu/MCSI/Funded-Research/">MCSI funded researches</a></li>					
 			<li><a href="https://www.engineering.pitt.edu/MCSI/Summer-Research-Opportunities/">Summer research opportunities</a></li>
 			</ul>
-		</div>
+		
 			
 			
 			<div class="container">
@@ -123,7 +130,9 @@
 			<img src="images/MCSI_pic1.png" alt="Engineering Science icon" style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
 			
 			<div class="blockg"> </div>
-		
+		</div>
+		</div>
+		</div>
 		</body>
 		<footer>
 		<div class="gridcontainer2">

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engineering Science at University of Pittsburgh</title>
+	<!--title-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
 	
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -18,17 +21,16 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
-          ['Industry : Engineering',8],
-          ['Industry : Research and Development / Product Development',      13],
-          ['Graduate School : Engineering / Science',  18],
-          ['Consulting (Policy / Organizational)', 2],
-          ['Government : Policy or Program Management',    1]
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
         ]);
 
         var options = {
-          title: 'Engineering Science program effectively prepares students for:',
-          pieHole: 0,
-		  tooltip:{text:'percentage'},
+          title: 'My Daily Activities',
+          pieHole: 0.4,
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
@@ -55,10 +57,14 @@
 });
 </script>
   </head>
+  
   <body>
 	<main>
 		<!--*************Title and drop down menu*****************-->
+		
 		<header>
+			
+			<!--<h1><span style = "color:#fcba03; font-size:60px">PITT|</span><span>Engineering Science</span></h1>-->
 			<div class="gridcontainer8" style="">
 			<h1 style = "color:#fcba03; font-size:54px; margin:auto;margin:auto;font-weight:850;">PITT</h1>
 			<img src="images/verticalbar.png" alt="verticalbar" style = "max-width:15px; height:53.33px;justify-self:center;align-self:center;"></img>
@@ -67,6 +73,8 @@
 			
 			
 			</div>
+			
+			
 			<div class="block"> </div>
 			<div id="bugfix"></div>
 			<div class="navbar gridcontainer"id = "nav_bar">
@@ -136,42 +144,53 @@
 		</header>
 		<div class="box">
 		<div class = "section-wraper">
-			<h1>Career outlook for Engineering Science students:</h1>
+		
+			<h2>Career outlook for Engineering Science students:</h2>
 			<div id="donutchart" style="width: 100%; height: auto;"></div>
-			<h1>Where do our graduates go?:</h1>
-			<div style="display:grid; grid-template-columns: 1fr 1fr;">
-			
+			<div id="donutchart" style="width: 100%; height: auto;"></div>
+			<div id="donutchart" style="width: 100%; height: auto;"></div>
+			<div id="donutchart" style="width: 100%; height: auto;"></div>
+			<div id="donutchart" style="width: 100%; height: auto;"></div>
+			<div id="donutchart" style="width: 100%; height: auto;"></div>
+			<h2>The most significant strength of Engineering Science program at Pitt:</h2>
+			<ul>
+			<li>Flexibility schedules help students keep focus on their interest. </li>
+			<li>Analytic science components in the program prepare students exceptionally for the graduate school and industry.</li>
+			<li>Students will have a much broader view on natural sciences and build up a more intact structure of the theories and equations due to the interdisciplinary nature of the program.</li>
+		
+		
+			</ul>
+		
+			<div class="blockg"></div>
+			<div class="gridcontainer4" id = "show1">
+				<p> <span style="font-family: 'Pattaya', sans-serif; font-size: 13px;">"Getting a degree in Engineering Science - Nuclear Track, my courses consisted of mechanical, materials, and nuclear engineering with an emphasis on research and graduate school preparation. The math- and physics- heavy curriculum helped my application stand out for grad school. And the research-based senior design also helped fulfill my goals. I think the Engineering Science program at Pitt is ideal for students who need more flexibility and rigor than the traditional engineering programs in SSOE can offer."
+				</span><br><span style="text-align: right">Miriam Kreher-Class of 2016<span></p>
 				
-				<div>
-				<h2>In gradaute Institutions:</h2>
-				<ul>
-				<li>University of California San Diego</li>
-				<li>Virginia Western Community College</li>
-				<li>Harvard University</li>
-				<li>University of Pittsburgh</li>
-				<li>Northwestern University</li>
-				<li>Carnegie Mellon University</li>
-				<li>Massachusetts Institute of Technology</li>
-				<li>Virginia Polytechnic Institute and State University</li>
-				<li>University of Pennsylvania</li>
-				</ul>
-				</div>
-				<div>
-				<h2>In Industry:</h2>
-				<ul>
-				<li>Bettis Atomic Power Laboratory</li>
-				<li>CorePower Magnetics</li>
-				<li>U. S. Steel</li>
-				<li>Fox IV Technologies</li>
-				<li>FlexEl, LLC</li>
-				<li>Johnson & Johnson</li>
-				<li>Sion Power</li>
-			
-				</ul>
-				</div>
+				
+				<img src="images/Miriam.jpg" alt="Engineering Alumni Miriam" style = "max-width:130px; height:auto;"></img>
+				
 			</div>
+			<div class="blockg"></div>
+			<div class="blockf"></div>
+			<div class="blockg"></div>
+			<div class="gridcontainer5" id = "show1">
+				<img src="images/Brendan.jpeg" alt="Engineering Alumni Miriam" style = "max-width:130px; height:auto;"></img>
+				
+				<p> <span style="font-family: 'Pattaya', sans-serif; font-size: 13px;">"The Engineer Physics (Science) multidisciplinary program built the foundation for success as a Reliability Engineer."
+				</span><br><span style="text-align: right">Brendan Van Ormer-Class of 2008<span></p>
+				
+				
+				
+				
+			</div>
+			<div class="blockg"></div>
+			<div class="blockf"></div>
+			<div class="blockg"></div>
+			
+		
 		</div>
 		</div>
+		
 		<footer>
 		<div class="gridcontainer2">
 			
@@ -179,10 +198,7 @@
 				<img src="images/icon.png" alt="Engineering Science icon">
 			
 			
-		</div>
-		
-		
-		
+			</div>
 		</footer>
 	</main>
   </body>

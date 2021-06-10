@@ -7,34 +7,10 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-	<script
-	src="https://code.jquery.com/jquery-3.6.0.min.js"
-	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-	crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Industry : Engineering',8],
-          ['Industry : Research and Development / Product Development',      13],
-          ['Graduate School : Engineering / Science',  18],
-          ['Consulting (Policy / Organizational)', 2],
-          ['Government : Policy or Program Management',    1]
-        ]);
-
-        var options = {
-          title: 'Engineering Science program effectively prepares students for:',
-          pieHole: 0,
-		  tooltip:{text:'percentage'},
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        chart.draw(data, options);
-      }
-    </script>
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
 	<script>
   $(document).ready(function() {
   
@@ -54,6 +30,45 @@
   });
 });
 </script>
+<style>
+ .collapsible {
+  background-color: #1a75ff;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+.active, .collapsible:hover {
+  background-color: #005ce6;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  
+}</style>
   </head>
   <body>
 	<main>
@@ -75,7 +90,7 @@
 					<div class="dropdown-content">
 						<a href="#">Mascaro Center for Sustainable Innovation (MCSI) </a>
 						<a href="#">University Honors College</a>
-						<a href="#">SSOE Research Center</a>
+						<a href="https://www.engineering.pitt.edu/Research/">SSOE Research Center</a>
 					</div>
 				</div>
 				<div class="dropdown">
@@ -134,44 +149,49 @@
 				
 			</div>
 		</header>
-		<div class="box">
-		<div class = "section-wraper">
-			<h1>Career outlook for Engineering Science students:</h1>
-			<div id="donutchart" style="width: 100%; height: auto;"></div>
-			<h1>Where do our graduates go?:</h1>
-			<div style="display:grid; grid-template-columns: 1fr 1fr;">
+		<div class='box'>
+		
+		
+		
+			<div class='section-wraper1'>
+			<div class="gridcontainer9">
+				<img src="images/Howtoapply.jpg" alt="Background image" style="width:100%; height:auto;padding-right: 0px;padding-left: 0px;z-index:999;position:relative;">
+				<div style="padding-left:20px;padding-right:20px; padding-top:20px">
+				<h1>How to apply to Engineering Science?</h1>
+				<p style="font-weight: none">There are three ways to get into Engineering Science Program at Pitt:</p>
+				<button class="collapsible">Direct application to ES at Pitt</button>
+					<div class="content">
+					<a href="https://admissions.pitt.edu/first-year-student/" class="button">MORE INFORMATION</a>
 			
+					</div>
+					<div class="blockg"></div>
+				<button class="collapsible">External trasnfer to ES at Pitt</button>
+					
+					<div class="content">
+					<a href="https://www.engineering.pitt.edu/First-Year/First-Year/Transfer-Students/External-Transfer-Students/#:~:text=EXTERNAL%20TRANSFER%20GUIDELINES&text=Have%20a%20minimum%20GPA%20of,planning%20to%20major%20in%20Bioengineering." class="button">MORE INFORMATION</a>
+			
+					</div>
+			
+					
+					<div class="blockg"></div>
+					
+					<button class="collapsible">Internal trasnfer to ES at Pitt</button>
+					
+					<div class="content">
+					<a href="https://www.engineering.pitt.edu/First-Year/First-Year/Transfer-Students/Internal-Transfer-Students/" class="button">MORE INFORMATION</a>
+			
+					</div>
+			
+					</div>
+					<div class="blockg"></div>
+				</div>
 				
-				<div>
-				<h2>In gradaute Institutions:</h2>
-				<ul>
-				<li>University of California San Diego</li>
-				<li>Virginia Western Community College</li>
-				<li>Harvard University</li>
-				<li>University of Pittsburgh</li>
-				<li>Northwestern University</li>
-				<li>Carnegie Mellon University</li>
-				<li>Massachusetts Institute of Technology</li>
-				<li>Virginia Polytechnic Institute and State University</li>
-				<li>University of Pennsylvania</li>
-				</ul>
-				</div>
-				<div>
-				<h2>In Industry:</h2>
-				<ul>
-				<li>Bettis Atomic Power Laboratory</li>
-				<li>CorePower Magnetics</li>
-				<li>U. S. Steel</li>
-				<li>Fox IV Technologies</li>
-				<li>FlexEl, LLC</li>
-				<li>Johnson & Johnson</li>
-				<li>Sion Power</li>
+			</div>	
+		</div>
 			
-				</ul>
-				</div>
-			</div>
 		</div>
-		</div>
+		
+		</body>
 		<footer>
 		<div class="gridcontainer2">
 			
@@ -179,13 +199,26 @@
 				<img src="images/icon.png" alt="Engineering Science icon">
 			
 			
-		</div>
-		
-		
-		
+			</div>
 		</footer>
 	</main>
-  </body>
+  <script>
   
+	  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+ 
 </html>
 		

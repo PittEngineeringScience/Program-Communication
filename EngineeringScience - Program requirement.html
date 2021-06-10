@@ -248,7 +248,7 @@
       //.log to determine when you want the 
       //nav bar to stick.  
       console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 90.67) {
+    if ($(window).scrollTop() > 105) {
       $('#nav_bar').addClass('navbar-fixed');
 	  $('#bugfix').addClass('blockm');
     }
@@ -303,7 +303,14 @@
 	<main>
 		<!--*************Title and drop down menu*****************-->
 		<header>
-			<h1 > Engineering Science <span style = "color:#fcba03">@ PITT</span> </h1>
+			<div class="gridcontainer8" style="">
+			<h1 style = "color:#fcba03; font-size:54px; margin:auto;margin:auto;font-weight:850;">PITT</h1>
+			<img src="images/verticalbar.png" alt="verticalbar" style = "max-width:15px; height:53.33px;justify-self:center;align-self:center;"></img>
+ 
+			<h1 style = " font-size:15px; grid-column:3/4; margin:auto; font-weight:bold;">Swanson School of Engineering<br>Engineering Science</h1>
+			
+			
+			</div>
 			<div class="block"> </div>
 			<div id="bugfix"></div>
 			<div class="navbar gridcontainer" id="nav_bar">
@@ -372,6 +379,7 @@
 			</div>
 		</header>
 		<!--mission of the program-->
+		<div class='box'>
 		<div class = "section-wraper">
 			<h2>Program Requirement:</h2>
 			<ul>
@@ -380,9 +388,9 @@
 				<li>Minimum 15 hours concentrated in a single Engineering program</li>
 				<li>Minimum 101 hours total ‘STEM’ classes (Science + Engineering + Math) </li>
 				<li>Minimum 18 hours (six courses) of H/SS electives including one W course (per approved SSOE H/SS courses)</li>
-			<ul>
+			</ul>
 		
-		</div>
+		
 		<button class="collapsible">Course Distribution for Engineering Mechanics</button>
 		<div class="content section-wraper gridcontainer3">
 			<div id="piechart" style="width: 50%; grid-area: 1/1"></div>
@@ -417,6 +425,8 @@
 			
 		</div>
 		<div class="blockg"> </div>
+		</div>
+		</div>
 		<footer>
 		<div class="gridcontainer2">
 			

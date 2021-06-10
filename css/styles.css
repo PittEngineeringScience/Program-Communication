@@ -60,15 +60,21 @@ body {
 	border: 0px;
 	
 }
+/*navbar*/
 .gridcontainer {
 	
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
 	grid-template-rows: 50px;
-	justify-items: center;
-	align-self:center;
+	justify-content: center;  
+align-items: center; 
+	
 	/*background:linear-gradient(#005ce6, #1a75ff);*/
 	background:#1a75ff;
+	padding-left:10%;
+	padding-right:10%;
+	z-index:999;
+	position:relative;
 }
 .grid-items{
 	align-self: center;
@@ -76,13 +82,17 @@ body {
 	padding: 10px;
 	
 }
+/*bottom*/
 .gridcontainer2 {
 	
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: 100px;
 	
-	background:#1a75ff
+	background:#1a75ff;
+	z-index:999;
+	position:relative;
+	padding-left:10%;
 }
 .grid-items2{
 	
@@ -113,19 +123,37 @@ header>h1{
     font-weight: 900;
     font-family: 'Catamaran', sans-serif;
     
-	background: linear-gradient(white, #cce5ff);
-    padding: 10px;
+	
+    
 	margin:0px;
 	color:#000080;
 	
   }
+  
+  /*crucial*/
  .section-wraper
  {
 	 
-	padding: 25px 50px;
+	padding: 25px 10%;
 	font-weight: bold;
 	background: white;
+	box-shadow: 0 0 10px 1px #88b1f2;
+	z-index:1;
+	position:relative;
 }
+
+/*For big picture without padding*/
+ .section-wraper1
+ {
+	 
+	
+	font-weight: bold;
+	background: white;
+	box-shadow: 0 0 10px 1px #88b1f2;
+	z-index:1;
+	position:relative;
+}
+
 
 footer>div>h2
 {
@@ -155,7 +183,7 @@ footer>div>img {
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 300px 300px;
 	flex-wrap: nowrap;
-	background:#ffcc00
+	background:#ffcc00;
 	
 }
 svg > g > g:last-child { pointer-events: none }
@@ -187,6 +215,7 @@ svg > g > g:last-child { pointer-events: none }
 	display: grid;
 	
 	grid-template-columns: 1fr 1fr 1fr;
+	max-width:100%;
 	grid-auto-rows: auto;
 	
 	
@@ -196,12 +225,50 @@ svg > g > g:last-child { pointer-events: none }
 	display: grid;
 	
 	grid-template-columns: 1fr;
-	grid-template-rows: 4fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	align-items: center;
 	justify-items: center;
-	margin: 7px 0px
+	margin: 7px 2px;
+	background:linear-gradient(45deg, #a2bfe8, #e6edf7);
 }
+.gridcontainer7
+{
+	display: grid;
+	
+	grid-template-columns: 4fr 1fr 4fr 1fr 4fr 1fr 4fr;
+	grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr;
+	align-items: center;
+	justify-items: center;
+	
+}
+/*icon complex*/
+.gridcontainer8
+{
+	display: grid;
+	grid-template-columns: 140px 15px 239px;
+	grid-template-rows: 97px;
+	max-width:50%;
+	height:auto;
+	padding-left:10%;
+	
+}
+.gridcontainer9
+{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	
+}
+/*center stuff*/	
+.gridcontainer10	
+{
+	
+	display:grid;
+	justify-content: center;  
+align-items: center; 
+}
+	
 
+/*textbox on picture
 /*Drop down menu package*/
 
 /* Style The Dropdown Button */
@@ -212,7 +279,7 @@ svg > g > g:last-child { pointer-events: none }
 	font-weight: bold;
 	border: none;
 	cursor: pointer;
-	padding: 18px 15px;
+	padding: 18px 10%;
 	background:#1a75ff;
 	margin: auto;
 	
@@ -227,6 +294,8 @@ svg > g > g:last-child { pointer-events: none }
   position: relative;
   display: inline-block;
   justify-self:center;
+  justify-items: center;align-self:center;align-items: center;
+  
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -267,4 +336,29 @@ svg > g > g:last-child { pointer-events: none }
   position: fixed;
    width:100%
    
+}
+.box 
+{
+	padding: 0px 10%;
+	font-weight: bold;
+	background:#d7ecfa;
+	
+}
+
+/*button*/
+.button {
+  background-color: #005ce6;
+  border: none;
+  color: white;
+  padding: 7px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.button:hover {
+  background-color: #000080; /* Green */
 }

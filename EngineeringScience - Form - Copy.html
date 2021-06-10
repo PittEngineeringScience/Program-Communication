@@ -7,34 +7,10 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-	<script
-	src="https://code.jquery.com/jquery-3.6.0.min.js"
-	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-	crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Industry : Engineering',8],
-          ['Industry : Research and Development / Product Development',      13],
-          ['Graduate School : Engineering / Science',  18],
-          ['Consulting (Policy / Organizational)', 2],
-          ['Government : Policy or Program Management',    1]
-        ]);
-
-        var options = {
-          title: 'Engineering Science program effectively prepares students for:',
-          pieHole: 0,
-		  tooltip:{text:'percentage'},
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        chart.draw(data, options);
-      }
-    </script>
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
 	<script>
   $(document).ready(function() {
   
@@ -69,13 +45,14 @@
 			</div>
 			<div class="block"> </div>
 			<div id="bugfix"></div>
+			<!--
 			<div class="navbar gridcontainer"id = "nav_bar">
 				<div class="dropdown">
 					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Research</button>
 					<div class="dropdown-content">
 						<a href="#">Mascaro Center for Sustainable Innovation (MCSI) </a>
 						<a href="#">University Honors College</a>
-						<a href="#">SSOE Research Center</a>
+						<a href="https://www.engineering.pitt.edu/Research/">SSOE Research Center</a>
 					</div>
 				</div>
 				<div class="dropdown">
@@ -133,45 +110,30 @@
 			
 				
 			</div>
+			-->
 		</header>
 		<div class="box">
 		<div class = "section-wraper">
-			<h1>Career outlook for Engineering Science students:</h1>
-			<div id="donutchart" style="width: 100%; height: auto;"></div>
-			<h1>Where do our graduates go?:</h1>
-			<div style="display:grid; grid-template-columns: 1fr 1fr;">
-			
-				
-				<div>
-				<h2>In gradaute Institutions:</h2>
-				<ul>
-				<li>University of California San Diego</li>
-				<li>Virginia Western Community College</li>
-				<li>Harvard University</li>
-				<li>University of Pittsburgh</li>
-				<li>Northwestern University</li>
-				<li>Carnegie Mellon University</li>
-				<li>Massachusetts Institute of Technology</li>
-				<li>Virginia Polytechnic Institute and State University</li>
-				<li>University of Pennsylvania</li>
-				</ul>
-				</div>
-				<div>
-				<h2>In Industry:</h2>
-				<ul>
-				<li>Bettis Atomic Power Laboratory</li>
-				<li>CorePower Magnetics</li>
-				<li>U. S. Steel</li>
-				<li>Fox IV Technologies</li>
-				<li>FlexEl, LLC</li>
-				<li>Johnson & Johnson</li>
-				<li>Sion Power</li>
-			
-				</ul>
-				</div>
-			</div>
+			<h1>Forms</h1>
+			<h2>Checklists</h2>
+			<ul>
+			<li><a href = "documents/Engineering Mechanics checklist.pdf">Engineering Mechanics checklist</a></li>
+			<li><a href = "documents/Engineering Physics checklist.pdf" >Engineering Physics checklist</a></li>
+			<li><a href = "ESCI Nanotech Chem_Bio.pdf" >ESCI Nanotech Chem_Bio checklist</a></li>
+			<li><a href = "documents/ESCI Nanotech Physics.pdf" >ESCI Nanotech Physics checklist</a></li>
+			</ul>
+			<h2>Program Manual</h2>
+			<ul>
+			<li>
+			<a href = "documents/ESCI Undergrad Manual.pdf" >ESCI Undergrad Manual</a>
+			</li>
+			</ul>
 		</div>
 		</div>
+			
+			
+		
+		</body>
 		<footer>
 		<div class="gridcontainer2">
 			
@@ -179,13 +141,10 @@
 				<img src="images/icon.png" alt="Engineering Science icon">
 			
 			
-		</div>
-		
-		
-		
+			</div>
 		</footer>
 	</main>
-  </body>
   
+ 
 </html>
 		
