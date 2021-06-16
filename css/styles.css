@@ -373,6 +373,20 @@ align-items: center;
 	padding-bottom:10px;
 }
 
+.gridcontainer16
+{
+	display:grid;
+	grid-template-columns:1fr;
+	max-width:50%;
+	max-height:49.33px;
+	z-index:999;
+
+ background:#1a75ff;
+    
+   
+
+}
+
 
 .statfont
 {

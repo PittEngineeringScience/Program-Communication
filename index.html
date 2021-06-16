@@ -7,29 +7,43 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-	
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+	<link rel="stylesheet" href="css/responsivedesign.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
+	<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 	<script>
 
+ 
   $(document).ready(function() {
-$(window).scroll(function () {
+  
+  $(window).scroll(function () {
       //if you hard code, then use console
       //.log to determine when you want the 
       //nav bar to stick.  
       console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 0) {
-      $('#nav_bar').addClass('navbar-fixed');
+    if ($(window).scrollTop() > 105) {
+      $('#myTopnav').addClass('navbar-fixed');
 	  $('#bugfix').addClass('blockm');
-	  $('#nav_bar').addClass('op');
     }
     else  {
-      $('#nav_bar').removeClass('navbar-fixed');
+      $('#myTopnav').removeClass('navbar-fixed');
 	  $('#bugfix').removeClass('blockm');
-	  $('#nav_bar').removeClass('op');
     }
   });
+});
+</script>
+<script>
   
   
   
@@ -145,38 +159,33 @@ setInterval(function() {
 
 
 </script>
-  </head>
-  <body>
+<body>
 	<main>
 		<!--*************Title and drop down menu*****************-->
 		<header>
-			
-			
-			<div id="bugfix"></div>
-			<div class="navbar gridcontainerforhome"id = "nav_bar">
-			
-				<div class="gridcontainer8" style="">
-					<h1 style = "color:#fcba03; font-size:54px; margin:auto;margin:auto;font-weight:850;">PITT</h1>
-					<img src="images/verticalbar.png" alt="verticalbar" style = "max-width:15px; height:53.33px;justify-self:center;align-self:center;"></img>
+			<div class="gridcontainer8" style="">
+			<h1 style = "color:#fcba03; font-size:54px; margin:auto;margin:auto;font-weight:850;">PITT</h1>
+			<img src="images/verticalbar.png" alt="verticalbar" style = "max-width:15px; height:53.33px;justify-self:center;align-self:center;"></img>
  
-					<h1 style = " font-size:15px; grid-column:3/4; margin:auto; font-weight:bold;">Swanson School of Engineering<br>Engineering Science</h1>
+			<h2 style = " font-size:15px; grid-column:3/4; margin:auto; font-weight:bold;">Swanson School of Engineering<br>Engineering Science</h2>
 			
 			
-				</div>
-				<div></div>
-				<div class="dropdown " >
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center; padding: 38px 10%;">Research</button>
+			</div>
+			<div class="block"> </div>
+			<div id="bugfix"></div>
+			<div class="topnav" id="myTopnav">
+			
+				<a href="#home" class="active">Home</a>
+				<div class="dropdown">
+					<button class="dropbtn">Research</button>
 					<div class="dropdown-content">
 						<a href="#">Mascaro Center for Sustainable Innovation (MCSI) </a>
 						<a href="#">University Honors College</a>
 						<a href="https://www.engineering.pitt.edu/Research/">SSOE Research Center</a>
 					</div>
 				</div>
-				
-				
-				
 				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center;padding: 38px 10%;">People</button>
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">People</button>
 					<div class="dropdown-content">
 						<a href="https://www.engineering.pitt.edu/People/Faculty-Search/">Faculty</a>
 						<a href="https://www.engineering.pitt.edu/People/Staff-Listing/">Complete Staff Directory</a>
@@ -184,7 +193,7 @@ setInterval(function() {
 					</div>
 				</div>
 				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center;padding: 38px 10%;">Students</button>
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Students</button>
 					<div class="dropdown-content">
 						<a href="#">Prospective Students</a>
 						<a href="#">Current Students</a>
@@ -196,7 +205,7 @@ setInterval(function() {
 					</div>
 				</div>
 				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center;padding: 38px 10%;">Industry</button>
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Industry</button>
 					<div class="dropdown-content">
 						<a href="#">Link 1</a>
 						<a href="#">Link 2</a>
@@ -204,24 +213,27 @@ setInterval(function() {
 					</div>
 				</div>
 				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center;padding: 38px 10%;">Alumni</button>
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Alumni</button>
 					<div class="dropdown-content">
 						<a href="#">Alumni spotlight</a>
 						
 					</div>
 				</div>
 				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center;padding: 38px 10%;">Life@ES</button>
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Life@ES</button>
 					<div class="dropdown-content">
 						<a href="#">Link 1</a>
 						<a href="#">Link 2</a>
 						<a href="#">Link 3</a>
 					</div>
 				</div>
-			
 				
-			
 				
+				<a href="javascript:void(0);" style="font-size:12px;" class="icon" onclick="myFunction()">&#9776;</a>
+				
+				<div class="gridcontainer16">
+				<p style=" font-family: 'Lobster', cursive;, sans-serif;margin-top:0;font-size:26px;margin-bottom:0;text-align:right;-webkit-text-stroke: 0.1px black;color:#fcba03;align-self:center;">Forging Ahead!</p>
+				</div>
 			</div>
 		</header>
 		
@@ -383,7 +395,7 @@ setInterval(function() {
 			
 			
 		
-		</body>
+		
 		
 		<footer>
 		<div class="gridcontainer2">
@@ -397,6 +409,6 @@ setInterval(function() {
 		
 	</main>
   
- 
+ </body>
 </html>
 		

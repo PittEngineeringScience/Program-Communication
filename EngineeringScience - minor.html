@@ -7,12 +7,25 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+	<link rel="stylesheet" href="css/responsivedesign.css">
 	<script
 	src="https://code.jquery.com/jquery-3.6.0.min.js"
 	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 	crossorigin="anonymous"></script>
 
   </head>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
  <script>
   $(document).ready(function() {
   
@@ -22,11 +35,11 @@
       //nav bar to stick.  
       console.log($(window).scrollTop())
     if ($(window).scrollTop() > 105) {
-      $('#nav_bar').addClass('navbar-fixed');
+      $('#myTopnav').addClass('navbar-fixed');
 	  $('#bugfix').addClass('blockm');
     }
     else  {
-      $('#nav_bar').removeClass('navbar-fixed');
+      $('#myTopnav').removeClass('navbar-fixed');
 	  $('#bugfix').removeClass('blockm');
     }
   });
@@ -48,7 +61,7 @@
   padding-left: 50px;
 }
 
-.active, .collapsible:hover {
+.active2, .collapsible:hover {
   background-color: #005ce6;
 }
 
@@ -60,7 +73,7 @@
   margin-left: 5px;
 }
 
-.active:after {
+.active2:after {
   content: "\2212";
 }
 
@@ -79,19 +92,21 @@
 			<h1 style = "color:#fcba03; font-size:54px; margin:auto;margin:auto;font-weight:850;">PITT</h1>
 			<img src="images/verticalbar.png" alt="verticalbar" style = "max-width:15px; height:53.33px;justify-self:center;align-self:center;"></img>
  
-			<h1 style = " font-size:15px; grid-column:3/4; margin:auto; font-weight:bold;">Swanson School of Engineering<br>Engineering Science</h1>
+			<h2 style = " font-size:15px; grid-column:3/4; margin:auto; font-weight:bold;">Swanson School of Engineering<br>Engineering Science</h2>
 			
 			
 			</div>
 			<div class="block"> </div>
 			<div id="bugfix"></div>
-			<div class="navbar gridcontainer" id = "nav_bar">
+			<div class="topnav" id="myTopnav">
+			
+				<a href="#home" class="active">Home</a>
 				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Research</button>
+					<button class="dropbtn">Research</button>
 					<div class="dropdown-content">
 						<a href="#">Mascaro Center for Sustainable Innovation (MCSI) </a>
 						<a href="#">University Honors College</a>
-						<a href="#">SSOE Research Center</a>
+						<a href="https://www.engineering.pitt.edu/Research/">SSOE Research Center</a>
 					</div>
 				</div>
 				<div class="dropdown">
@@ -137,17 +152,13 @@
 						<a href="#">Link 3</a>
 					</div>
 				</div>
-				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Links</button>
-					<div class="dropdown-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
-					</div>
+				
+				
+				<a href="javascript:void(0);" style="font-size:12px;" class="icon" onclick="myFunction()">&#9776;</a>
+				
+				<div class="gridcontainer16">
+				<p style=" font-family: 'Lobster', cursive;, sans-serif;margin-top:0;font-size:26px;margin-bottom:0;text-align:right;-webkit-text-stroke: 0.1px black;color:#fcba03;align-self:center;">Forging Ahead!</p>
 				</div>
-				
-			
-				
 			</div>
 		</header>
 		<!--dropdown menu for minors/certificate-->
@@ -552,7 +563,7 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("active2");
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;

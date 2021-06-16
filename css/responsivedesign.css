@@ -3,7 +3,9 @@
   background-color: #1a75ff;
   text-align:justify;
  padding-left:10%;
-  z-index:2;
+ padding-right:10%;
+  z-index:999;
+  
 }
 
 .topnav a {
@@ -79,7 +81,7 @@
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 889px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -89,7 +91,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 889px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -101,7 +103,7 @@
     display: block;
     text-align: left;
   }
-  .topnav {padding-left:0;}
+  .topnav {padding-left:0;padding-right:0;}
   .topnav.responsive .dropdown {float: none;}
   .topnav.responsive .dropdown-content {position: relative;width:100%;background:white;}
   .topnav.responsive .dropdown .dropbtn {
@@ -109,12 +111,13 @@
     width: 100%;
     text-align: left;
   }
+  
    
   
 }
   
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 490px) {
   .gridcontainer8>h1 {
     display:none;
   }
