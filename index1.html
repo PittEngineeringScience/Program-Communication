@@ -1,4 +1,3 @@
-
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -12,29 +11,6 @@
 	<link rel="stylesheet" href="css/responsivedesign.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
-	<script>
-
- 
- $(document).ready(function() {
-  
-  $(window).scroll(function () {
-      //if you hard code, then use console
-      //.log to determine when you want the 
-      //nav bar to stick.  
-      console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 105) {
-      $('#fixbar').addClass('navbar-fixed');
-	  $('#bugfix').addClass('blockm');
-    }
-    else  {
-      $('#fixbar').removeClass('navbar-fixed');
-	  $('#bugfix').removeClass('blockm');
-    }
-  });
-});
-
-</script>
 	<script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -45,7 +21,27 @@ function myFunction() {
   }
 }
 </script>
-	
+	<script>
+
+ 
+  $(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 105) {
+      $('#myTopnav').addClass('navbar-fixed');
+	  $('#bugfix').addClass('blockm');
+    }
+    else  {
+      $('#myTopnav').removeClass('navbar-fixed');
+	  $('#bugfix').removeClass('blockm');
+    }
+  });
+});
+</script>
 <script>
   
   
@@ -58,9 +54,9 @@ function myFunction() {
         $("#content").removeClass('transition');
 		 
     });
-
+});
   
-  
+  $(document).ready(function(){
     $('#content1').hover(function() {
         $("#content1").addClass('transition');
 		
@@ -68,9 +64,9 @@ function myFunction() {
         $("#content1").removeClass('transition');
 		 
     });
+});
 
-
-
+$(document).ready(function(){
     $('#content3').hover(function() {
         $("#content3").addClass('transition');
 		
@@ -78,8 +74,8 @@ function myFunction() {
         $("#content3").removeClass('transition');
 		 
     });
-
-
+});
+$(document).ready(function(){
     $('#content2').hover(function() {
         $("#content2").addClass('transition');
 		
@@ -90,9 +86,8 @@ function myFunction() {
 });
   
   
+});
 
-</script>
-<script>
 $("#slideshow1 > div:gt(0)").hide();
 
 setInterval(function() {
@@ -128,7 +123,38 @@ setInterval(function() {
     .appendTo('#slideshow3');
 }, 3000);
 
+$("#slideshow4 > div:gt(0)").hide();
 
+setInterval(function() {
+  $('#slideshow4 > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow4');
+}, 3000);
+
+$("#slideshow5 > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow5 > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow5');
+}, 3000);
+
+$("#slideshow6 > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow6 > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow6');
+}, 3000);
 
 
 </script>
@@ -146,15 +172,14 @@ setInterval(function() {
 			</div>
 			<div class="block"> </div>
 			<div id="bugfix"></div>
-			<div id="fixbar">
-				<div class="topnav" id="myTopnav">
-				
-				<a href="index.html" class="active">Home</a>
+			<div class="topnav" id="myTopnav">
+			
+				<a href="#home" class="active">Home</a>
 				<div class="dropdown">
 					<button class="dropbtn">Research</button>
 					<div class="dropdown-content">
-						<a href="EngineeringScience - MCSI.html">Mascaro Center for Sustainable Innovation (MCSI) </a>
-						<a href="EngineeringScience - UHC.html">University Honors College</a>
+						<a href="#">Mascaro Center for Sustainable Innovation (MCSI) </a>
+						<a href="#">University Honors College</a>
 						<a href="https://www.engineering.pitt.edu/Research/">SSOE Research Center</a>
 					</div>
 				</div>
@@ -163,23 +188,33 @@ setInterval(function() {
 					<div class="dropdown-content">
 						<a href="https://www.engineering.pitt.edu/People/Faculty-Search/">Faculty</a>
 						<a href="https://www.engineering.pitt.edu/People/Staff-Listing/">Complete Staff Directory</a>
-						<a href="EngineeringScience - Aministrative Contacts.html">Administrative Contacts</a>
+						<a href="#">Administrative Contacts</a>
 					</div>
 				</div>
 				<div class="dropdown">
 					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Students</button>
 					<div class="dropdown-content">
-						<a href="EngineeringScience - Prospective Students.html">Prospective Students</a>
-						<a href="EngineeringScience - Current Students.html">Current Students</a>
-						
+						<a href="#">Prospective Students</a>
+						<a href="#">Current Students</a>
+						<a href="#">Scholarships and Awards</a>
+						<a href="#">FAQs</a>
+						<a href="#">Student Life</a>
+						<a href="#">Minors and Certificates</a>
 						
 					</div>
 				</div>
-				<a href="EngineeringScience - Career.html" class="normicon">Career</a>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Industry</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
 				<div class="dropdown">
 					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Alumni</button>
 					<div class="dropdown-content">
-						<a href="EngineeringScience - Alumni spotlight.html">Alumni spotlight</a>
+						<a href="#">Alumni spotlight</a>
 						
 					</div>
 				</div>
@@ -195,9 +230,8 @@ setInterval(function() {
 				
 				<a href="javascript:void(0);" style="font-size:12px;" class="icon" onclick="myFunction()">&#9776;</a>
 				
-					<div class="gridcontainer16">
-						<p style=" font-family: 'Lobster', cursive;, sans-serif;margin-top:0;font-size:26px;margin-bottom:0;text-align:right;-webkit-text-stroke: 0.1px black;color:#fcba03;align-self:center;">Forging Ahead!</p>
-					</div>
+				<div class="gridcontainer16">
+				<p style=" font-family: 'Lobster', cursive;, sans-serif;margin-top:0;font-size:26px;margin-bottom:0;text-align:right;-webkit-text-stroke: 0.1px black;color:#fcba03;align-self:center;">Forging Ahead!</p>
 				</div>
 			</div>
 		</header>
@@ -207,13 +241,13 @@ setInterval(function() {
 			
 				<div class="slideshow" id="slideshow1">
 					<div>
-						<img src="picturegallery/spot1/img1.jpg" style="width:100%;height:auto;">
+						<img src="picturegallery/spot1/img1.jpg" style="width:100%;height:auto;;">
 					</div>
 					<div>
-						<img src="picturegallery/spot1/img2.jpg" style="width:100%;height:auto;">
+						<img src="picturegallery/spot1/img2.jpg" style="width:100%;height:auto;;">
 					</div>
 					<div>
-						<img src="picturegallery/spot1/img3.jpg" style="width:100%;height:auto;">
+						<img src="picturegallery/spot1/img3.jpg" style="width:100%;height:auto;;">
 					</div>
    
 				</div>
@@ -376,4 +410,3 @@ setInterval(function() {
   
  </body>
 </html>
-		

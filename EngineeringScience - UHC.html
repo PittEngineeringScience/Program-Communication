@@ -15,6 +15,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	
 	<script>
+  
+
+    
+
   $(document).ready(function() {
   
   $(window).scroll(function () {
@@ -23,15 +27,16 @@
       //nav bar to stick.  
       console.log($(window).scrollTop())
     if ($(window).scrollTop() > 105) {
-      $('#myTopnav').addClass('navbar-fixed');
+      $('#fixbar').addClass('navbar-fixed');
 	  $('#bugfix').addClass('blockm');
     }
     else  {
-      $('#myTopnav').removeClass('navbar-fixed');
+      $('#fixbar').removeClass('navbar-fixed');
 	  $('#bugfix').removeClass('blockm');
     }
   });
 });
+
 </script>
 <script>
 function myFunction() {
@@ -58,14 +63,15 @@ function myFunction() {
 			</div>
 			<div class="block"> </div>
 			<div id="bugfix"></div>
-			<div class="topnav" id="myTopnav">
-			
+			<div id="fixbar">
+				<div class="topnav" id="myTopnav">
+				
 				<a href="#home" class="active">Home</a>
 				<div class="dropdown">
 					<button class="dropbtn">Research</button>
 					<div class="dropdown-content">
-						<a href="#">Mascaro Center for Sustainable Innovation (MCSI) </a>
-						<a href="#">University Honors College</a>
+						<a href="EngineeringScience - MCSI.html">Mascaro Center for Sustainable Innovation (MCSI) </a>
+						<a href="EngineeringScience - UHC.html">University Honors College</a>
 						<a href="https://www.engineering.pitt.edu/Research/">SSOE Research Center</a>
 					</div>
 				</div>
@@ -74,33 +80,23 @@ function myFunction() {
 					<div class="dropdown-content">
 						<a href="https://www.engineering.pitt.edu/People/Faculty-Search/">Faculty</a>
 						<a href="https://www.engineering.pitt.edu/People/Staff-Listing/">Complete Staff Directory</a>
-						<a href="#">Administrative Contacts</a>
+						<a href="EngineeringScience - Aministrative Contacts.html">Administrative Contacts</a>
 					</div>
 				</div>
 				<div class="dropdown">
 					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Students</button>
 					<div class="dropdown-content">
-						<a href="#">Prospective Students</a>
-						<a href="#">Current Students</a>
-						<a href="#">Scholarships and Awards</a>
-						<a href="#">FAQs</a>
-						<a href="#">Student Life</a>
-						<a href="#">Minors and Certificates</a>
+						<a href="EngineeringScience - Prospective Students.html">Prospective Students</a>
+						<a href="EngineeringScience - Current Students.html">Current Students</a>
+						
 						
 					</div>
 				</div>
-				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Industry</button>
-					<div class="dropdown-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
-					</div>
-				</div>
+				<a href="EngineeringScience - Career.html" class="normicon">Career</a>
 				<div class="dropdown">
 					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Alumni</button>
 					<div class="dropdown-content">
-						<a href="#">Alumni spotlight</a>
+						<a href="EngineeringScience - Alumni spotlight.html">Alumni spotlight</a>
 						
 					</div>
 				</div>
@@ -118,6 +114,7 @@ function myFunction() {
 				
 				<div class="gridcontainer16">
 				<p style=" font-family: 'Lobster', cursive;, sans-serif;margin-top:0;font-size:26px;margin-bottom:0;text-align:right;-webkit-text-stroke: 0.1px black;color:#fcba03;align-self:center;">Forging Ahead!</p>
+				</div>
 				</div>
 			</div>
 			

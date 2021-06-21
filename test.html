@@ -1,22 +1,252 @@
-
-
-<!DOCTYPE html>
+<!--
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Science at University of Pittsburgh</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+    
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+	<link rel="stylesheet" href="css/responsivedesign.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+<script>
+  
+  
+  
+  $(document).ready(function(){
+    $('#content').hover(function() {
+        $("#content").addClass('transition');
+		
+    }, function() {
+        $("#content").removeClass('transition');
+		 
+    });
+});
+  
+  $(document).ready(function(){
+    $('#content1').hover(function() {
+        $("#content1").addClass('transition');
+		
+    }, function() {
+        $("#content1").removeClass('transition');
+		 
+    });
+});
+
+$(document).ready(function(){
+    $('#content3').hover(function() {
+        $("#content3").addClass('transition');
+		
+    }, function() {
+        $("#content3").removeClass('transition');
+		 
+    });
+});
+$(document).ready(function(){
+    $('#content2').hover(function() {
+        $("#content2").addClass('transition');
+		
+    }, function() {
+        $("#content2").removeClass('transition');
+		 
+    });
+});
+  
+  
+});
+</script>
+<script>
+$(function(){
+  $('.multipleslides').each(function(){
+    // scope everything for each slideshow
+    var $this = this;
+    $('> :gt(0)', $this).hide();
+    setInterval(function(){$('> :first-child',$this).fadeOut().next().fadeIn().end().appendTo($this);}, 3000);
+  })
+});
+</script>
+
+<style>
+	.slideshow { 
+   
+  position: relative; 
+  width: 100%
+  height: 100%;
+  padding-bottom: 75%; 
+  
+}
+
+.slideshow > div { 
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+  right: 0px; 
+  bottom: 0px; 
+}
+
+.gridcontainer11
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	
+}
+</style>
+<body>
+<div class="gridcontainer11">
+			
+				<div class="multipleslides" >
+					<div>
+						<img src="picturegallery/spot1/img1.jpg" style="width:100%;height:auto;">
+					</div>
+					<div>
+						<img src="picturegallery/spot1/img2.jpg" style="width:100%;height:auto;">
+					</div>
+					<div>
+						<img src="picturegallery/spot1/img3.jpg" style="width:100%;height:auto;">
+					</div>
+   
+				</div>
+				<div class="multipleslides" >
+					<div>
+						<img src="picturegallery/spot2/img1.jpg" style="width:100%;height:auto;;">
+					</div>
+					<div>
+						<img src="picturegallery/spot2/img2.jpg" style="width:100%;height:auto;;">
+					</div>
+					<div>
+						<img src="picturegallery/spot2/img3.jpg" style="width:100%;height:auto;;">
+					</div>
+   
+				</div>
+				<div class="multipleslides" >
+					<div>
+						<img src="picturegallery/spot3/img1.jpg" style="width:100%;height:auto;;">
+					</div>
+					<div>
+						<img src="picturegallery/spot3/img2.jpg" style="width:100%;height:auto;;">
+					</div>
+					<div>
+						<img src="picturegallery/spot3/img3.jpg" style="width:100%;height:auto;;">
+					</div>
+   
+				</div>
+			
+			
+			</div>
+			</body>
+</html>
+
+
+
+
+
+
+<script>
+  
+  
+  
+  $(document).ready(function(){
+    $('#content').hover(function() {
+        $("#content").addClass('transition');
+		
+    }, function() {
+        $("#content").removeClass('transition');
+		 
+    });
+});
+  
+  $(document).ready(function(){
+    $('#content1').hover(function() {
+        $("#content1").addClass('transition');
+		
+    }, function() {
+        $("#content1").removeClass('transition');
+		 
+    });
+});
+
+$(document).ready(function(){
+    $('#content3').hover(function() {
+        $("#content3").addClass('transition');
+		
+    }, function() {
+        $("#content3").removeClass('transition');
+		 
+    });
+});
+$(document).ready(function(){
+    $('#content2').hover(function() {
+        $("#content2").addClass('transition');
+		
+    }, function() {
+        $("#content2").removeClass('transition');
+		 
+    });
+});
+  
+  
+
+</script>
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+<title>Simplest jQuery Slideshow</title>
+
+<style>
+body {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+
+.fadein { position:relative; height:332px; width:500px; }
+.fadein img { position:absolute; left:0; top:0; }
+
+.fadelinks, .faderandom { position:relative; height:332px; width:500px; }
+.fadelinks > *, .faderandom > * { position:absolute; left:0; top:0; display:block; }
+<!--
+.multipleslides { position:relative; height:332px; width:500px; float:left; }
+.multipleslides > * { position:absolute; left:0; top:0; display:block; }
+-->
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
 </head>
 <body>
 
 
-<div class="slide-in-left">
-hello
+<h2>More Simple jQuery Slideshow: Multiple Slideshows</h2>
+
+<script>
+$(function(){
+  $('.multipleslides').each(function(){
+    // scope everything for each slideshow
+    var $this = this;
+    $('> :gt(0)', $this).hide();
+    setInterval(function(){$('> :first-child',$this).fadeOut().next().fadeIn().end().appendTo($this);}, 3000);
+  })
+});
+</script>
+<div class="multipleslides" >
+					<div>
+						<img src="picturegallery/spot1/img1.jpg" style="width:100%;height:auto;">
+					</div>
+					<div>
+						<img src="picturegallery/spot1/img2.jpg" style="width:100%;height:auto;">
+					</div>
+					<div>
+						<img src="picturegallery/spot1/img3.jpg" style="width:100%;height:auto;">
+					</div>
 </div>
-
-
+<div class="multipleslides">
+  <a href="#"><img src="https://farm3.static.flickr.com/2610/4148988872_990b6da667.jpg"></a>
+  <a href="#"><img src="https://farm3.static.flickr.com/2597/4121218611_040cd7b3f2.jpg"></a>
+  <a href="#"><img src="https://farm3.static.flickr.com/2531/4121218751_ac8bf49d5d.jpg"></a>
+</div>
 </body>
 </html>

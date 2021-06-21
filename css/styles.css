@@ -316,6 +316,8 @@ align-items: center;
   background-color: #000080; /* Green */
 }
 
+
+
 /*autoplay slideshow*/
 .slideshow { 
    
@@ -340,7 +342,7 @@ align-items: center;
 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
+	
 	
 }
 .gridcontainer12
