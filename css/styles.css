@@ -296,6 +296,17 @@ align-items: center;
    width:100%
    
 }
+
+.sidebar-fixed {
+	display:block;
+    /*top: 74.33px;*/
+	top:140px;
+	right:18%;
+    z-index: 100;
+  position: fixed;
+   width:150px;
+   
+}
 .box 
 {
 	padding: 0px 10%;
@@ -405,7 +416,7 @@ align-items: center;
 .gridcontainer18
 {
 	display:grid;
-	grid-template-columns:1fr 120px;
+	grid-template-columns:1fr 150px;
 }
 
 

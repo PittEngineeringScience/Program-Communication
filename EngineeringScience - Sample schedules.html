@@ -21,7 +21,7 @@
 
   $(document).ready(function() {
   
-  $(window).scroll(function () {
+  $(window).scroll(function run2() {
       //if you hard code, then use console
       //.log to determine when you want the 
       //nav bar to stick.  
@@ -35,6 +35,22 @@
 	  $('#bugfix').removeClass('blockm');
     }
   });
+  
+  
+  /*$(window).scroll(function run1() {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 105) {
+      $('#fixside').addClass('sidebar-fixed');
+	  
+    }
+    else  {
+      $('#fixside').removeClass('sidebar-fixed');
+	  
+    }
+  });*/
 });
 
 </script>
@@ -56,7 +72,7 @@ function myFunction() {
   color: black; 
   border: 2px solid #008CBA;
   width:150px;
-  min-height:60px;
+  min-height:40px;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -74,7 +90,7 @@ function myFunction() {
   color: black; 
   border: 2px solid red;
   width:150px;
-  min-height:60px;
+  min-height:40px;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -93,7 +109,7 @@ function myFunction() {
   color: black; 
   border: 2px solid green;
   width:150px;
-  min-height:60px;
+  min-height:40px;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -200,11 +216,11 @@ function myFunction() {
 			
 		</header>
 		<div class='box'>
-		<div class = "section-wraper">
+		<div class = "section-wraper" style="padding-top:10px;">
 		<div class="gridcontainer18">
 			<div style="margin-right:25px;">
-			<h1>Engineering Physics Concentration</h1>
-			<h2>First Term</h2>
+			<h1 style="margin-top:0;">Engineering Physics Concentration</h1>
+			<h2 style="margin-top:0;margin-bottom:0;">First Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
 				<li>MATH 0220 - ANALYTIC GEOMETRY AND CALCULUS 1</li>
@@ -215,9 +231,11 @@ function myFunction() {
 				<li>ENGCMP 0210 - SEMINAR IN COMPOSITION: ENGINEERING</li>
 				
 				
+				
 			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="one">17</h3>
 			
-			<h2>Second Term</h2>
+			<h2 style="margin-top:0;margin-bottom:0;">Second Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
 				<li>MATH 0230 - ANALYTIC GEOMETRY AND CALCULUS 2</li>
@@ -228,10 +246,10 @@ function myFunction() {
 				<li>ENGCMP 0412 - ENGINEERING COMMUNICATION IN A PROFESSIONAL CONTEXT</li>
 				
 			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="two">17</h3>
 			
 			
-			
-			<h2>Third Term</h2>
+			<h2 style="margin-top:0;margin-bottom:0;">Third Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
 				<li>MATH 0240 – ANALYTIC GEOMETRY AND CALCULUS 3</li>
@@ -242,8 +260,9 @@ function myFunction() {
 				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
 				
 			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="three">16</h3>
 			
-			<h2>Fourth Term</h2>
+			<h2 style="margin-top:0;margin-bottom:0;">Fourth Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
 				<li class="math">MATH 0290 – DIFFERENTIAL EQUATIONS</li>
@@ -255,8 +274,9 @@ function myFunction() {
 				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
 				
 			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="four">18</h3>
 			
-			<h2>Fifth Term</h2>
+			<h2 style="margin-top:0;margin-bottom:0;">Fifth Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
 				<li>MEMS 1053 – STRUCTURE OF CRYSTALS AND DIFFRACTION</li>
@@ -267,8 +287,11 @@ function myFunction() {
 				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
 				
 			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="five">16</h3>
 			
-			<h2>Sixth Term</h2>
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Sixth Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
 				<li class="ele">ECE 1212 – ELECTRONIC CIRCUIT DESIGN LAB</li>
@@ -281,8 +304,12 @@ function myFunction() {
 				<li class="ele" style="display:none;">ECE 0142 – COMPUTER ORGANIZATION</li>
 				
 			</ul>
+				
+				<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="six">15</h3>
 			
-			<h2>Seventh Term</h2>
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Seventh Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
 				<li>MEMS 1058 – ELECTROMAGNETIC PROPERTIES OF MATERIALS</li>
@@ -294,8 +321,9 @@ function myFunction() {
 				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
 				
 			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="seven">18</h3>
 			
-			<h2>Eighth Term</h2>
+			<h2 style="margin-top:0;margin-bottom:0;">Eighth Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
 				<li>MEMS 1063 – PHASE TRANSFORMATION AND MICROSTRUCTURE EVOLUTION</li>
@@ -307,15 +335,19 @@ function myFunction() {
 				<li class="math" style="display:none;">MATH 1000+ (3 credits)</li>
 				
 			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="eight">15</h3>
 			</div>
-			<div>
+			<div id="fixside" class="sidebar-fixed">
+				
 				<div style="height:16.08px;"></div>
+				<h2 style="display:inline-block;">Total Credits:</h2><h2 style="display:inline-block;"id="total">133</h2>
+				
 				<button id="physicsB" class="button1">Physics Minor</button>
-				<div style="height:30px;"></div>
+				<div style="height:2px;"></div>
 				<button id="mathB" class="button2">Math Minor</button>
-				<div style="height:30px;"></div>
+				<div style="height:2px;"></div>
 				<button id="eleB" class="button4">Electrical Engineering Minor</button>
-				<div style="height:30px;"></div>
+				<div style="height:2px;"></div>
 				<button type="button" onClick="window.location.reload();"class="button3">Reset</button>
 			</div>
 		</div>
@@ -323,6 +355,8 @@ function myFunction() {
 		</div>
 		
 				<script>
+				
+				
 $(document).ready(function() {
 
 document.getElementById("physicsB").onclick = function(){
@@ -331,10 +365,18 @@ var elements = document.getElementsByClassName("physics"), i, len;
   
   for (i = 0, len = elements.length; i < len; i++) {
     elements[i].style.color = '#2C81B7';
+	
   }
 }
-
-
+document.getElementById('one').innerHTML = '17';
+document.getElementById('two').innerHTML = '17';
+document.getElementById('three').innerHTML = '16';
+document.getElementById('four').innerHTML = '18';
+document.getElementById('five').innerHTML = '16';
+document.getElementById('six').innerHTML = '15';
+document.getElementById('seven').innerHTML = '18';
+document.getElementById('eight').innerHTML = '15';
+document.getElementById('total').innerHTML = '133';
 
 });
 
@@ -349,9 +391,16 @@ var elements = document.getElementsByClassName("math"), i, len;
 	elements[i].style.color = 'red';
 	
   }
+document.getElementById('one').innerHTML = '17';
+document.getElementById('two').innerHTML = '17';
+document.getElementById('three').innerHTML = '16';
+document.getElementById('four').innerHTML = '18';
+document.getElementById('five').innerHTML = '16';
+document.getElementById('six').innerHTML = '18';
+document.getElementById('seven').innerHTML = '18';
+document.getElementById('eight').innerHTML = '18';
+document.getElementById('total').innerHTML = '139';
 }
-
-
 
 });
 
