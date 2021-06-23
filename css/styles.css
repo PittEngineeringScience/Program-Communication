@@ -51,6 +51,12 @@ body {
 	border: 0px;
 	
 }
+.blockb
+{
+	min-height: 3.8px;
+	background: #000080;
+	border: 0px;
+}
 /*for flexable menu*/
 .blockm{
 	
@@ -389,6 +395,19 @@ align-items: center;
 
 }
 
+.gridcontainer17
+{
+	display:grid;
+	grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+	max-width:100%;
+}
+
+.gridcontainer18
+{
+	display:grid;
+	grid-template-columns:1fr 120px;
+}
+
 
 .statfont
 {
@@ -481,3 +500,17 @@ align-items: center;
   opacity: 1;
   right: 0;
 }
+
+
+
+
+
+table, td, th {
+  border: 3px solid black;
+}
+
+.table1 {
+  border-collapse: collapse;
+  width:100%;
+}
+

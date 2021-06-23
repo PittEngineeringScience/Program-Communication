@@ -1,0 +1,390 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Science at University of Pittsburgh</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+	<link rel="stylesheet" href="css/responsivedesign.css">
+	<link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	<script>
+  
+
+    
+
+  $(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 105) {
+      $('#fixbar').addClass('navbar-fixed');
+	  $('#bugfix').addClass('blockm');
+    }
+    else  {
+      $('#fixbar').removeClass('navbar-fixed');
+	  $('#bugfix').removeClass('blockm');
+    }
+  });
+});
+
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<style>
+
+  
+  .button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  width:150px;
+  min-height:60px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid red;
+  width:150px;
+  min-height:60px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button2:hover {
+  background-color: red;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid green;
+  width:150px;
+  min-height:60px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button3:hover {
+  background-color: green;
+  color: white;
+}
+
+.button4 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #FCBA03;
+  width:150px;
+  min-height:60px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button4:hover {
+  background-color: #FCBA03;
+  color: white;
+}
+		
+		</style>
+
+  </head>
+  <body>
+	<main>
+		<!--*************Title and drop down menu*****************-->
+		<header>
+			<div class="gridcontainer8" style="">
+			<h1 style = "color:#fcba03; font-size:54px; margin:auto;margin:auto;font-weight:850;">PITT</h1>
+			<img src="images/verticalbar.png" alt="verticalbar" style = "max-width:15px; height:53.33px;justify-self:center;align-self:center;"></img>
+ 
+			<h2 style = " font-size:15px; grid-column:3/4; margin:auto; font-weight:bold;">Swanson School of Engineering<br>Engineering Science</h2>
+			
+			
+			</div>
+			<div class="block"> </div>
+			<div id="bugfix"></div>
+			<div id="fixbar">
+				<div class="topnav" id="myTopnav">
+				
+				<a href="#home" class="active">Home</a>
+				<div class="dropdown">
+					<button class="dropbtn">Research</button>
+					<div class="dropdown-content">
+						<a href="EngineeringScience - MCSI.html">Mascaro Center for Sustainable Innovation (MCSI) </a>
+						<a href="EngineeringScience - UHC.html">University Honors College</a>
+						<a href="https://www.engineering.pitt.edu/Research/">SSOE Research Center</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">People</button>
+					<div class="dropdown-content">
+						<a href="https://www.engineering.pitt.edu/People/Faculty-Search/">Faculty</a>
+						<a href="https://www.engineering.pitt.edu/People/Staff-Listing/">Complete Staff Directory</a>
+						<a href="EngineeringScience - Aministrative Contacts.html">Administrative Contacts</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Students</button>
+					<div class="dropdown-content">
+						<a href="EngineeringScience - Prospective Students.html">Prospective Students</a>
+						<a href="EngineeringScience - Current Students.html">Current Students</a>
+						
+						
+					</div>
+				</div>
+				<a href="EngineeringScience - Career.html" class="normicon">Career</a>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Alumni</button>
+					<div class="dropdown-content">
+						<a href="EngineeringScience - Alumni spotlight.html">Alumni spotlight</a>
+						
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Life@ES</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				
+				
+				<a href="javascript:void(0);" style="font-size:12px;" class="icon" onclick="myFunction()">&#9776;</a>
+				
+				<div class="gridcontainer16">
+				<p style=" font-family: 'Lobster', cursive;, sans-serif;margin-top:0;font-size:26px;margin-bottom:0;text-align:right;-webkit-text-stroke: 0.1px black;color:#fcba03;align-self:center;">Forging Ahead!</p>
+				</div>
+				</div>
+			</div>
+			
+		</header>
+		<div class='box'>
+		<div class = "section-wraper">
+		<div class="gridcontainer18">
+			<div style="margin-right:25px;">
+			<h1>Engineering Physics Concentration</h1>
+			<h2>First Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0220 - ANALYTIC GEOMETRY AND CALCULUS 1</li>
+				<li>CHEM 0960 - GENERAL CHEM FOR ENGINEERS 1</li>
+				<li class="physics">PHYS 0174 - BASIC PHYSICS, SCIENCE AND ENGINEERING 1 (INTEGRATED)</li>
+				<li>ENGR 0011 - INTRO TO ENGINEERING ANALYSIS</li>
+				<li>ENGR 0081 - FRESHMAN ENGINEERING SEMINAR 1</li>
+				<li>ENGCMP 0210 - SEMINAR IN COMPOSITION: ENGINEERING</li>
+				
+				
+			</ul>
+			
+			<h2>Second Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0230 - ANALYTIC GEOMETRY AND CALCULUS 2</li>
+				<li>CHEM 0970 - GENERAL CHEM FOR ENGINEERS 2</li>
+				<li class="physics">PHYS 0174 - BASIC PHYSICS, SCIENCE AND ENGINEERING 2 (INTEGRATED)</li>
+				<li>ENGR 0012 - INTRO TO ENGINEERING COMPUTING</li>
+				<li>ENGR 0082 - FRESHMAN ENGINEERING SEMINAR 2</li>
+				<li>ENGCMP 0412 - ENGINEERING COMMUNICATION IN A PROFESSIONAL CONTEXT</li>
+				
+			</ul>
+			
+			
+			
+			<h2>Third Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0240 – ANALYTIC GEOMETRY AND CALCULUS 3</li>
+				<li class="physics" class="math">MATH 0280 – INTRO TO MATRICES & LINEAR ALG</li>
+				<li>ENGER 0022 – MATERIALS STRUCTURE AND PROPERTIES</li>
+				<li class="ele">ECE 0031 – LINEAR CIRCUITS AND SYSTEMS 1</li>
+				<li>PHYS 0219 – BASIC LABORATORY PHYSICS SCIENCE AND ENGINEERING</li>
+				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
+				
+			</ul>
+			
+			<h2>Fourth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li class="math">MATH 0290 – DIFFERENTIAL EQUATIONS</li>
+				<li>ENGER 0135 – STATICS & MECHC OF MATERIALS 1</li>
+				<li class="ele">ECE 0257 – ANALYSIS AND DESIGN OF ELECTRONIC CIRCUITS</li>
+				<li class="physics">Upper Level Physics – 3 Credits</li>
+				<li>MEMS 0051 – INTRODUCTION TO THERMODYNAMICS</li>
+				<li>Humanity/Social Science Elective 3 – 3 Credits</li>
+				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
+				
+			</ul>
+			
+			<h2>Fifth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MEMS 1053 – STRUCTURE OF CRYSTALS AND DIFFRACTION</li>
+				<li>MEMS 1059 – PHASE EQUILIBRIA IN MULTI-COMPONENT MATERIALS</li>
+				<li class="physics">PHYS 0477 – INTRODUCTION TO THERMAL PHYSICS, RELATIVITY AND QUANTUM MECHANICS</li>
+				<li class="ele">ECE 1201 – ELECTNC MEASURMNTS & CRCTS LAB</li>
+				<li>Upper Level Physics – 3 Credits</li>
+				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
+				
+			</ul>
+			
+			<h2>Sixth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li class="ele">ECE 1212 – ELECTRONIC CIRCUIT DESIGN LAB</li>
+				<li class="ele">ECE 1247 – SEMICONDUCTOR DEVICE THEORY</li>
+				<li class="ele">ECE 0132 – DIGITAL LOGIC</li>
+				<li>PHYS 0481 – PRINCIPLES OF MODERN PHYSCIS 2</li>
+				<li>Humanity/Social Science Elective 4 – 3 Credits</li>
+				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
+				<li class="math" style="display:none;">MATH 0250</li>
+				<li class="ele" style="display:none;">ECE 0142 – COMPUTER ORGANIZATION</li>
+				
+			</ul>
+			
+			<h2>Seventh Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MEMS 1058 – ELECTROMAGNETIC PROPERTIES OF MATERIALS</li>
+				<li>ECE 1266 – APPLICATIONS OF FIELDS & WAVES</li>
+				<li>Senior Design 1 – 3 Credits</li>
+				<li>Upper Level Physics – 3 Credits</li>
+				<li class="math">Program Elective – 3 Credits</li>
+				<li>Humanity/Social Science Elective 5 – 3 Credits</li>
+				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
+				
+			</ul>
+			
+			<h2>Eighth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MEMS 1063 – PHASE TRANSFORMATION AND MICROSTRUCTURE EVOLUTION</li>
+				<li>ECE 1552 – SIGNALS AND SYSTEMS ANALYSIS</li>
+				<li>Senior Design 2 – 3 Credits</li>
+				<li>Program Elective – 3 Credits</li>
+				<li>Humanity/Social Science Elective 6 – 3 Credits</li>
+				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
+				<li class="math" style="display:none;">MATH 1000+ (3 credits)</li>
+				
+			</ul>
+			</div>
+			<div>
+				<div style="height:16.08px;"></div>
+				<button id="physicsB" class="button1">Physics Minor</button>
+				<div style="height:30px;"></div>
+				<button id="mathB" class="button2">Math Minor</button>
+				<div style="height:30px;"></div>
+				<button id="eleB" class="button4">Electrical Engineering Minor</button>
+				<div style="height:30px;"></div>
+				<button type="button" onClick="window.location.reload();"class="button3">Reset</button>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+				<script>
+$(document).ready(function() {
+
+document.getElementById("physicsB").onclick = function(){
+
+var elements = document.getElementsByClassName("physics"), i, len;
+  
+  for (i = 0, len = elements.length; i < len; i++) {
+    elements[i].style.color = '#2C81B7';
+  }
+}
+
+
+
+});
+
+$(document).ready(function() {
+
+document.getElementById("mathB").onclick = function(){
+
+var elements = document.getElementsByClassName("math"), i, len;
+  
+  for (i = 0, len = elements.length; i < len; i++) {
+    elements[i].style.display = 'list-item';
+	elements[i].style.color = 'red';
+	
+  }
+}
+
+
+
+});
+
+$(document).ready(function() {
+
+document.getElementById("eleB").onclick = function(){
+
+var elements = document.getElementsByClassName("ele"), i, len;
+  
+  for (i = 0, len = elements.length; i < len; i++) {
+    elements[i].style.display = 'list-item';
+	elements[i].style.color = '#FCBA03';
+	
+  }
+}
+
+
+
+});
+</script>
+		</body>
+		<footer>
+		<div class="gridcontainer2">
+			
+				
+				<img src="images/icon.png" alt="Engineering Science icon">
+			
+			
+			</div>
+		</footer>
+
+	</main>
+  
+ 
+</html>
+		

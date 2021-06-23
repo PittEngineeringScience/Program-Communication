@@ -148,3 +148,20 @@
 	
 }
  
+  }
+ 
+ @media only screen and (max-width: 769px) {
+	 .gridcontainer6
+	 {
+		 grid-template-columns: 1fr 1fr;
+	 }
+	 
+ }
+ 
+ @media only screen and (max-width: 517px) {
+	 .gridcontainer6
+	 {
+		 grid-template-columns: 1fr;
+	 }
+	 
+ }
