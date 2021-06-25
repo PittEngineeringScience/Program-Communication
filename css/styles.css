@@ -157,7 +157,7 @@ header>h1{
 	font-weight: bold;
 	background: white;
 	box-shadow: 0 0 10px 1px #88b1f2;
-	z-index:1;
+	z-index:0;
 	position:relative;
 }
 
@@ -274,7 +274,7 @@ svg > g > g:last-child { pointer-events: none }
 .gridcontainer9
 {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1.3fr 1fr;
 	
 }
 /*center stuff*/	

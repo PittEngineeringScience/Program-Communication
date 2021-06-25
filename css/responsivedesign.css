@@ -165,3 +165,24 @@
 	 }
 	 
  }
+ 
+ @media only screen and (max-width: 1200px) {
+	 .gridcontainer9
+	 {
+		 grid-template-columns: 1fr;
+		 
+	 }
+	 #pic
+	 {
+		 display:none;
+	 }
+ }
+ 
+
+	 @media only screen and (max-width: 500px) 
+		{
+		 .special1
+		 {
+			 padding: 25px 0;
+		 }
+	 }

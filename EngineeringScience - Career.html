@@ -26,6 +26,35 @@ function myFunction() {
 </script>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
+	
+	
+	  google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart3);
+
+      function drawChart3() {
+
+        var data = google.visualization.arrayToDataTable([
+           ['Task', 'Hours per Day'],
+          ['Industry : Engineering',8],
+          ['Industry : Research and Development / Product Development',      13],
+          ['Graduate School : Engineering / Science',  18],
+          ['Consulting (Policy / Organizational)', 2],
+          ['Government : Policy or Program Management',    1]
+        ]);
+
+        var options = {
+          title: 'Engineering Science program effectively prepares students for:',
+		  chartArea:{width:'100%',height:'80%'}
+		  
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
+
+        chart.draw(data, options);
+      }
+	
+	
+	
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
@@ -46,6 +75,7 @@ function myFunction() {
 
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         chart.draw(data, options);
+		
       }
 	  $(window).resize(function(){
 			drawChart();
@@ -144,7 +174,8 @@ function myFunction() {
 		<div class="box">
 		<div class = "section-wraper">
 			<h1>Career outlook for Engineering Science students:</h1>
-			<div id="donutchart" style="width: 100%; height: auto;"></div>
+			<div id="piechart3" style="width: 100%;"></div>
+			
 			<h1>Where do our graduates go?:</h1>
 			<div style="display:grid; grid-template-columns: 1fr 1fr;">
 			
