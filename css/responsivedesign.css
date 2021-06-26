@@ -186,3 +186,27 @@
 			 padding: 25px 0;
 		 }
 	 }
+	 .resp_CS
+	 {
+		 font-size: 32px;
+	 }
+	 @media only screen and (max-width: 845px) 
+	 {
+		 .gridcontainer7
+		 {
+				grid-template-columns:  1fr  1fr 1fr;
+				grid-template-rows: 1fr  1fr 1fr 1fr;
+		 }
+		 .resp_CS
+		 {
+			 font-size: 25px;
+		 }
+	 }
+	 @media only screen and (max-width: 600px) 
+	 {
+		 .gridcontainer7
+		 {
+				grid-template-columns:  1fr 1fr;
+				grid-template-rows: 1fr  1fr 1fr 1fr;
+		 }
+	 }

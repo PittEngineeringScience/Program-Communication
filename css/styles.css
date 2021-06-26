@@ -254,8 +254,8 @@ svg > g > g:last-child { pointer-events: none }
 {
 	display: grid;
 	
-	grid-template-columns: 4fr 1fr 4fr 1fr 4fr 1fr 4fr;
-	grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr;
+	grid-template-columns: 1fr 1fr  1fr  1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
 	align-items: center;
 	justify-items: center;
 	
@@ -523,5 +523,24 @@ table, td, th {
 .table1 {
   border-collapse: collapse;
   width:100%;
+}
+
+
+
+
+/* unvisited link */
+.link_g a:link {
+	color: red;
+  text-decoration:none;
+}
+
+/* visited link */
+.link_g a:visited {
+  color: green;
+}
+
+/* mouse over link */
+.link_g a:hover {
+  color: green;
 }
 
