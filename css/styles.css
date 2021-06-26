@@ -187,10 +187,11 @@ footer>div>h2
 	font-size:15px;
 }
 footer>div>img {  
-	max-height: 100px;
+	max-height: 90px;
 
 	width: auto; 
-	padding-left: 10px; 
+	padding-top:10px;
+padding-bottom:10px;	
 	
 }
 
@@ -417,6 +418,40 @@ align-items: center;
 {
 	display:grid;
 	grid-template-columns:1fr 150px;
+}
+
+.gridcontainer18
+{
+	display:grid;
+	grid-template-columns:1.2fr 1fr;
+	min-height:400px;
+}
+
+.gridcontainer19
+{
+	display: flex;
+    flex-wrap: wrap;
+    
+    list-style: none;
+	/*display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr;*/
+	background:#1a75ff;
+	z-index:999;
+	position:relative;
+	padding-left:10%;
+	padding-right:10%;
+	
+}
+.gridcontainer19>a
+{
+	 display:table-cell;    /*Add this*/
+  vertical-align:middle; /*Change to middle*/
+  text-decoration:none;
+  color:white;
+  align-self:center;
+  justify-self:center;
+  font-size:12.3px;
+  font-weight:bold;
 }
 
 

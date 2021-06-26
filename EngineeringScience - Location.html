@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engineering Science at University of Pittsburgh</title>
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+	
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     
+	
+	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/responsivedesign.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
 	<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-	<script>
+  
+
+    
+
   $(document).ready(function() {
   
   $(window).scroll(function () {
@@ -40,25 +37,36 @@ function myFunction() {
     }
   });
 });
+
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 </script>
 <style>
 	.button1 {
   background-color: white; 
-  color: #294704; 
-  border: 3px solid #294704;
+  color: #000080; 
+  border: 3px solid #000080;
   width:100%;
   min-height:30px;
   text-align: center;
   text-decoration: none;
   display: block;
-  font-size: 15px;
+  font-size: 13px;
   vertical-align: middle;
   transition-duration: 0.4s;
   cursor: pointer;
   
 }
 .button1:hover {
-  background-color: #294704;
+  background-color: #000080;
   color: white;
 }
 </style>
@@ -80,7 +88,7 @@ function myFunction() {
 			<div id="fixbar">
 				<div class="topnav" id="myTopnav">
 				
-				<a href="index.html" class="active">Home</a>
+				<a href="#home" class="active">Home</a>
 				<div class="dropdown">
 					<button class="dropbtn">Research</button>
 					<div class="dropdown-content">
@@ -131,40 +139,48 @@ function myFunction() {
 				</div>
 				</div>
 			</div>
+			
 		</header>
 		<div class='box'>
-		<div class = "section-wraper" style="color:#294704">
-			<!--<h2 style="background-image: url('images/greenback.jpg');width:100%;min-height:50px;background-size:cover;text-align:center;-webkit-text-stroke: 1.8px #294704; 
+		<div class = "section-wraper">
+			<h2 style="background-image: url('images/location.jpg');width:100%;min-height:50px;background-size:cover;text-align:center;
 
-     color: white;font-size:3vw; padding-top:30px;padding-bottom:30px;">Mascaro Center for Sustainable Innovation</h2>-->
-	 <h2 style="background-image: url('images/greenback.jpg');width:100%;min-height:50px;background-size:cover;text-align:center;
-
-     color: white;font-size:3vw; padding-top:30px;padding-bottom:30px;">Mascaro Center for Sustainable Innovation</h2>
-			<h3>Introduction</h3>
-			<p> Mascaro Center for Sustainable Innovation carries out the commitment of Pitt towards Sustainability. The center is dedicated to sustainability research and education, and students are able to find the suitable programs and research opportunities related to sustainability in the Center.</p>
-			<a href="https://www.engineering.pitt.edu/MCSI/Summer-Research-Opportunities/" class="button1"><span style="border-top:10px;border-bottom:10px;">Summer research opportunities</a>
-			<div style="height:2px;"></div>
-			<a href="https://www.engineering.pitt.edu/MCSI/Research-Strengths/" class="button1">Research Strengths</a>
-			<div style="height:2px;"></div>
-			<a href="https://www.engineering.pitt.edu/MCSI/Funded-Research/" class="button1">MCSI funded researches</a>
-			
-		
+     color: white;font-size:4vw; padding-top:30px;padding-bottom:30px;">Department Location</h2>
+	 
+		<div class="gridcontainer18">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4049593019727!2d-79.96045538546441!3d40.44417316189544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f22bd6556075%3A0xdf1ba0e42b98d286!2sBenedum%20Hall!5e0!3m2!1sen!2sus!4v1624730302954!5m2!1sen!2sus" width="100%" height="100%" style="border:0; text-align:center;" allowfullscreen="" loading="lazy"></iframe>
+			<div>
+				
+				<p style="margin-left:10px;">Department location: <br>Benedum Hall
+				<br>3700 O'Hara St, Pittsburgh, PA 15213<br></p>
+				
+				<p style="margin-left:10px;">Office of Engineering Science Program Director:<br>Dr. Paul Ohodnicki
+				<br>Benedum 808<br></p>
+				
+				<p style="margin-left:10px;">Office of MEMS Undergraduate Student Administrator:<br>Manns, Heather L.
+				<br>Benedum 6xx<br></p>
+			</div>
+		</div>
 			
 			
 			
 			<div class="blockg"> </div>
-		
-		</div>
-		</div>
-		</body>
-		<footer>
-		<div class="gridcontainer2">
-			
-				
-				<img src="images/icon.png" alt="Engineering Science icon">
-			
 			
 			</div>
+			</div>
+		</body>
+		<footer>
+		<div class="gridcontainer19">
+			
+				
+				<img src="images/icon.png" alt="Engineering Science icon" style="margin-right:24px;">
+				
+				<a href="EngineeringScience - Location.html" style="margin-right:24px;">Maps and Locations</a>
+				<a href="https://find.pitt.edu/" class="" style="margin-right:24px;">Find People at Pitt</a>
+				<a href="https://www.join.pitt.edu/" class="" style="margin-right:24px;">Jobs</a>
+				<a href="https://my.pitt.edu/" class="" style="margin-right:24px;">MyPitt</a>
+				<a href="https://www.join.pitt.edu/" class="" style="margin-right:24px;">Jobs</a>
+			
 		</footer>
 	</main>
   
