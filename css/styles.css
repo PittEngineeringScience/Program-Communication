@@ -454,6 +454,17 @@ align-items: center;
   font-weight:bold;
 }
 
+.gridcontainer20
+{
+	display: grid;
+	
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 150px;
+	background:#05213b;
+	
+	
+}
+
 
 .statfont
 {
@@ -579,3 +590,26 @@ table, td, th {
   color: green;
 }
 
+
+
+#myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 80%;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.smartbutton {
+  background-color: #05213b;
+  border: none;
+  color: white;
+  padding: 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+width: 19.4%;
+  cursor: pointer;
+}

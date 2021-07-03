@@ -1,0 +1,192 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Science at University of Pittsburgh</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js"></script>
+  <script type="module" src="js/jquery.csv.js"></script>
+	
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/responsivedesign.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+ <script type="module" src="js/Advisory.js"></script>
+  <script type="module" src="js/filter.js"></script>
+    
+	
+	<script>
+  
+
+    
+
+  $(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 105) {
+      $('#fixbar').addClass('navbar-fixed');
+	  $('#bugfix').addClass('blockm');
+    }
+    else  {
+      $('#fixbar').removeClass('navbar-fixed');
+	  $('#bugfix').removeClass('blockm');
+    }
+  });
+});
+
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<style>
+	.button1 {
+  background-color: white; 
+  color: #000080; 
+  border: 3px solid #000080;
+  width:100%;
+  min-height:30px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  vertical-align: middle;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+}
+.button1:hover {
+  background-color: #000080;
+  color: white;
+}
+</style>
+  </head>
+  <body>
+	
+		<!--*************Title and drop down menu*****************-->
+		
+		<header>
+			
+			<div class="gridcontainer8" style="">
+			<h1 style = "color:#fcba03; font-size:54px; margin:auto;margin:auto;font-weight:850;">PITT</h1>
+			<img src="images/verticalbar.png" alt="verticalbar" style = "max-width:15px; height:53.33px;justify-self:center;align-self:center;"></img>
+ 
+			<h2 style = " font-size:15px; grid-column:3/4; margin:auto; font-weight:bold;">Swanson School of Engineering<br>Engineering Science</h2>
+			
+			
+			</div>
+			<div class="block"> </div>
+			<div id="bugfix"></div>
+			<div id="fixbar">
+				<div class="topnav" id="myTopnav">
+				
+				<a href="#home" class="active">Home</a>
+				<div class="dropdown">
+					<button class="dropbtn">Research</button>
+					<div class="dropdown-content">
+						<a href="EngineeringScience - MCSI.html">Mascaro Center for Sustainable Innovation (MCSI) </a>
+						<a href="EngineeringScience - UHC.html">University Honors College</a>
+						<a href="https://www.engineering.pitt.edu/Research/">SSOE Research Center</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">People</button>
+					<div class="dropdown-content">
+						<a href="https://www.engineering.pitt.edu/People/Faculty-Search/">Faculty</a>
+						<a href="https://www.engineering.pitt.edu/People/Staff-Listing/">Complete Staff Directory</a>
+						<a href="EngineeringScience - Aministrative Contacts.html">Administrative Contacts</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Students</button>
+					<div class="dropdown-content">
+						<a href="EngineeringScience - Prospective Students.html">Prospective Students</a>
+						<a href="EngineeringScience - Current Students.html">Current Students</a>
+						
+						
+					</div>
+				</div>
+				<a href="EngineeringScience - Career.html" class="normicon">Career</a>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Alumni</button>
+					<div class="dropdown-content">
+						<a href="EngineeringScience - Alumni spotlight.html">Alumni spotlight</a>
+						
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Life@ES</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				
+				
+				<a href="javascript:void(0);" style="font-size:12px;" class="icon" onclick="myFunction()">&#9776;</a>
+				
+				<div class="gridcontainer16">
+				<p style=" font-family: 'Lobster', cursive;, sans-serif;margin-top:0;font-size:26px;margin-bottom:0;text-align:right;-webkit-text-stroke: 0.1px black;color:#fcba03;align-self:center;">Forging Ahead!</p>
+				</div>
+				</div>
+			</div>
+			
+		</header>
+			<div class='box'>
+			<div class = "section-wraper">
+				<h1>Advisory Boards</h1>
+
+
+					<input type="text" id="myInput"  placeholder="Search for names.." title="Type in a name">
+					<button class="smartbutton" id="smartbutton">Search</button>
+					<div class="blockg"></div>
+					<div class="blockf"></div>
+					<div class="blockg"></div>
+					<main class="maincontent">
+					<!--<div class="gridcontainer20">
+					<img src="images/Miriam.jpg" alt="Engineering Alumni Miriam" style = "max-width:120px; max-height:140px;justify-self:center;align-self:center"></img>
+					<p style="align-self:center"> <span style="font-family: 'Pattaya', sans-serif; font-size: 16px;color:white;">Category:<br>Name:<br>E-mail:<span></p>
+					</div>
+					<div class="blockg"></div>-->
+					
+					
+				
+					
+			
+					</main>
+					
+			<div class="blockg"> </div>
+			
+			</div>
+			</div>
+		</body>
+		<footer>
+		<div class="gridcontainer2">
+			
+				
+				<img src="images/icon.png" alt="Engineering Science icon">
+			
+			
+			</div>
+		</footer>
+	
+  
+ 
+</html>
+		

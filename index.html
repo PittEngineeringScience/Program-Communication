@@ -46,92 +46,7 @@ function myFunction() {
 }
 </script>
 	
-<script>
-  
-  
-  
-  $(document).ready(function(){
-    $('#content').hover(function() {
-        $("#content").addClass('transition');
-		
-    }, function() {
-        $("#content").removeClass('transition');
-		 
-    });
 
-  
-  
-    $('#content1').hover(function() {
-        $("#content1").addClass('transition');
-		
-    }, function() {
-        $("#content1").removeClass('transition');
-		 
-    });
-
-
-
-    $('#content3').hover(function() {
-        $("#content3").addClass('transition');
-		
-    }, function() {
-        $("#content3").removeClass('transition');
-		 
-    });
-
-
-    $('#content2').hover(function() {
-        $("#content2").addClass('transition');
-		
-    }, function() {
-        $("#content2").removeClass('transition');
-		 
-    });
-});
-  
-  
-
-</script>
-<script>
-$("#slideshow1 > div:gt(0)").hide();
-
-setInterval(function() {
-  $('#slideshow1 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-	
-    .appendTo('#slideshow1');
-}, 3000);
-
-$("#slideshow2 > div:gt(0)").hide();
-
-setInterval(function() {
-  $('#slideshow2 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-	
-    .appendTo('#slideshow2');
-}, 3000);
-
-$("#slideshow3 > div:gt(0)").hide();
-
-setInterval(function() {
-  $('#slideshow3 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow3');
-}, 3000);
-
-
-
-
-</script>
 <body>
 	<main>
 		<!--*************Title and drop down menu*****************-->
@@ -379,5 +294,91 @@ setInterval(function() {
 	</main>
   
  </body>
+ <script>
+  
+  
+  
+  $(document).ready(function(){
+    $('#content').hover(function() {
+        $("#content").addClass('transition');
+		
+    }, function() {
+        $("#content").removeClass('transition');
+		 
+    });
+
+  
+  
+    $('#content1').hover(function() {
+        $("#content1").addClass('transition');
+		
+    }, function() {
+        $("#content1").removeClass('transition');
+		 
+    });
+
+
+
+    $('#content3').hover(function() {
+        $("#content3").addClass('transition');
+		
+    }, function() {
+        $("#content3").removeClass('transition');
+		 
+    });
+
+
+    $('#content2').hover(function() {
+        $("#content2").addClass('transition');
+		
+    }, function() {
+        $("#content2").removeClass('transition');
+		 
+    });
+});
+  
+  
+
+</script>
+<script>
+$("#slideshow1 > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow1 > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+	
+    .appendTo('#slideshow1');
+}, 3000);
+
+$("#slideshow2 > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow2 > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+	
+    .appendTo('#slideshow2');
+}, 3000);
+
+$("#slideshow3 > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow3 > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow3');
+}, 3000);
+
+
+
+
+</script>
 </html>
 		
