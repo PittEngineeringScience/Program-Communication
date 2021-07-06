@@ -54,7 +54,7 @@ function myFunction() {
   }
 }
 </script>
-<style>
+<style>	
 	.button1 {
   background-color: white; 
   color: #000080; 
@@ -69,11 +69,35 @@ function myFunction() {
   transition-duration: 0.4s;
   cursor: pointer;
   
-}
-.button1:hover {
+	}
+	.button1:hover {
   background-color: #000080;
   color: white;
-}
+	}
+
+	@media only screen and (max-width: 650px) 
+	 {
+		 .box
+		 {
+				padding-left:0;
+				padding-right:0;
+		 }
+	 }
+	 @media only screen and (max-width: 510px) 
+	 {
+		 .section-wraper
+		 {
+				padding-left:0;
+				padding-right:0;
+		 }
+	 }
+	 @media only screen and (max-width: 440px) 
+	 {
+		 .smartbutton
+		 {
+				width:83px;
+		 }
+	 }
 </style>
   </head>
   <body>

@@ -11,8 +11,8 @@ for (q = 0; q < Commette.length; q++) {
             
             
   <div class="gridcontainer20">
-  <img src="${Commette[q].photo}" alt="Advisory commette member" style = "max-width:120px; max-height:140px;justify-self:center;align-self:center"></img>
-  <p style="align-self:center"> <span style="font-family: 'Pattaya', sans-serif; font-size: 13px;color:white;">Category:${Commette[q].category}<br>Name:${Commette[q].name}<br>affiliate:${Commette[q].affi}<br>E-mail:${Commette[q].mail}<span></p>
+  <img src="${Commette[q].photo}" alt="Advisory commette member" style = "max-width:120px; max-height:125px;justify-self:center;align-self:center"></img>
+  <p style="align-self:center"> <span style="font-family: 'Pattaya', sans-serif; font-size: 11px;color:white;">Category:${Commette[q].category}<br>Name:${Commette[q].name}<br>affiliate:${Commette[q].affi}<br>E-mail:${Commette[q].mail}<span></p>
   </div>
   <div class="blockg"></div>
 `;
@@ -57,8 +57,8 @@ button.addEventListener("click", (event) =>{
                   
                   
         <div class="gridcontainer20">
-        <img src="${Commette[q].photo}" alt="Advisory commette member" style = "max-width:120px; max-height:140px;justify-self:center;align-self:center"></img>
-        <p style="align-self:center"> <span style="font-family: 'Pattaya', sans-serif; font-size: 13px;color:white;">Category:${Commette[q].category}<br>Name:${Commette[q].name}<br>affiliate:${Commette[q].affi}<br>E-mail:${Commette[q].mail}<span></p>
+        <img src="${Commette[q].photo}" alt="Advisory commette member" style = "max-width:120px; max-height:125px;justify-self:center;align-self:center"></img>
+        <p style="align-self:center"> <span style="font-family: 'Pattaya', sans-serif; font-size: 11px;color:white;">Category:${Commette[q].category}<br>Name:${Commette[q].name}<br>affiliate:${Commette[q].affi}<br>E-mail:${Commette[q].mail}<span></p>
         </div>
         <div class="blockg"></div>
       `;
@@ -86,8 +86,8 @@ button.addEventListener("click", (event) =>{
             
             
             <div class="gridcontainer20">
-            <img src="${Commette[i].photo}" alt="Advisory commette member" style = "max-width:120px; max-height:140px;justify-self:center;align-self:center"></img>
-            <p style="align-self:center"> <span style="font-family: 'Pattaya', sans-serif; font-size: 13px;color:white;">Category:${Commette[i].category}<br>Name:${td}<br>affiliate:${Commette[i].affi}<br>E-mail:${Commette[i].mail}<span></p>
+            <img src="${Commette[i].photo}" alt="Advisory commette member" style = "max-width:120px; max-height:125px;justify-self:center;align-self:center"></img>
+            <p style="align-self:center"> <span style="font-family: 'Pattaya', sans-serif; font-size: 11px;color:white;">Category:${Commette[i].category}<br>Name:${td}<br>affiliate:${Commette[i].affi}<br>E-mail:${Commette[i].mail}<span></p>
             </div>
             <div class="blockg"></div>
           `;

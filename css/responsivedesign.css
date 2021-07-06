@@ -144,7 +144,7 @@
 }
 .gridcontainer8
 {
-	grid-template-columns: 0px 0px 239px;
+	grid-template-columns:0px 0px 239px;
 	
 }
  
@@ -208,5 +208,17 @@
 		 {
 				grid-template-columns:  1fr 1fr;
 				grid-template-rows: 1fr  1fr 1fr 1fr;
+		 }
+	 }
+	 
+	 @media only screen and (max-width: 548px) 
+	 {
+		 #fixside
+		 {
+				.section-wraper
+		 {
+				padding-left:0;
+				padding-right:0;
+		 }
 		 }
 	 }
