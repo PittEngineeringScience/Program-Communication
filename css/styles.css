@@ -234,7 +234,7 @@ svg > g > g:last-child { pointer-events: none }
 {
 	display: grid;
 	
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	max-width:100%;
 	grid-auto-rows: auto;
 	
@@ -245,11 +245,12 @@ svg > g > g:last-child { pointer-events: none }
 	display: grid;
 	
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
+	/*grid-template-rows: 1fr 1fr;*/
 	align-items: center;
 	justify-items: center;
 	margin: 7px 2px;
-	background:linear-gradient(45deg, #a2bfe8, #e6edf7);
+	background:#b4d2ed;
+	/*linear-gradient(45deg, #063159, #052542);*/
 }
 .gridcontainer7
 {
@@ -631,3 +632,247 @@ width: 19.4%;
 {
 	display:none;
 }
+
+@keyframes shiftout {
+	from 
+	{
+		
+		opacity: 1;
+		
+	}
+	to 
+	{
+		
+		opacity: 0;
+	}
+  }
+
+  .frame111 {
+	animation: 0.2s ease-out 0s 1 running shiftout;
+    animation-fill-mode: forwards;
+
+  }
+
+
+  @keyframes shiftout1 {
+	from 
+	{
+		
+		opacity: 0;
+		
+	}
+	to 
+	{
+		
+		opacity: 1;
+	}
+  }
+
+  .frame222 {
+	animation: 0.2s ease-in 0s 1 running shiftout1;
+    animation-fill-mode: forwards;
+
+  }
+
+  @keyframes flip-with-rotate {
+	0% {
+	  transform: perspective(400px) rotatex(90deg);
+	}
+  
+	100% {
+	  transform: perspective(400px) rotatex(0);
+	}
+  }
+
+  .frameflip{
+	animation-name:flip-with-rotate;
+	animation-timing-function: linear;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+
+  @keyframes flip-with-rotate1 {
+	0% {
+	  transform: perspective(400px) rotatex(270deg);
+	}
+  
+	100% {
+	  transform: perspective(400px) rotatex(360deg);
+	}
+  }
+
+  .frameflip1{
+	animation-name:flip-with-rotate1;
+	animation-timing-function: linear;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+
+  @keyframes slidein {
+	from {
+		opacity: 0;
+	  
+	}
+  
+	to {
+		opacity: 1;
+	  
+	}
+  }
+  .slidein{
+	animation-name:slidein;
+	animation-timing-function: linear;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+
+  /*reserve*/
+/* 
+  @keyframes flip-with-rotate2 {
+	0% {
+	  transform: perspective(400px) rotatex(360deg);
+	}
+  
+	100% {
+	  transform: perspective(400px) rotatex(270deg);
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @keyframes slide1 {
+	from 
+	{
+		margin-left: 0;
+		
+		
+	}
+	to 
+	{
+		margin-right: 45%;
+		
+	}
+  }
+
+  .frame111 {
+	animation: 0.8s ease-out 0s 1 running slide1;
+    animation-fill-mode: forwards;
+  
+  } 
+  @keyframes slide2 {
+	from 
+	{
+		
+		margin-right: 45%;
+		
+	}
+	to 
+	{
+		
+		margin-left: 0;
+	}
+  }
+
+  .frame222 {
+	animation: 0.8s ease-out 0s 1 running slide2;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  @keyframes flip-with-rotate {
+	0% {
+	  transform: perspective(400px) rotatex(0);
+	}
+  
+	100% {
+	  transform: perspective(400px) rotatex(90deg);
+	}
+  }
+
+  .frameflip{
+	animation-name:flip-with-rotate;
+	animation-timing-function: linear;
+    animation-duration: 0.35s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+
+  @keyframes flip-with-rotate1 {
+	0% {
+	  transform: perspective(400px) rotatex(270deg);
+	}
+  
+	100% {
+	  transform: perspective(400px) rotatex(360deg);
+	}
+  }
+
+  .frameflip1{
+	animation-name:flip-with-rotate1;
+	animation-timing-function: linear;
+    animation-duration: 0.35s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+  /*reserve*/
+/* 
+  @keyframes flip-with-rotate2 {
+	0% {
+	  transform: perspective(400px) rotatex(360deg);
+	}
+  
+	100% {
+	  transform: perspective(400px) rotatex(270deg);
+	}
+  }
+
+  .frameflip2{
+	animation-name:flip-with-rotate2;
+	animation-timing-function: linear;
+    animation-duration: 0.35s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+
+  @keyframes flip-with-rotate3 {
+	0% {
+	  transform: perspective(400px) rotatex(90deg);
+	}
+  
+	100% {
+	  transform: perspective(400px) rotatex(0deg);
+	}
+  }
+
+  .frameflip3{
+	animation-name:flip-with-rotate3;
+	animation-timing-function: linear;
+    animation-duration: 0.35s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  } */ */

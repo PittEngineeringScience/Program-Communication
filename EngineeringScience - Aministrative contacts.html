@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     
 	<link rel="stylesheet" href="css/responsivedesign.css">
+	
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script>
@@ -120,12 +121,12 @@ function myFunction() {
 			</div>
 		</header>
 		<div class="box">
-		<div class = "section-wraper">
+		<div class = "section-wraper" style="padding-left:10%;padding-right:10%;">
 		<h2>Administrative Contacts</h2>
 			<div class="gridcontainer6">
 			
 				<div class="inlinegrid1">
-					<img src="images/Ohodnicki.jpeg" alt="Dr.Ohodnicki's photo" style = "width:120px;  height:auto;padding-top:7px;">
+					<img src="images/Ohodnicki.jpeg" alt="Dr.Ohodnicki's photo" style = "width:100%;  height:auto;align-self: start;">
 					<div style="text-align: center;">
 					<p style="margin: 7px 0px">Paul Ohodnicki</p>
 					<p style="margin: 7px 0px">Engineering Science Program Director</p>
@@ -134,23 +135,33 @@ function myFunction() {
 				</div>
 				
 				<div class="inlinegrid1">
-					<img src="images/Heather.png" alt="Heather's photo" style = "width:120px; height:auto;padding-top:7px;">
+					<img src="images/Heather.png" alt="Heather's photo" style = "width:100%; height:auto;align-self: start;">
 					<div style="text-align: center;">
 					<p style="margin: 7px 0px">Manns, Heather L.</p>
 					<p style="margin: 7px 0px">MEMS Undergraduate Student Administrator</p>
 					<p style="margin: 7px 0px"><a href="mailto:undrmems@pitt.edu" style="text-decoration:none;color: #000080;">Email: undrmems@pitt.edu</a></p>
 					</div>
-					</div>
-				<div class="inlinegrid1">
-					<img src="images/Shengye.png" alt="Shengye's photo" style = "width:120px; height:auto;padding-top:7px;">
-					<div style="text-align: center;">
+				</div>
+
+
+				<div class="inlinegrid1" id="test" >
+					
+					<img id="test2"  src="images/Shengye.png" alt="Shengye's photo" style = "position:relative; width:100%; height:auto;align-self: start;">
+					
+					
+					<div style="text-align: center; "id="test3">
 					<p style="margin: 7px 0px">Shengye Dong</p>
 					<p style="margin: 7px 0px">Engineering Science Program Student Support</p>
-					<p style="margin: 7px 0px"><a href="mailto:SHD85@pitt.edu" style="text-decoration:none;color: #000080;">Email: SHD85@pitt.edu</a></p>
+					<p style="margin: 7px 0px"><a href="mailto:SHD85@pitt.edu" style="text-decoration:none;color:;">Email: SHD85@pitt.edu</a></p>
 					</div>
 				</div>
+
+
+
 				<div class="inlinegrid1">
-					<img src="images/Ellen.jpeg" alt="Ellen's photo" style = "width:120px;  height:auto;padding-top:7px;">
+				
+					<img src="images/Ellen.jpeg" alt="Ellen's photo" style = "width:100%;  height:auto;align-self: start;">
+				
 					<div style="text-align: center;">
 					<p style="margin: 7px 0px">Ellen Troyanosky</p>
 					<p style="margin: 7px 0px">Engineering Science Program Student Support</p>
@@ -172,6 +183,7 @@ function myFunction() {
 				
 			</div>
 		</footer>
+		<script type="module" src="js/animation.js"></script>
 	</main>
   
  
