@@ -4,7 +4,7 @@ let test3 = document.getElementById("test3");
 test2.addEventListener("mouseenter", function( event ) {
   
   test2.classList.add('frame111');
-  setTimeout(function(){ test2.setAttribute("src", "images/Robot-SD.png"); 
+  setTimeout(function(){ test2.setAttribute("src", "images/robot.gif"); 
        test2.classList.add('frame222'); 
        test2.classList.remove('frame111'); 
      }, 150);
