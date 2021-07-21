@@ -8,10 +8,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
 	
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-	<script type="module" src="js/swap.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/responsivedesign.css">
-	
+	<script type="module" src="js/Top_bottombar.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	
@@ -215,87 +214,24 @@ function myFunction() {
   <body>
 	<main>
 		<!--*************Title and drop down menu*****************-->
-		<header>
-			<div class="gridcontainer8" style="">
-			<h1 style = "color:#fcba03; font-size:54px; margin:auto;margin:auto;font-weight:850;">PITT</h1>
-			<img src="images/verticalbar.png" alt="verticalbar" style = "max-width:15px; height:53.33px;justify-self:center;align-self:center;"></img>
- 
-			<h2 style = " font-size:15px; grid-column:3/4; margin:auto; font-weight:bold;">Swanson School of Engineering<br>Engineering Science</h2>
+		<header id="headerr">
 			
-			
-			</div>
-			<div class="block"> </div>
-			<div id="bugfix"></div>
-			<div id="fixbar">
-				<div class="topnav" id="myTopnav">
-				
-				<a href="#home" class="active">Home</a>
-				<div class="dropdown">
-					<button class="dropbtn">Research</button>
-					<div class="dropdown-content">
-						<a href="EngineeringScience - MCSI.html">Mascaro Center for Sustainable Innovation (MCSI) </a>
-						<a href="EngineeringScience - UHC.html">University Honors College</a>
-						<a href="https://www.engineering.pitt.edu/Research/">SSOE Research Center</a>
-					</div>
-				</div>
-				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">People</button>
-					<div class="dropdown-content">
-						<a href="https://www.engineering.pitt.edu/People/Faculty-Search/">Faculty</a>
-						<a href="https://www.engineering.pitt.edu/People/Staff-Listing/">Complete Staff Directory</a>
-						<a href="EngineeringScience - Aministrative Contacts.html">Administrative Contacts</a>
-					</div>
-				</div>
-				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Students</button>
-					<div class="dropdown-content">
-						<a href="EngineeringScience - Prospective Students.html">Prospective Students</a>
-						<a href="EngineeringScience - Current Students.html">Current Students</a>
-						
-						
-					</div>
-				</div>
-				<a href="EngineeringScience - Career.html" class="normicon">Career</a>
-				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Alumni</button>
-					<div class="dropdown-content">
-						<a href="EngineeringScience - Alumni spotlight.html">Alumni spotlight</a>
-						
-					</div>
-				</div>
-				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Life@ES</button>
-					<div class="dropdown-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
-					</div>
-				</div>
-				
-				
-				<a href="javascript:void(0);" style="font-size:12px;" class="icon" onclick="myFunction()">&#9776;</a>
-				
-				<div class="gridcontainer16">
-				<p style=" font-family: 'Lobster', cursive;, sans-serif;margin-top:0;font-size:26px;margin-bottom:0;text-align:right;-webkit-text-stroke: 0.1px black;color:#fcba03;align-self:center;">Forging Ahead!</p>
-				</div>
-				</div>
-			</div>
 			
 		</header>
 		<div class='box'>
 		<div class = "section-wraper" style="padding-top:10px;">
 		<div class="gridcontainer18">
 			<div style="margin-right:25px;">
-			<h1 >Engineering Mechanics Concentration</h1>
+			<h1 >Engineering Physics Concentration</h1>
 			<h2 style="margin-top:0;margin-bottom:0;">First Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
-			<li>MATH 0220 - ANALYTIC GEOMETRY AND CALCULUS 1</li>
-			<li>CHEM 0960 - GENERAL CHEM FOR ENGINEERS 1</li>
-			<li class="physics">PHYS 0174 - BASIC PHYSICS, SCIENCE AND ENGINEERING 1</li>
-			<li>ENGR 0011 - INTRO TO ENGINEERING ANALYSIS</li>
-			<li>ENGR 0081 - FRESHMAN ENGINEERING SEMINAR 1</li>
-			<li>ENGCMP 0210 - SEMINAR IN COMPOSITION: ENGINEERING</li>
+				<li class="pc" >MATH 0220<div class="media"> - ANALYTIC GEOMETRY AND CALCULUS 1</div></li>
+				<li class="pc">CHEM 0960<div class="media"> - GENERAL CHEM FOR ENGINEERS 1</div></li>
+				<li class="physics pc">PHYS 0174<div class="media"> - BASIC PHYSICS, SCIENCE AND ENGINEERING 1 (INTEGRATED)</div></li>
+				<li>ENGR 0011<div class="media"> - INTRO TO ENGINEERING ANALYSIS</div></li>
+				<li>ENGR 0081<div class="media"> - FRESHMAN ENGINEERING SEMINAR 1</div></li>
+				<li>ENGCMP 0210<div class="media"> - SEMINAR IN COMPOSITION: ENGINEERING</div></li>
 				
 				
 				
@@ -305,12 +241,12 @@ function myFunction() {
 			<h2 style="margin-top:0;margin-bottom:0;">Second Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
-				<li>MATH 0230 - ANALYTIC GEOMETRY AND CALCULUS 2</li>
-				<li>CHEM 0970 - GENERAL CHEM FOR ENGINEERS 2</li>
-				<li class="physics">PHYS 0175 - BASIC PHYSICS, SCIENCE AND ENGINEERING 2</li>
-				<li>ENGR 0012 - INTRO TO ENGINEERING COMPUTING</li>
-				<li>ENGR 0082 - FRESHMAN ENGINEERING SEMINAR 2</li>
-				<li>ENGCMP 0412 - ENGINEERING COMMUNICATION IN A PROFESSIONAL CONTEXT</li>
+				<li class="pc">MATH 0230<div class="media"> - ANALYTIC GEOMETRY AND CALCULUS 2</div></li>
+				<li class="pc">CHEM 0970<div class="media"> - GENERAL CHEM FOR ENGINEERS 2</div></li>
+				<li class="physics pc">PHYS 0175<div class="media"> - BASIC PHYSICS, SCIENCE AND ENGINEERING 2 (INTEGRATED)</div></li>
+				<li>ENGR 0012<div class="media"> - INTRO TO ENGINEERING COMPUTING</div></li>
+				<li>ENGR 0082<div class="media"> - FRESHMAN ENGINEERING SEMINAR 2</div></li>
+				<li>ENGCMP 0412<div class="media"> - ENGINEERING COMMUNICATION IN A PROFESSIONAL CONTEXT</div></li>
 				
 			</ul>
 			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="two">17</h3>
@@ -319,12 +255,12 @@ function myFunction() {
 			<h2 style="margin-top:0;margin-bottom:0;">Third Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
-				<li>MATH 0240 – ANALYTIC GEOMETRY AND CALCULUS 3</li>
-				<li class="math">MATH 0280 – INTRO TO MATRICES & LINEAR ALG</li>
-				<li class="me">MEMS 0024 – INTRO TO MECHANICAL ENGINEERING DESIGN</li>
-				<li>ENGR 0135 – STATICS & MECHC OF MATERIALS 1</li>
-				<li>Humanity/Social Science Elective – 3 Credits</li>
-				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
+				<li class="pc">MATH 0240<div class="media"> – ANALYTIC GEOMETRY AND CALCULUS 3</div></li>
+				<li class="physics math pc">MATH 0280<div class="media"> – INTRO TO MATRICES & LINEAR ALG</div></li>
+				<li class="mse">ENGER 0022<div class="media"> – MATERIALS STRUCTURE AND PROPERTIES</div></li>
+				<li class="ele">ECE 0031<div class="media"> – LINEAR CIRCUITS AND SYSTEMS 1</div></li>
+				<li class="pc">PHYS 0219<div class="media"> – BASIC LABORATORY PHYSICS SCIENCE AND ENGINEERING</div></li>
+				<li>MEMS 1085<div class="media"> – DEPARTMENTAL SEMINAR</div></li>
 				
 			</ul>
 			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="three">16</h3>
@@ -332,41 +268,46 @@ function myFunction() {
 			<h2 style="margin-top:0;margin-bottom:0;">Fourth Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
-				<li class="math">MATH 0290 – DIFFERENTIAL EQUATIONS</li>
-				<li class="math bruh">Math 0250+ - Additional Class</li>
-				<li>ENGR 0145 – STATICS & MECHC OF MATERIALS 2</li>
-				<li>MEMS 0031 – ELECTRICAL CIRCUITS</li>
-				<li>MEMS 0051 – INTRODUCTION TO THERMODYNAMICS</li>
-				<li class="mse">ENGR 0022 – MATERIALS STRUCTURE AND PROPERTIES</li>
-				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
+				<li class="math pc">MATH 0290<div class="media"> – DIFFERENTIAL EQUATIONS</div></li>
+				<li>ENGER 0135<div class="media"> – STATICS & MECHC OF MATERIALS 1</div></li>
+				<li class="ele">ECE 0301<div class="media"> – PROBLEM SOLVING WITH C++</div></li>
+				<li class="physics">Upper Level Physics – 3 Credits</li>
+				<li>MEMS 0051<div class="media"> – INTRODUCTION TO THERMODYNAMICS</div></li>
+				<li class="sus">Humanity/Social Science Elective 3 – 3 Credits</li>
+				<li>MEMS 1085<div class="media"> – DEPARTMENTAL SEMINAR</div></li>
 				
 			</ul>
-			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="four">15</h3>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="four">18</h3>
 			
 			<h2 style="margin-top:0;margin-bottom:0;">Fifth Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
-				<li class="physics">PHYS 0477 – INTRODUCTION TO THERMAL PHYSICS, RELATIVITY AND QUANTUM MECHANICS</li>
-				<li •	Math 0250+>MATH 1550 – VECTOR ANALYSIS AND APPLICATIONS</li>
-				<li>MEMS 1010 – EXPERIMENTAL METHODS IN MATERIALS SCIENCE AND ENGINEERING</li>
-				<li>MEMS 0071 – INTROUCTION TO FLUID MECHANICS</li>
-				<li>MEMS 1014 – DYNAMICS SYSTEMS</li>
-				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
+				<li class="mse">MEMS 1053<div class="media"> – STRUCTURE OF CRYSTALS AND DIFFRACTION</div></li>
+				<li class="mse">MEMS 1059<div class="media"> – PHASE EQUILIBRIA IN MULTI-COMPONENT MATERIALS</div></li>
+				<li class="physics pc">PHYS 0477<div class="media"> – INTRODUCTION TO THERMAL PHYSICS, RELATIVITY AND QUANTUM MECHANICS</div></li>
+				<li class="ele">ECE 0102<div class="media"> - MICRO CIRCUITS & LAB</div></li>
+				<li class="MS">MEMS 0040<div class="media">: Materials and Manufacturing (3 units)</div></li>
+				<li>Upper Level Physics – 3 Credits</li>
+				<li>MEMS 1085<div class="media"> – DEPARTMENTAL SEMINAR</div></li>
 				
 			</ul>
-			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="five">16</h3>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="five">17</h3>
 			
 				
 			
 			<h2 style="margin-top:0;margin-bottom:0;">Sixth Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
-				<li>STAT 1000 – APPLIED STATISTICAL METHODS</li>
-				<li class="me">MEMS 1028 – MECHANICAL DESIGN 1</li>
-				<li>Humanity/Social Science Elective – 3 Credits</li>
-				<li>MEMS 1041 – MECHANICAL MEASUREMENTS 1</li>
-				<li>MEMS 1020 – MECHANICAL VIBRATIONS</li>
-				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
+				<li class="ele pc">ECE 1247<div class="media"> – SEMICONDUCTOR DEVICE THEORY</div></li>
+				<li class="ele">ECE 0201<div class="media"> – Digital Circuits & Systems</div></li>
+				<li>ECE 0402<div class="media"> – SIGNALS SYSTEMS & PROBABILITY</div></li>
+				<li class="MS">MEMS 1059<div class="media"> – PHASE EQUILIBRIA IN MULTI-COMPONENT MATERIALS</div></li>
+				<li>PHYS 0481<div class="media"> – PRINCIPLES OF MODERN PHYSCIS 2</div></li>
+				<li class="sus">CEE 1610<div class="media"> – ENGINEERING & SUSTAINABLE DEVELOPMENT-Additional Class</div></li>
+				<li class="sus">Humanity/Social Science Elective 4 – 3 Credits</li>
+				<li>MEMS 1085<div class="media"> – DEPARTMENTAL SEMINAR</div></li>
+				
+				<li class="ele bruh">ECE 0142<div class="media"> – COMPUTER ORGANIZATION</div></li>
 				
 			</ul>
 				
@@ -378,14 +319,15 @@ function myFunction() {
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
 				
-				<li>MEMS 1047 – FINITE ELEMENT ANALYSIS</li>
-				<li class="mse me swap1" >Program Elective – 3 Credits</li>
+				<li class="pc">ECE 1266<div class="media"> – APPLICATIONS OF FIELDS & WAVES</div></li>
 				<li>Senior Design 1 – 3 Credits</li>
-				<li class="math bruh">Math 1000+ - Additional Class</li>
-				<li>MEMS 1015 – RIDGID BODY DYNAMICS</li>
-				<li class="mse">MEMS 1053 – STRUCTURE OF CRYSTALS</li>
-				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
-				
+				<li class="pc">Upper Level Physics – 3 Credits</li>
+				<li class="math">Program Elective – 3 Credits</li>
+				<li class="sus">Humanity/Social Science Elective 5 – 3 Credits</li>
+				<li class="math bruh">MATH 0250<div class="media">-Additional Class</div></li>
+				<li class="ele bruh">ECE 0132<div class="media"> – DIGITAL LOGIC-Additional Class</div></li>
+				<li class="sus bruh">ENGR 1905<div class="media"> – CURRENT ISSUES IN SUSTAINABILITY-Additional Class</div></li>
+				<li>MEMS 1085<div class="media"> – DEPARTMENTAL SEMINAR</li>
 				
 			</ul>
 			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="seven">15</h3>
@@ -393,14 +335,16 @@ function myFunction() {
 			<h2 style="margin-top:0;margin-bottom:0;">Eighth Term</h2>
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
+				<li class="pc">ECE 1212<div class="media"> – ELECTRONIC CIRCUIT DESIGN LAB</div></li>
 				<li>Senior Design 2 – 3 Credits</li>
-				<li class="mse me">Program Elective – 3 Credits</li>
-				<li class="mse bruh">MEMS 0040 – Materials and Manufacturing (Program Elective)-Additional Class</li>
-				<li class="physics swap1">Upper Level Physics – 3 Credits</li>
+				<li class="pc">Program Elective – 3 Credits</li>
+					<li class="sus bruh">ENGR 1907<div class="media"> – SUSTAINABILITY CAPSTONE EXPERIENCE</div></li>
 				<li>Humanity/Social Science Elective – 3 Credits</li>
 				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li class="mse bruh">MEMS 1063<div class="media"> – Phase Transformations and Microstructure Evolution-Additional Class</div></li>
+				<li class="mse bruh">MEMS 0040<div class="media"> – Materials and Manufacturing-Additional Class</div></li>
 				<li>MEMS 1085 – DEPARTMENTAL SEMINAR</li>
-				
+				<li class="math bruh">MATH 1000+<div class="media"> (3 credits)-Additional Class</div></li>
 				
 			</ul>
 			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="eight">15</h3>
@@ -408,13 +352,13 @@ function myFunction() {
 			<div id="fixside">
 				
 				<div style="height:10px;"></div>
-				<h3 style="display:inline-block;margin-bottom:5px;">Total Credits:</h3><h3 style="display:inline-block;margin-bottom:5px;"id="total">127</h3>
+				<h3 style="display:inline-block;margin-bottom:5px;">Total Credits:</h3><h3 style="display:inline-block;margin-bottom:5px;"id="total">131</h3>
 				<h3 style="display:inline-block;margin-top:0px;">Additional Classes:</h3><h3 style="display:inline-block;margin-top:0px;"id="addi">0</h3>
 				<button id="physicsB" class="button1">Physics Minor</button>
 				<div style="height:2px;"></div>
 				<button id="mathB" class="button2">Math Minor</button>
 				<div style="height:2px;"></div>
-				<button id="ME" class="button3">Mechanical Engineering Minor</button>
+				<button id="eleB" class="button3">Electrical Engineering Minor</button>
 				<div style="height:2px;"></div>
 				<button id="MS" class="button4">Materials Science and Engineering Minor</button>
 				<div style="height:2px;"></div>
@@ -429,18 +373,6 @@ function myFunction() {
 		
 				<script>
 				
-
-				function swap(cl) {
-
-
-
-
-store = cl[0].innerHTML
-cl[0].innerHTML = cl[1].innerHTML
-cl[1].innerHTML = store
-}
-
-
 				
 $(document).ready(function() {
 
@@ -472,12 +404,12 @@ var elements = document.getElementsByClassName("physics"), i, len;
 document.getElementById('one').innerHTML = '17';
 document.getElementById('two').innerHTML = '17';
 document.getElementById('three').innerHTML = '16';
-document.getElementById('four').innerHTML = '15';
-document.getElementById('five').innerHTML = '16';
+document.getElementById('four').innerHTML = '18';
+document.getElementById('five').innerHTML = '17';
 document.getElementById('six').innerHTML = '16';
 document.getElementById('seven').innerHTML = '15';
 document.getElementById('eight').innerHTML = '15';
-document.getElementById('total').innerHTML = Number(document.getElementById('one').innerHTML)+Number(document.getElementById('two').innerHTML)+Number(document.getElementById('three').innerHTML)+Number(document.getElementById('four').innerHTML)+Number(document.getElementById('five').innerHTML)+Number(document.getElementById('six').innerHTML)+Number(document.getElementById('seven').innerHTML)+Number(document.getElementById('eight').innerHTML)
+document.getElementById('total').innerHTML = '131';
 document.getElementById('addi').innerHTML = '0';
 }
 });
@@ -511,10 +443,10 @@ document.getElementById('one').innerHTML = '17';
 document.getElementById('two').innerHTML = '17';
 document.getElementById('three').innerHTML = '16';
 document.getElementById('four').innerHTML = '18';
-document.getElementById('five').innerHTML = '16';
+document.getElementById('five').innerHTML = '17';
 document.getElementById('six').innerHTML = '16';
 document.getElementById('seven').innerHTML = '18';
-document.getElementById('eight').innerHTML = '15';
+document.getElementById('eight').innerHTML = '18';
 document.getElementById('total').innerHTML = Number(document.getElementById('one').innerHTML)+Number(document.getElementById('two').innerHTML)+Number(document.getElementById('three').innerHTML)+Number(document.getElementById('four').innerHTML)+Number(document.getElementById('five').innerHTML)+Number(document.getElementById('six').innerHTML)+Number(document.getElementById('seven').innerHTML)+Number(document.getElementById('eight').innerHTML)
 document.getElementById('addi').innerHTML = '2';
 }
@@ -523,19 +455,7 @@ document.getElementById('addi').innerHTML = '2';
 
 $(document).ready(function() {
 
-	
-
-//ME-special schedule
-document.getElementById("ME").onclick = function(){
-
-const spe = getElementsByClassName('gridcontainer18')
-
-spe.innerHTML=
-{
-	
-}
-
-
+document.getElementById("eleB").onclick = function(){
 const recover = document.querySelectorAll("li");
 let q, lenn;
   
@@ -551,7 +471,7 @@ for (m = 0, lennn = recover2.length; m < lennn; m++) {
 recover2[m].style.display = 'none';
 	}
 
-var elements = document.getElementsByClassName("me"), i, len;
+var elements = document.getElementsByClassName("ele"), i, len;
   
   for (i = 0, len = elements.length; i < len; i++) {
     elements[i].style.display = 'list-item';
@@ -569,11 +489,6 @@ document.getElementById('eight').innerHTML = '18';
 document.getElementById('total').innerHTML = Number(document.getElementById('one').innerHTML)+Number(document.getElementById('two').innerHTML)+Number(document.getElementById('three').innerHTML)+Number(document.getElementById('four').innerHTML)+Number(document.getElementById('five').innerHTML)+Number(document.getElementById('six').innerHTML)+Number(document.getElementById('seven').innerHTML)+Number(document.getElementById('eight').innerHTML)
   document.getElementById('addi').innerHTML = '2';
   
- 
- 
- 
-
- 
   
 }
 
@@ -581,7 +496,7 @@ document.getElementById('total').innerHTML = Number(document.getElementById('one
 
 });
 
-<!--MSE-->
+<!--MEMS-->
 $(document).ready(function() {
 
 document.getElementById("MS").onclick = function(){
@@ -610,13 +525,13 @@ var elements = document.getElementsByClassName("mse"), i, len;
   document.getElementById('one').innerHTML = '17';
 document.getElementById('two').innerHTML = '17';
 document.getElementById('three').innerHTML = '16';
-document.getElementById('four').innerHTML = '15';
-document.getElementById('five').innerHTML = '16';
+document.getElementById('four').innerHTML = '18';
+document.getElementById('five').innerHTML = '17';
 document.getElementById('six').innerHTML = '16';
-document.getElementById('seven').innerHTML = '15';
+document.getElementById('seven').innerHTML = '18';
 document.getElementById('eight').innerHTML = '18';
 document.getElementById('total').innerHTML = Number(document.getElementById('one').innerHTML)+Number(document.getElementById('two').innerHTML)+Number(document.getElementById('three').innerHTML)+Number(document.getElementById('four').innerHTML)+Number(document.getElementById('five').innerHTML)+Number(document.getElementById('six').innerHTML)+Number(document.getElementById('seven').innerHTML)+Number(document.getElementById('eight').innerHTML)
-  document.getElementById('addi').innerHTML = '1';
+  document.getElementById('addi').innerHTML = '2';
   
   
 }
@@ -718,14 +633,8 @@ document.getElementById('total').innerHTML = Number(document.getElementById('one
 
 </script>
 		</body>
-		<footer>
-		<div class="gridcontainer2">
-			
-				
-				<img src="images/icon.png" alt="Engineering Science icon">
-			
-			
-			</div>
+		<footer id="footerr">
+		
 		</footer>
 
 	</main>

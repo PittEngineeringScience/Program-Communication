@@ -1,0 +1,1224 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Science at University of Pittsburgh</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<script type="module" src="js/swap.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/responsivedesign.css">
+	<script type="module" src="js/Top_bottombar.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	<script>
+  
+
+    
+
+  $(document).ready(function() {
+  
+  $(window).scroll(function run2() {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 105) {
+      $('#fixbar').addClass('navbar-fixed');
+	  $('#bugfix').addClass('blockm');
+    }
+    else  {
+      $('#fixbar').removeClass('navbar-fixed');
+	  $('#bugfix').removeClass('blockm');
+    }
+  });
+  
+  
+  $(window).scroll(function run1() {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 105) {
+      $('#fixside').addClass('sidebar-fixed');
+	  
+    }
+    else  {
+      $('#fixside').removeClass('sidebar-fixed');
+	  
+    }
+  });
+});
+
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<style>
+
+  
+  .button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  width:150px;
+  min-height:52px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid red;
+  width:150px;
+  min-height:52px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button2:hover {
+  background-color: red;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid green;
+  width:150px;
+  min-height:52px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button3:hover {
+  background-color: green;
+  color: white;
+}
+
+.button4 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #FCBA03;
+  width:150px;
+  min-height:52px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button4:hover {
+  background-color: #FCBA03;
+  color: white;
+}
+
+.button5 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #5ebcbf;
+  width:150px;
+  min-height:52px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button5:hover {
+  background-color: #5ebcbf;
+  color: white;
+}
+
+.button6 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #a473e6;
+  width:150px;
+  min-height:52px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button6:hover {
+  background-color: #a473e6;
+  color: white;
+}
+.media
+{
+	display:inline-block;
+}
+		@media only screen and (max-width: 740px) {
+  .media {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 548px) 
+	 {
+		 
+				.section-wraper
+		 {
+				padding-left:0;
+				padding-right:0;
+		 }
+		 .box
+		 {
+				padding-left:0;
+				padding-right:0;
+		 }
+		 .sidebar-fixed
+		 {
+			right:0%;
+		 }
+		 
+	 }
+		</style>
+
+  </head>
+  <body>
+	<main>
+		<!--*************Title and drop down menu*****************-->
+		<header id="headerr">
+			
+		</header>
+		<div class='box'>
+		<div class = "section-wraper" style="padding-top:10px;">
+		<div class="gridcontainer18">
+			<div class="swap" style="margin-right:25px;">
+			<h1>Nanotechnology – Chemistry/Bioengineering Concentration</h1>
+			<h2 style="margin-top:0;margin-bottom:0;">First Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+			<li>MATH 0220 - ANALYTIC GEOMETRY AND CALCULUS 1</li>
+			<li>CHEM 0960 - GENERAL CHEM FOR ENGINEERS 1</li>
+			<li>PHYS 0174 - BASIC PHYSICS, SCIENCE AND ENGINEERING 1</li>
+			<li>ENGR 0011 - INTRO TO ENGINEERING ANALYSIS</li>
+			<li>ENGR 0081 - FRESHMAN ENGINEERING SEMINAR 1</li>
+			<li>ENGCMP 0210 - SEMINAR IN COMPOSITION: ENGINEERING</li>
+				
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="one">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Second Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0230 - ANALYTIC GEOMETRY AND CALCULUS 2</li>
+				<li>CHEM 0970 - GENERAL CHEM FOR ENGINEERS 2</li>
+				<li>PHYS 0175 - BASIC PHYSICS, SCIENCE AND ENGINEERING 2</li>
+				<li>ENGR 0012 - INTRO TO ENGINEERING COMPUTING</li>
+				<li>ENGR 0082 - FRESHMAN ENGINEERING SEMINAR 2</li>
+				<li>ENGCMP 0412 - ENGINEERING COMMUNICATION IN A PROFESSIONAL CONTEXT</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="two">17</h3>
+			
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Third Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0240 – ANALYTIC GEOMETRY AND CALCULUS 3</li>
+				<li>MATH 0280 – INTRO TO MATRICES & LINEAR ALG</li>
+				<li>CHEM 1 – Core Chemistry Course</li>
+				<li>ECE 0031 – LIN CIR & SYSTEMS 1</li>
+				<li>ECE 0301 -  PROBLEM SOLVING WITH C++</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="three">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fourth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0290 – DIFFERENTIAL EQUATIONS</li>
+				<li>CHEM 2 – Core Chemistry Course</li>
+				<li>PHYS 0219 – BASIC LAB PHYSICS 2</li>
+				<li>ENGR 0022 – MATERIAL STRUCTURE & PROPERTIES</li>
+				<li>MEMS 0051 – INTRODUCTION TO THERMODYNAMICS</li>
+				<li>ECE 0102 – MICROELECTRONIC CIRCUITS</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="four">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fifth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>ENGR 0240 INTRO TO NANOTECHNOLOGY & NANOENGINEERING</li>
+				<li>LIFESCI 1 – Basic Life Science</li>
+				<li>MEMS 1010 – EXPERIMENTAL METHODS IN MSE</li>
+				<li>MEMS 1053 – STRUCTURE OF CRYSTALS & DIFFRACTION</li>
+				<li>BIOENG 1 – Core Bioengineering Course</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="five">15</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Sixth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>ENGR 0020 – PROBABILITY & STATISTICS </li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>BIOENG 2 – Core Bioengineering Course</li>
+				<li>CHEM 3 – Core Chemistry Course</li>
+				<li>Nanotechnology Elective  – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+				
+				<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="six">16</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Seventh Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				
+				<li>ENGR 0135 – STATICS & MECHANICS OF MATERIALS 1</li>
+				<li>LIFESCI 2 – Basic Life Science</li>
+				<li>Senior Design 1 – 3 Credits</li>
+				<li>MEMS 1057 – MICRO/NANO MANUFACTURING</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="seven">15</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Eighth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>Senior Design 2 – 3 Credits</li>
+				<li>Nanotechnology Elective – 3 Credits</li>
+				<li>Nanotechnology Elective – 3 Credits</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="eight">15</h3>
+			</div>
+			
+			
+			<div id="fixside">
+				
+				<div style="height:10px;"></div>
+				<h3 style="display:inline-block;margin-bottom:5px;">Total Credits:</h3><h3 style="display:inline-block;margin-bottom:5px;"id="total">127</h3>
+				<h3 style="display:inline-block;margin-top:0px;">Additional Classes:</h3><h3 style="display:inline-block;margin-top:0px;"id="addi">0</h3>
+				<button id="ChemB" class="button1">Chemistry Minor</button>
+				<div style="height:2px;"></div>
+				<button id="PhysicsB" class="button2">Physics Minor</button>
+				<div style="height:2px;"></div>
+				<button id="MSE" class="button3">Materials Science and Engineering Minor</button>
+				<div style="height:2px;"></div>
+				<button id="BioE" class="button4">Bioengineering Minor </button>
+				<div style="height:2px;"></div>
+				<button id="PC" class="button5">Photonics Certificate </button>
+				<div style="height:2px;"></div>
+				<button id="SUS" class="button6">Sustainability Certificate</button>
+				
+			</div>
+		</div>
+		</div>
+		</div>
+		
+				<script>
+				
+
+				
+
+
+				
+$(document).ready(function() {
+
+document.getElementById("ChemB").onclick = function(){
+
+
+
+	const content = `
+	<h1>Nanotechnology – Chemistry/Bioengineering Concentration</h1>
+			<h2 style="margin-top:0;margin-bottom:0;">First Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+			<li>MATH 0220 - ANALYTIC GEOMETRY AND CALCULUS 1</li>
+			<li style="color:#008CBA">CHEM 0960 - GENERAL CHEM FOR ENGINEERS 1</li>
+			<li>PHYS 0174 - BASIC PHYSICS, SCIENCE AND ENGINEERING 1</li>
+			<li>ENGR 0011 - INTRO TO ENGINEERING ANALYSIS</li>
+			<li>ENGR 0081 - FRESHMAN ENGINEERING SEMINAR 1</li>
+			<li>ENGCMP 0210 - SEMINAR IN COMPOSITION: ENGINEERING</li>
+				
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="one">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Second Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0230 - ANALYTIC GEOMETRY AND CALCULUS 2</li>
+				<li style="color:#008CBA">CHEM 0970 - GENERAL CHEM FOR ENGINEERS 2</li>
+				<li>PHYS 0175 - BASIC PHYSICS, SCIENCE AND ENGINEERING 2</li>
+				<li>ENGR 0012 - INTRO TO ENGINEERING COMPUTING</li>
+				<li>ENGR 0082 - FRESHMAN ENGINEERING SEMINAR 2</li>
+				<li>ENGCMP 0412 - ENGINEERING COMMUNICATION IN A PROFESSIONAL CONTEXT</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="two">17</h3>
+			
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Third Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0240 – ANALYTIC GEOMETRY AND CALCULUS 3</li>
+				<li>MATH 0280 – INTRO TO MATRICES & LINEAR ALG</li>
+				<li style="color:#008CBA">CHEM 1 – Core Chemistry Course</li>
+				<li>ECE 0031 – LIN CIR & SYSTEMS 1</li>
+				<li>ECE 0301 -  PROBLEM SOLVING WITH C++</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="three">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fourth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0290 – DIFFERENTIAL EQUATIONS</li>
+				<li style="color:#008CBA">CHEM 2 – Core Chemistry Course</li>
+				<li>PHYS 0219 – BASIC LAB PHYSICS 2</li>
+				<li>ENGR 0022 – MATERIAL STRUCTURE & PROPERTIES</li>
+				<li>MEMS 0051 – INTRODUCTION TO THERMODYNAMICS</li>
+				<li>ECE 0102 – MICROELECTRONIC CIRCUITS</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="four">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fifth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>ENGR 0240 INTRO TO NANOTECHNOLOGY & NANOENGINEERING</li>
+				<li>LIFESCI 1 – Basic Life Science</li>
+				<li>MEMS 1010 – EXPERIMENTAL METHODS IN MSE</li>
+				<li>MEMS 1053 – STRUCTURE OF CRYSTALS & DIFFRACTION</li>
+				<li>BIOENG 1 – Core Bioengineering Course</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="five">15</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Sixth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>ENGR 0020 – PROBABILITY & STATISTICS </li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>BIOENG 2 – Core Bioengineering Course</li>
+				<li style="color:#008CBA">CHEM 3 – Core Chemistry Course</li>
+				<li style="color:#008CBA">Chemistry Lab-Additional Class)</li>
+				<li>Nanotechnology Elective  – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+				
+				<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="six">18</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Seventh Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				
+				<li>ENGR 0135 – STATICS & MECHANICS OF MATERIALS 1</li>
+				<li>LIFESCI 2 – Basic Life Science</li>
+				<li>Senior Design 1 – 3 Credits</li>
+				<li>MEMS 1057 – MICRO/NANO MANUFACTURING</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="seven">15</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Eighth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>Senior Design 2 – 3 Credits</li>
+				<li>Nanotechnology Elective – 3 Credits</li>
+				<li>Nanotechnology Elective – 3 Credits</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="eight">15</h3>
+			</div>
+			
+			
+			`
+			
+			const x = document.querySelector(".swap");
+			x.innerHTML = content;
+			document.getElementById('total').innerHTML = Number(document.getElementById('one').innerHTML)+Number(document.getElementById('two').innerHTML)+Number(document.getElementById('three').innerHTML)+Number(document.getElementById('four').innerHTML)+Number(document.getElementById('five').innerHTML)+Number(document.getElementById('six').innerHTML)+Number(document.getElementById('seven').innerHTML)+Number(document.getElementById('eight').innerHTML)
+			document.getElementById('addi').innerHTML = '1';
+
+
+
+}
+});
+
+$(document).ready(function() {
+
+document.getElementById("PhysicsB").onclick = function(){
+	const content = `
+	<h1>Nanotechnology – Chemistry/Bioengineering Concentration</h1>
+			<h2 style="margin-top:0;margin-bottom:0;">First Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+			<li>MATH 0220 - ANALYTIC GEOMETRY AND CALCULUS 1</li>
+			<li>CHEM 0960 - GENERAL CHEM FOR ENGINEERS 1</li>
+			<li style="color:red;">PHYS 0174 - BASIC PHYSICS, SCIENCE AND ENGINEERING 1</li>
+			<li>ENGR 0011 - INTRO TO ENGINEERING ANALYSIS</li>
+			<li>ENGR 0081 - FRESHMAN ENGINEERING SEMINAR 1</li>
+			<li>ENGCMP 0210 - SEMINAR IN COMPOSITION: ENGINEERING</li>
+				
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="one">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Second Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0230 - ANALYTIC GEOMETRY AND CALCULUS 2</li>
+				<li>CHEM 0970 - GENERAL CHEM FOR ENGINEERS 2</li>
+				<li style="color:red;">PHYS 0175 - BASIC PHYSICS, SCIENCE AND ENGINEERING 2</li>
+				<li>ENGR 0012 - INTRO TO ENGINEERING COMPUTING</li>
+				<li>ENGR 0082 - FRESHMAN ENGINEERING SEMINAR 2</li>
+				<li>ENGCMP 0412 - ENGINEERING COMMUNICATION IN A PROFESSIONAL CONTEXT</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="two">17</h3>
+			
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Third Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0240 – ANALYTIC GEOMETRY AND CALCULUS 3</li>
+				<li>MATH 0280 – INTRO TO MATRICES & LINEAR ALG</li>
+				<li>CHEM 1 – Core Chemistry Course</li>
+				<li>ECE 0031 – LIN CIR & SYSTEMS 1</li>
+				<li>ECE 0301 -  PROBLEM SOLVING WITH C++</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="three">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fourth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0290 – DIFFERENTIAL EQUATIONS</li>
+				<li>CHEM 2 – Core Chemistry Course</li>
+				<li>PHYS 0219 – BASIC LAB PHYSICS 2</li>
+				<li>ENGR 0022 – MATERIAL STRUCTURE & PROPERTIES</li>
+				<li>MEMS 0051 – INTRODUCTION TO THERMODYNAMICS</li>
+				<li>ECE 0102 – MICROELECTRONIC CIRCUITS</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="four">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fifth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>ENGR 0240 INTRO TO NANOTECHNOLOGY & NANOENGINEERING</li>
+				<li>LIFESCI 1 – Basic Life Science</li>
+				<li>MEMS 1010 – EXPERIMENTAL METHODS IN MSE</li>
+				<li>MEMS 1053 – STRUCTURE OF CRYSTALS & DIFFRACTION</li>
+				<li>BIOENG 1 – Core Bioengineering Course</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="five">15</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Sixth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>ENGR 0020 – PROBABILITY & STATISTICS </li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>BIOENG 2 – Core Bioengineering Course</li>
+				<li>CHEM 3 – Core Chemistry Course</li>
+				<li style="color:red;">FUNDAMENTALS OF NANOSCIENCE (Nanotechnology elective)</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+				
+				<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="six">16</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Seventh Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				
+				<li>ENGR 0135 – STATICS & MECHANICS OF MATERIALS 1</li>
+				<li>LIFESCI 2 – Basic Life Science</li>
+				<li style="color:red;">PHYS 0477 – THERMAL PHYISCS RELATIVITY & QUANTUM MECHANICS - Additional Class</li>
+				<li>Senior Design 1 – 3 Credits</li>
+				<li>MEMS 1057 – MICRO/NANO MANUFACTURING</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="seven">18</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Eighth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>Senior Design 2 – 3 Credits</li>
+				<li>Nanotechnology Elective – 3 Credits</li>
+				<li>Nanotechnology Elective – 3 Credits</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="eight">18</h3>
+			</div>
+			`
+			
+			const x = document.querySelector(".swap");
+			x.innerHTML = content;
+			document.getElementById('total').innerHTML = Number(document.getElementById('one').innerHTML)+Number(document.getElementById('two').innerHTML)+Number(document.getElementById('three').innerHTML)+Number(document.getElementById('four').innerHTML)+Number(document.getElementById('five').innerHTML)+Number(document.getElementById('six').innerHTML)+Number(document.getElementById('seven').innerHTML)+Number(document.getElementById('eight').innerHTML)
+			document.getElementById('addi').innerHTML = '2';
+ 
+ 
+
+ 
+  
+}
+
+
+
+});
+
+
+
+<!--MsE-->
+$(document).ready(function() {
+
+document.getElementById("MSE").onclick = function(){
+	const content = `
+			<h1>Nanotechnology – Chemistry/Bioengineering Concentration</h1>
+			<h2 style="margin-top:0;margin-bottom:0;">First Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+			<li>MATH 0220 - ANALYTIC GEOMETRY AND CALCULUS 1</li>
+			<li>CHEM 0960 - GENERAL CHEM FOR ENGINEERS 1</li>
+			<li>PHYS 0174 - BASIC PHYSICS, SCIENCE AND ENGINEERING 1</li>
+			<li>ENGR 0011 - INTRO TO ENGINEERING ANALYSIS</li>
+			<li>ENGR 0081 - FRESHMAN ENGINEERING SEMINAR 1</li>
+			<li>ENGCMP 0210 - SEMINAR IN COMPOSITION: ENGINEERING</li>
+				
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="one">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Second Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0230 - ANALYTIC GEOMETRY AND CALCULUS 2</li>
+				<li>CHEM 0970 - GENERAL CHEM FOR ENGINEERS 2</li>
+				<li>PHYS 0175 - BASIC PHYSICS, SCIENCE AND ENGINEERING 2</li>
+				<li>ENGR 0012 - INTRO TO ENGINEERING COMPUTING</li>
+				<li>ENGR 0082 - FRESHMAN ENGINEERING SEMINAR 2</li>
+				<li>ENGCMP 0412 - ENGINEERING COMMUNICATION IN A PROFESSIONAL CONTEXT</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="two">17</h3>
+			
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Third Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0240 – ANALYTIC GEOMETRY AND CALCULUS 3</li>
+				<li>MATH 0280 – INTRO TO MATRICES & LINEAR ALG</li>
+				<li>CHEM 1 – Core Chemistry Course</li>
+				<li>ECE 0031 – LIN CIR & SYSTEMS 1</li>
+				<li>ECE 0301 -  PROBLEM SOLVING WITH C++</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="three">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fourth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0290 – DIFFERENTIAL EQUATIONS</li>
+				<li>CHEM 2 – Core Chemistry Course</li>
+				<li>PHYS 0219 – BASIC LAB PHYSICS 2</li>
+				<li style="color:green;">ENGR 0022 – MATERIAL STRUCTURE & PROPERTIES</li>
+				<li>MEMS 0051 – INTRODUCTION TO THERMODYNAMICS</li>
+				<li>ECE 0102 – MICROELECTRONIC CIRCUITS</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="four">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fifth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>ENGR 0240 INTRO TO NANOTECHNOLOGY & NANOENGINEERING</li>
+				<li>LIFESCI 1 – Basic Life Science</li>
+				<li>MEMS 1010 – EXPERIMENTAL METHODS IN MSE</li>
+				<li style="color:green;">MEMS 1053 – STRUCTURE OF CRYSTALS & DIFFRACTION</li>
+				<li>BIOENG 1 – Core Bioengineering Course</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="five">15</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Sixth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>ENGR 0020 – PROBABILITY & STATISTICS </li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>BIOENG 2 – Core Bioengineering Course</li>
+				<li>CHEM 3 – Core Chemistry Course</li>
+				<li style="color:green;">MEMS 1063 – PHASE TRANSFORMATION AND MICROSTRUCTURE EVOLUTION (Nanotechnology elective)</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+				
+				<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="six">16</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Seventh Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				
+				<li>ENGR 0135 – STATICS & MECHANICS OF MATERIALS 1</li>
+				<li>LIFESCI 2 – Basic Life Science</li>
+				<li>Senior Design 1 – 3 Credits</li>
+				<li>MEMS 1057 – MICRO/NANO MANUFACTURING</li>
+				<li style="color:green;">MEMS 1059 – PHASE EQUILIBRIA IN MULTI-COMPONENT MATERIALS (Nanotechnology Elective)</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="seven">18</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Eighth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>Senior Design 2 – 3 Credits</li>
+				<li style="color:green;">MEMS 0040 – MATERIALS AND MANUFACTURING- Additional Class</li>
+				<li>Nanotechnology Elective – 3 Credits</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="eight">15</h3>
+			</div>`
+			
+			const x = document.querySelector(".swap");
+			x.innerHTML = content;
+			document.getElementById('total').innerHTML = Number(document.getElementById('one').innerHTML)+Number(document.getElementById('two').innerHTML)+Number(document.getElementById('three').innerHTML)+Number(document.getElementById('four').innerHTML)+Number(document.getElementById('five').innerHTML)+Number(document.getElementById('six').innerHTML)+Number(document.getElementById('seven').innerHTML)+Number(document.getElementById('eight').innerHTML)
+			document.getElementById('addi').innerHTML = '1';
+}
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+<!--BioE-->
+$(document).ready(function() {
+
+document.getElementById("BioE").onclick = function(){
+	const content = `
+	<h1>Nanotechnology – Chemistry/Bioengineering Concentration</h1>
+			<h2 style="margin-top:0;margin-bottom:0;">First Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+			<li>MATH 0220 - ANALYTIC GEOMETRY AND CALCULUS 1</li>
+			<li>CHEM 0960 - GENERAL CHEM FOR ENGINEERS 1</li>
+			<li>PHYS 0174 - BASIC PHYSICS, SCIENCE AND ENGINEERING 1</li>
+			<li>ENGR 0011 - INTRO TO ENGINEERING ANALYSIS</li>
+			<li>ENGR 0081 - FRESHMAN ENGINEERING SEMINAR 1</li>
+			<li>ENGCMP 0210 - SEMINAR IN COMPOSITION: ENGINEERING</li>
+				
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="one">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Second Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0230 - ANALYTIC GEOMETRY AND CALCULUS 2</li>
+				<li>CHEM 0970 - GENERAL CHEM FOR ENGINEERS 2</li>
+				<li>PHYS 0175 - BASIC PHYSICS, SCIENCE AND ENGINEERING 2</li>
+				<li>ENGR 0012 - INTRO TO ENGINEERING COMPUTING</li>
+				<li>ENGR 0082 - FRESHMAN ENGINEERING SEMINAR 2</li>
+				<li>ENGCMP 0412 - ENGINEERING COMMUNICATION IN A PROFESSIONAL CONTEXT</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="two">17</h3>
+			
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Third Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0240 – ANALYTIC GEOMETRY AND CALCULUS 3</li>
+				<li>MATH 0280 – INTRO TO MATRICES & LINEAR ALG</li>
+				<li>CHEM 1 – Core Chemistry Course</li>
+				<li>ECE 0031 – LIN CIR & SYSTEMS 1</li>
+				<li>ECE 0301 -  PROBLEM SOLVING WITH C++</li>
+				<li style="color:#FCBA03">BIOENG 1086 – BIOENGINEERING SEMINAR FOR MINORS (0 credits)-Additional Class</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="three">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fourth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0290 – DIFFERENTIAL EQUATIONS</li>
+				<li>CHEM 2 – Core Chemistry Course</li>
+				<li>PHYS 0219 – BASIC LAB PHYSICS 2</li>
+				<li>ENGR 0022 – MATERIAL STRUCTURE & PROPERTIES</li>
+				<li>MEMS 0051 – INTRODUCTION TO THERMODYNAMICS</li>
+				<li>ECE 0102 – MICROELECTRONIC CIRCUITS</li>
+				<li style="color:#FCBA03">BIOENG 1086 – BIOENGINEERING SEMINAR FOR MINORS (0 credits)-Additional Class</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="four">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fifth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>ENGR 0240 INTRO TO NANOTECHNOLOGY & NANOENGINEERING</li>
+				<li style="color:#FCBA03">LIFESCI 1 – Basic Life Science</li>
+				<li>MEMS 1010 – EXPERIMENTAL METHODS IN MSE</li>
+				<li>MEMS 1053 – STRUCTURE OF CRYSTALS & DIFFRACTION</li>
+				<li style="color:#FCBA03">BIOENG 1 – Core Bioengineering Course</li>
+				<li style="color:#FCBA03">BIOENG 1086 – BIOENGINEERING SEMINAR FOR MINORS (0 credits)-Additional Class</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="five">15</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Sixth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li style="color:#FCBA03">ENGR 0020 – PROBABILITY & STATISTICS </li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li style="color:#FCBA03">BIOENG 2 – Core Bioengineering Course</li>
+				<li>CHEM 3 – Core Chemistry Course</li>
+				<li style="color:#FCBA03">BIOENG 1005, 1532, 1601, or 1810 (Nanotechnology elective)</li>
+				
+				<li style="color:#FCBA03">BIOENG 1086 – BIOENGINEERING SEMINAR FOR MINORS (0 credits)-Additional Class</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+				
+				<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="six">16</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Seventh Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				
+				<li>ENGR 0135 – STATICS & MECHANICS OF MATERIALS 1</li>
+				<li>LIFESCI 2 – Basic Life Science</li>
+				<li>Senior Design 1 – 3 Credits</li>
+				<li>MEMS 1057 – MICRO/NANO MANUFACTURING</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li style="color:#FCBA03">BIOENG 1086 – BIOENGINEERING SEMINAR FOR MINORS (0 credits)-Additional Class</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="seven">15</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Eighth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>Senior Design 2 – 3 Credits</li>
+				<li>Nanotechnology Elective – 3 Credits</li>
+				<li>Nanotechnology Elective – 3 Credits</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li style="color:#FCBA03">BIOENG 1086 – BIOENGINEERING SEMINAR FOR MINORS (0 credits)-Additional Class</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="eight">15</h3>
+			</div>`
+			
+			const x = document.querySelector(".swap");
+			x.innerHTML = content;
+			document.getElementById('total').innerHTML = Number(document.getElementById('one').innerHTML)+Number(document.getElementById('two').innerHTML)+Number(document.getElementById('three').innerHTML)+Number(document.getElementById('four').innerHTML)+Number(document.getElementById('five').innerHTML)+Number(document.getElementById('six').innerHTML)+Number(document.getElementById('seven').innerHTML)+Number(document.getElementById('eight').innerHTML)
+			document.getElementById('addi').innerHTML = '1-Seminar-0 credit';
+}
+
+
+
+});
+
+
+
+<!--Photonics Certificate -->
+$(document).ready(function() {
+
+document.getElementById("PC").onclick = function(){
+	const content = `
+	<h1>Nanotechnology – Chemistry/Bioengineering Concentration</h1>
+			<h2 style="margin-top:0;margin-bottom:0;">First Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+			<li style="color:#5ebcbf">MATH 0220 - ANALYTIC GEOMETRY AND CALCULUS 1</li>
+			<li style="color:#5ebcbf">CHEM 0960 - GENERAL CHEM FOR ENGINEERS 1</li>
+			<li style="color:#5ebcbf">PHYS 0174 - BASIC PHYSICS, SCIENCE AND ENGINEERING 1</li>
+			<li>ENGR 0011 - INTRO TO ENGINEERING ANALYSIS</li>
+			<li>ENGR 0081 - FRESHMAN ENGINEERING SEMINAR 1</li>
+			<li>ENGCMP 0210 - SEMINAR IN COMPOSITION: ENGINEERING</li>
+				
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="one">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Second Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li style="color:#5ebcbf">MATH 0230 - ANALYTIC GEOMETRY AND CALCULUS 2</li>
+				<li style="color:#5ebcbf">CHEM 0970 - GENERAL CHEM FOR ENGINEERS 2</li>
+				<li style="color:#5ebcbf">PHYS 0175 - BASIC PHYSICS, SCIENCE AND ENGINEERING 2</li>
+				<li>ENGR 0012 - INTRO TO ENGINEERING COMPUTING</li>
+				<li>ENGR 0082 - FRESHMAN ENGINEERING SEMINAR 2</li>
+				<li>ENGCMP 0412 - ENGINEERING COMMUNICATION IN A PROFESSIONAL CONTEXT</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="two">17</h3>
+			
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Third Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li style="color:#5ebcbf">MATH 0240 – ANALYTIC GEOMETRY AND CALCULUS 3</li>
+				<li style="color:#5ebcbf">MATH 0280 – INTRO TO MATRICES & LINEAR ALG</li>
+				<li>CHEM 1 – Core Chemistry Course</li>
+				<li>ECE 0031 – LIN CIR & SYSTEMS 1</li>
+				<li>ECE 0301 -  PROBLEM SOLVING WITH C++</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="three">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fourth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li style="color:#5ebcbf">MATH 0290 – DIFFERENTIAL EQUATIONS</li>
+				<li style="color:#5ebcbf">CHEM 1410 – PHYSICAL CHEMISTRY 1 (Core Chem)</li>
+				<li style="color:#5ebcbf">CHEM 1420 – PHYSICAL CHEMISTRY LAB 1-Additional Class</li>
+				<li>PHYS 0219 – BASIC LAB PHYSICS 2</li>
+				<li>ENGR 0022 – MATERIAL STRUCTURE & PROPERTIES</li>
+				<li>MEMS 0051 – INTRODUCTION TO THERMODYNAMICS</li>
+				<li>ECE 0102 – MICROELECTRONIC CIRCUITS</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="four">18</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fifth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>ENGR 0240 INTRO TO NANOTECHNOLOGY & NANOENGINEERING</li>
+				<li>LIFESCI 1 – Basic Life Science</li>
+				<li style="color:#5ebcbf">MEMS 1010 – EXPERIMENTAL METHODS IN MSE</li>
+				<li style="color:#5ebcbf">PHYS 1361 – WAVE MOTION AND OPTICS - Additional Class</li>
+				<li>MEMS 1053 – STRUCTURE OF CRYSTALS & DIFFRACTION</li>
+				<li>BIOENG 1 – Core Bioengineering Course</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="five">18</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Sixth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>ENGR 0020 – PROBABILITY & STATISTICS </li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>BIOENG 2 – Core Bioengineering Course</li>
+				<li>CHEM 3 – Core Chemistry Course</li>
+				<li style="color:#5ebcbf">**CHEM 1255 - INSTRUMENTAL ANALYSIS LAB</li>
+				<li>Nanotechnology Elective  – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+				
+				<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="six">17</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Seventh Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				
+				<li>ENGR 0135 – STATICS & MECHANICS OF MATERIALS 1</li>
+				<li>LIFESCI 2 – Basic Life Science</li>
+				<li>Senior Design 1 – 3 Credits</li>
+				<li>MEMS 1057 – MICRO/NANO MANUFACTURING</li>
+				<li style="color:#5ebcbf">MEMS 1058 – ELECTROMAGNETIC PROPERTIES OF MATERIALS (Other options here)</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="seven">18</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Eighth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>Senior Design 2 – 3 Credits</li>
+				<li style="color:#5ebcbf">ECE1247 – SEMICONDUCTOR DEVICE THEORY (Nanotechnology Elective)</li>
+				<li style="color:#5ebcbf">ECE 1232 – INTRO TO LASERS AND OPTICAL ELECTRONICS</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="eight">15</h3>
+			</div>`
+			
+			const x = document.querySelector(".swap");
+			x.innerHTML = content;
+			document.getElementById('total').innerHTML = Number(document.getElementById('one').innerHTML)+Number(document.getElementById('two').innerHTML)+Number(document.getElementById('three').innerHTML)+Number(document.getElementById('four').innerHTML)+Number(document.getElementById('five').innerHTML)+Number(document.getElementById('six').innerHTML)+Number(document.getElementById('seven').innerHTML)+Number(document.getElementById('eight').innerHTML)
+			document.getElementById('addi').innerHTML = '2 extra classes, 2 extra 1 credit labs – 8 credits';
+}
+
+
+
+});
+
+<!--Sustainability-->
+$(document).ready(function() {
+	document.getElementById("SUS").onclick = function(){
+
+	const content = `
+	<li>MATH 0220 - ANALYTIC GEOMETRY AND CALCULUS 1</li>
+			<li>CHEM 0960 - GENERAL CHEM FOR ENGINEERS 1</li>
+			<li>PHYS 0174 - BASIC PHYSICS, SCIENCE AND ENGINEERING 1</li>
+			<li>ENGR 0011 - INTRO TO ENGINEERING ANALYSIS</li>
+			<li>ENGR 0081 - FRESHMAN ENGINEERING SEMINAR 1</li>
+			<li>ENGCMP 0210 - SEMINAR IN COMPOSITION: ENGINEERING</li>
+				
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="one">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Second Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0230 - ANALYTIC GEOMETRY AND CALCULUS 2</li>
+				<li>CHEM 0970 - GENERAL CHEM FOR ENGINEERS 2</li>
+				<li>PHYS 0175 - BASIC PHYSICS, SCIENCE AND ENGINEERING 2</li>
+				<li>ENGR 0012 - INTRO TO ENGINEERING COMPUTING</li>
+				<li>ENGR 0082 - FRESHMAN ENGINEERING SEMINAR 2</li>
+				<li>ENGCMP 0412 - ENGINEERING COMMUNICATION IN A PROFESSIONAL CONTEXT</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="two">17</h3>
+			
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Third Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0240 – ANALYTIC GEOMETRY AND CALCULUS 3</li>
+				<li>MATH 0280 – INTRO TO MATRICES & LINEAR ALG</li>
+				<li>CHEM 1 – Core Chemistry Course</li>
+				<li>ECE 0031 – LIN CIR & SYSTEMS 1</li>
+				<li>ECE 0301 -  PROBLEM SOLVING WITH C++</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="three">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fourth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>MATH 0290 – DIFFERENTIAL EQUATIONS</li>
+				<li>CHEM 2 – Core Chemistry Course</li>
+				<li>PHYS 0219 – BASIC LAB PHYSICS 2</li>
+				<li>ENGR 0022 – MATERIAL STRUCTURE & PROPERTIES</li>
+				<li>MEMS 0051 – INTRODUCTION TO THERMODYNAMICS</li>
+				<li>ECE 0102 – MICROELECTRONIC CIRCUITS</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="four">17</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Fifth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>ENGR 0240 INTRO TO NANOTECHNOLOGY & NANOENGINEERING</li>
+				<li>LIFESCI 1 – Basic Life Science</li>
+				<li>MEMS 1010 – EXPERIMENTAL METHODS IN MSE</li>
+				<li>MEMS 1053 – STRUCTURE OF CRYSTALS & DIFFRACTION</li>
+				<li>BIOENG 1 – Core Bioengineering Course</li>
+				<li style="color:#a473e6">ENGR 1905 – CURRENT ISSUES IN SUSTAINABILITY</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="five">18</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Sixth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>ENGR 0020 – PROBABILITY & STATISTICS </li>
+				<li style="color:#a473e6">Humanity/Social Science Elective – 3 Credits (Check options here)</li>
+				<li>BIOENG 2 – Core Bioengineering Course</li>
+				<li>CHEM 3 – Core Chemistry Course</li>
+				<li>Nanotechnology Elective  – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+			</ul>
+				
+				<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="six">16</h3>
+			
+				
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Seventh Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				
+				<li>ENGR 0135 – STATICS & MECHANICS OF MATERIALS 1</li>
+				<li>LIFESCI 2 – Basic Life Science</li>
+				<li>Senior Design 1 – 3 Credits</li>
+				<li>MEMS 1057 – MICRO/NANO MANUFACTURING</li>
+				<li style="color:#a473e6">Humanity/Social Science Elective – 3 Credits (Check options here)</li>
+				<li style="color:#a473e6">Humanity/Social Science Elective – 3 Credits (Check options here)</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="seven">18</h3>
+			
+			<h2 style="margin-top:0;margin-bottom:0;">Eighth Term</h2>
+			<div class="blockb"></div>
+			<ul style="font-weight:normal;">
+				<li>Senior Design 2 – 3 Credits</li>
+				<li>Nanotechnology Elective – 3 Credits</li>
+				<li>Nanotechnology Elective – 3 Credits</li>
+				<li style="color:#a473e6">ENGR 1907 – SUSTAINABILITY CAPSTONE EXPERIENCE</li>
+					<li style="color:#a473e6">CEE 1610 – ENGINEERING & SUSTAINABLE DEVELOPMENT</li>
+				<li>Humanity/Social Science Elective – 3 Credits</li>
+				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
+				
+				
+			</ul>
+			<h3 style="display:inline-block;">Credits:</h3><h3 style="display:inline-block;"id="eight">18</h3>
+			</div>
+	
+	`
+			
+			const x = document.querySelector(".swap");
+			x.innerHTML = content;
+			document.getElementById('total').innerHTML = Number(document.getElementById('one').innerHTML)+Number(document.getElementById('two').innerHTML)+Number(document.getElementById('three').innerHTML)+Number(document.getElementById('four').innerHTML)+Number(document.getElementById('five').innerHTML)+Number(document.getElementById('six').innerHTML)+Number(document.getElementById('seven').innerHTML)+Number(document.getElementById('eight').innerHTML)
+			document.getElementById('addi').innerHTML = '3';
+  
+  
+}
+
+
+
+});
+
+
+</script>
+		</body>
+		<footer id="footerr">
+		
+		</footer>
+
+	</main>
+  
+ 
+</html>
+		
