@@ -1,3 +1,6 @@
+
+
+
 var topbar = document.getElementById('headerr')
 
 const content1=`<div class="gridcontainer8" style="">
@@ -11,7 +14,7 @@ const content1=`<div class="gridcontainer8" style="">
 <div class="block"> </div>
 <div id="bugfix"></div>
 <div id="fixbar">
-    <div class="topnav" id="myTopnav">
+    <div class="navstyle" id="Topnavbar">
     
     <a href="index.html" class="active">Home</a>
     <div class="dropdown">
@@ -25,9 +28,12 @@ const content1=`<div class="gridcontainer8" style="">
     <div class="dropdown">
         <button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">People</button>
         <div class="dropdown-content">
-            <a href="https://www.engineering.pitt.edu/People/Faculty-Search/">Faculty</a>
-            <a href="https://www.engineering.pitt.edu/People/Staff-Listing/">Complete Staff Directory</a>
-            <a href="EngineeringScience - Aministrative Contacts.html">Administrative Contacts</a>
+        <a href="EngineeringScience - Aministrative Contacts.html">Administrative Contacts</a>
+        <a href="EngineeringScience - Advisory Boards.html">Advisory Boards</a>
+        <a href="https://www.engineering.pitt.edu/People/Staff-Listing/">Complete Staff Directory</a>    
+        <a href="https://www.engineering.pitt.edu/People/Faculty-Search/">Faculty</a>
+            
+            
         </div>
     </div>
     <div class="dropdown">
@@ -35,8 +41,10 @@ const content1=`<div class="gridcontainer8" style="">
         <div class="dropdown-content">
             <a href="EngineeringScience - Prospective Students.html">Prospective Students</a>
             <a href="EngineeringScience - Current Students.html">Current Students</a>
-            
-            
+            <a href="EngineeringScience - Sample schedules - Engineering Mechanics.html">Sample Schedule-<br>Engineering Mechanics</a>
+            <a href="EngineeringScience - Sample schedules - Engineering Physics.html">Sample Schedule-<br>Engineering Physics</a>
+            <a href="EngineeringScience - Sample schedules - Nano-chembio.html">Sample Schedule-<br>Nanotechnology-ChemBio</a>
+            <a href="EngineeringScience - Sample schedules - Nano-MaterialsPhysics.html">Sample Schedule-<br>Nanotechnology-MaterialsPhysics</a>
         </div>
     </div>
     <a href="EngineeringScience - Career.html" class="normicon">Career</a>
@@ -50,14 +58,14 @@ const content1=`<div class="gridcontainer8" style="">
     <div class="dropdown">
         <button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Life@ES</button>
         <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+        <a href="EngineeringScience - Current Student Feedbacks.html">Student Feedbacks</a>
+            <a href="#">Student Projects</a>
+            
         </div>
     </div>
     
     
-    <a href="javascript:void(0);" style="font-size:12px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="javascript:void(0);" style="font-size:12px;" class="icon" onclick="Trigger()">&#9776;</a>
     
     <div class="gridcontainer16">
     <p style=" font-family: 'Lobster', cursive;, sans-serif;margin-top:0;font-size:26px;margin-bottom:0;text-align:right;-webkit-text-stroke: 0.1px black;color:#fcba03;align-self:center;">Forging Ahead!</p>
@@ -81,7 +89,14 @@ const content2=`<div class="gridcontainer19">
 <a href="https://find.pitt.edu/" class="" style="margin-right:24px;">Find People at Pitt</a>
 <a href="https://www.join.pitt.edu/" class="" style="margin-right:24px;">Jobs</a>
 <a href="https://my.pitt.edu/" class="" style="margin-right:24px;">MyPitt</a>
-<a href="https://www.join.pitt.edu/" class="" style="margin-right:24px;">Jobs</a>
+<a href="EngineeringScience - Acknowledgement.html" class="" style="margin-right:24px;">Acknowledgement</a>
 </div>`
 
 bbar.innerHTML= content2;
+
+var b = document.querySelector("main");
+var height = screen.availHeight;
+
+document.body.setAttribute("min-height",  height + 'px', false);
+
+

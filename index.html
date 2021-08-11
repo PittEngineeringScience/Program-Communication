@@ -13,6 +13,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="module" src="js/Top_bottombar.js"></script>
+  <script>
+	function Trigger() {
+    var x = document.getElementById("Topnavbar");
+    if (x.className === "navstyle") {
+      x.className += " responsive";
+    } else {
+      x.className = "navstyle";
+    }
+  }
+</script>
 	<script>
 
  
@@ -35,16 +45,7 @@
 });
 
 </script>
-	<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+
 	
 
 <body>
@@ -137,7 +138,7 @@ function myFunction() {
 						<div style="justify-self:center">
 							<h2 style="color:white;font-size:25px;">Beautiful Campus</h2>
 							<p style="color:white;font-size:15px;">Explore Pitt's campus and all its opportunities, including the surrounding the city. </p>
-							<button class="buttons" ><span>Learn More</span></button>
+							<a class="buttons" href="https://admissions.pitt.edu/virtual-tour/"><span>Learn More</span></a>
 						</div>
 					
 						
@@ -157,7 +158,7 @@ function myFunction() {
 						<div style="justify-self:center">
 							<h2 style="color:white;font-size:25px;">Accredited Program</h2>
 							<p style="color:white;font-size:15px;">Like other engineering degrees, Engineering Science is an ABET accredited program.</p>
-							<button class="buttons" ><span>Learn More</span></button>
+							<a class="buttons" href="https://www.engineering.pitt.edu/Departments/MEMS/_Content/Undergraduate/Engineering-Science/Engineering-Science-Background-information/"><span>Learn More</span></a>
 						</div>
 					
 					</div>
@@ -166,8 +167,8 @@ function myFunction() {
 					
 						<div style="justify-self:center">
 							<h2 style="color:white;font-size:25px;">Pitt Honors College</h2>
-							<p style="color:white;font-size:15px;">Enhance your degree with the University Honors College.</p>
-							<button class="buttons" ><span>Learn More</span></button>
+							<p style="color:white;font-size:15px;">Enhance your degree with the University Honors College.The curricular requirementst<br> are waived specifically for students in Engineering Sciecne Program.</p>
+							<a class="buttons" href="https://www.honorscollege.pitt.edu/degrees"><span>Learn More</span></a>
 						</div>
 					
 						
@@ -187,7 +188,7 @@ function myFunction() {
 						<div style="justify-self:center">
 							<h2 style="color:white;font-size:25px;">Transfer Friendly!</h2>
 							<p style="color:white;font-size:15px;">Whether you're transferring from another university or changing majors, you can switch to Engineering Science.</p>
-							<button class="buttons" ><span>Learn More</span></button>
+							<a class="buttons" href="https://www.engineering.pitt.edu/First-Year/First-Year/Transfer-Students/Prospective-Transfer-Students/"><span>Learn More</span></a>
 						</div>
 					
 					</div>

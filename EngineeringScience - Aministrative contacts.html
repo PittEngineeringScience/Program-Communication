@@ -10,19 +10,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     
 	<link rel="stylesheet" href="css/responsivedesign.css">
-	
+	<script type="module" src="js/Top_bottombar.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+
 	<script>
   $(document).ready(function() {
   
@@ -42,83 +33,23 @@ function myFunction() {
   });
 });
 </script>
+<script>
+	function Trigger() {
+    var x = document.getElementById("Topnavbar");
+    if (x.className === "navstyle") {
+      x.className += " responsive";
+    } else {
+      x.className = "navstyle";
+    }
+  }
+</script>
   </head>
+  <main> 
   <body>
-	<main>
+	
 		<!--*************Title and drop down menu*****************-->
-		<header>
-			<div class="gridcontainer8" style="">
-			<h1 style = "color:#fcba03; font-size:54px; margin:auto;margin:auto;font-weight:850;">PITT</h1>
-			<img src="images/verticalbar.png" alt="verticalbar" style = "max-width:15px; height:53.33px;justify-self:center;align-self:center;"></img>
- 
-			<h2 style = " font-size:15px; grid-column:3/4; margin:auto; font-weight:bold;">Swanson School of Engineering<br>Engineering Science</h2>
+		<header id="headerr">
 			
-			
-			</div>
-			<div class="block"> </div>
-			<div id="bugfix"></div>
-			<div class="topnav" id="myTopnav">
-			
-				<a href="#home" class="active">Home</a>
-				<div class="dropdown">
-					<button class="dropbtn">Research</button>
-					<div class="dropdown-content">
-						<a href="EngineeringScience - MCSI.html">Mascaro Center for Sustainable Innovation (MCSI) </a>
-						<a href="EngineeringScience - UHC.html">University Honors College</a>
-						<a href="https://www.engineering.pitt.edu/Research/">SSOE Research Center</a>
-					</div>
-				</div>
-				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">People</button>
-					<div class="dropdown-content">
-						<a href="https://www.engineering.pitt.edu/People/Faculty-Search/">Faculty</a>
-						<a href="https://www.engineering.pitt.edu/People/Staff-Listing/">Complete Staff Directory</a>
-						<a href="#">Administrative Contacts</a>
-					</div>
-				</div>
-				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Students</button>
-					<div class="dropdown-content">
-						<a href="#">Prospective Students</a>
-						<a href="#">Current Students</a>
-						<a href="#">Scholarships and Awards</a>
-						<a href="#">FAQs</a>
-						<a href="#">Student Life</a>
-						<a href="#">Minors and Certificates</a>
-						
-					</div>
-				</div>
-				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Industry</button>
-					<div class="dropdown-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
-					</div>
-				</div>
-				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Alumni</button>
-					<div class="dropdown-content">
-						<a href="#">Alumni spotlight</a>
-						
-					</div>
-				</div>
-				<div class="dropdown">
-					<button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Life@ES</button>
-					<div class="dropdown-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
-					</div>
-				</div>
-				
-				
-				<a href="javascript:void(0);" style="font-size:12px;" class="icon" onclick="myFunction()">&#9776;</a>
-				
-				<div class="gridcontainer16">
-				<p style=" font-family: 'Lobster', cursive;, sans-serif;margin-top:0;font-size:26px;margin-bottom:0;text-align:right;-webkit-text-stroke: 0.1px black;color:#fcba03;align-self:center;">Forging Ahead!</p>
-				</div>
-			</div>
 		</header>
 		<div class="box">
 		<div class = "section-wraper" style="padding-left:10%;padding-right:10%;">
@@ -144,10 +75,10 @@ function myFunction() {
 				</div>
 
 
-				<div class="inlinegrid1" id="test" >
+				<div class="inlinegrid1" >
 					
-					<img id="test2"  src="images/Shengye.png" alt="Shengye's photo" style = "position:relative; width:100%; height:auto;align-self: start;">
-					<!-- <img id="test2"  src="images/robot.gif" alt="Shengye's photo" style = "position:relative; width:100%; height:auto;align-self: start;"> -->
+				<img   src="images/Shengye.png" alt="Shengye's photo" style = "position:relative; width:100%; height:auto;align-self: start;">
+					<!--<img id="test2"  src="images/robot.gif" alt="Shengye's photo" style = "position:relative; width:100%; height:auto;align-self: start;">-->
 					
 					<div style="text-align: center; "id="test3">
 					<p style="margin: 7px 0px">Shengye Dong</p>
@@ -172,13 +103,8 @@ function myFunction() {
 			</div>	
 		</div>
 		</body>
-		<footer>
-		<div class="gridcontainer2">
-			
-				
-				<img src="images/icon.png" alt="Engineering Science icon">
-				
-			</div>
+		<footer id="footerr">
+		
 		</footer>
 		<script type="module" src="js/animation.js"></script>
 	</main>

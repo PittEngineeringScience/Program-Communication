@@ -732,6 +732,13 @@ width: 19.4%;
   }
 
 
+  #test2
+  {
+	  max-width:25%;
+	  display:inline-block;
+  }
+
+
   /*reserve*/
 /* 
   @keyframes flip-with-rotate2 {

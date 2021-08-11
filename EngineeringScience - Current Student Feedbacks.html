@@ -1,0 +1,105 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Science at University of Pittsburgh</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<script type="module" src="js/Top_bottombar.js"></script>
+	<link rel="stylesheet" href="css/responsivedesign.css">
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+	<script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+
+	
+  </head>
+  <script>
+	function Trigger() {
+    var x = document.getElementById("Topnavbar");
+    if (x.className === "navstyle") {
+      x.className += " responsive";
+    } else {
+      x.className = "navstyle";
+    }
+  }
+</script>
+  <script>
+  $(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 105) {
+      $('fixbar').addClass('navbar-fixed');
+	  $('#bugfix').addClass('blockm');
+    }
+    else  {
+      $('#fixbar').removeClass('navbar-fixed');
+	  $('#bugfix').removeClass('blockm');
+    }
+  });
+});
+</script>
+
+<script type="module" src="js/Top_bottombar.js"></script>
+  <style>
+	  @media only screen and (max-width: 773px) {
+  #sp {
+    font-size:20px;
+	font-weight:bold;
+  }
+}
+	  </style>
+  <body>
+  <!--
+	<script>
+		$(document).ready(function() {
+		$("#show1").load(function(){
+		$("show1").show("slide");
+		});
+		
+		});
+		</script>
+		-->
+	<main>
+		<!--*************Title and drop down menu*****************-->
+		<header id="headerr">
+			
+		</header>
+		<div class='box'>
+		<div class ="section-wraper">
+			<h1 id="sp">Listern to the voice of our current students in Engineering Science Program!</h1>
+			<div class="gridcontainer4" id = "show1">
+				<div style="margin-right:20px;">
+				<p> <span style="font-size: 13px;font-weight:noraml;margin-top:0px;">
+Q:Why do you choose Engineering Science program?<br>
+A:, I was trying to choose between ME and Engineering Science, and it pretty much came down to the fact that I can do more outside the degree with the ES degree ,it means physics and Sustainability Engineering, which I’m not able to do with normal ME degree. My list will be way longer than It would be otherwise. <br>
+	 			
+				</span><br><span style="text-align: right">Herzog, Natan P - Sophomore<span></p>
+				
+				</div>
+				<img src="images/Natan.jpg" alt="Engineering Alumni Miriam" style = "width:140px; height:auto;margin-top:10px;"></img>
+				
+			</div>
+		</div>
+		</div>
+		
+		
+		
+		<footer id="footerr">
+	
+			
+		</footer>
+	</main>
+	
+  </body>
+</html>
+		

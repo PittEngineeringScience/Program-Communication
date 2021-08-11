@@ -1,0 +1,290 @@
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr 10px 1fr;
+}
+
+.gridcontainer2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.gridcontainer2 > div {
+  color: white;
+}
+
+.gridcontainer2 > div > h3 {
+  text-align: center;
+}
+
+.boody {
+  background-color: black;
+}
+
+.button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 16px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: red;
+  color: black;
+  border: 2px solid red;
+}
+
+.button1:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1.1);
+}
+
+.button2 {
+  background-color: blue;
+  color: black;
+  border: 2px solid blue;
+}
+
+.button2:hover {
+  background-color: blue;
+  color: white;
+  transform: scale(1.1);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Frame*/
+@keyframes scale1 {
+  from {
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes showup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.showup1 {
+  animation: 2s linear 0s 1 running showup;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showdown {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.showdown1 {
+  animation: 1.2s ease-out 0s 1 running showdown;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotatex {
+  0% {
+    transform: perspective(400px) rotatex(-90deg);
+  }
+
+  90% {
+    transform: perspective(400px) rotatex(20deg);
+  }
+  100% {
+    transform: perspective(400px) rotatex(0deg);
+  }
+}
+
+.rotatex {
+  animation-name: rotatex;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+/* ---- reset ---- */
+.boody {
+  margin: 0;
+  font: normal 90% Arial, Helvetica, sans-serif;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+  height: 90%;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+} /* ---- stats.js ---- */
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+/*red pill page*/
+
+.box {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 80%;
+  height: 100%;
+}
+.gridcontainer3 {
+  display: grid;
+  grid-template-rows: 1fr;
+  height: 70%;
+  width: 100%;
+}
+
+.innergrid1 {
+  display: grid;
+  grid-template-columns: 2fr 10px 1fr;
+  height: 100%;
+}
+
+#textbox1 {
+  color: white;
+  font-size: 20px;
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+}
+
+#box2 {
+  width: 90%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+.gradient {
+  animation: gradient 5s infinite linear;
+}
+
+.stage {
+  animation: animateBg 8s infinite linear;
+  background-color: #fff;
+  background-image: linear-gradient(0deg, #da3287, #ffde5e, #da3287, #ffde5e);
+  background-size: 100% 300%;
+  box-shadow: 0 3px 14px #000;
+  border-radius: 1rem;
+
+  width: 10px;
+}
+@keyframes animateBg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.stage2 {
+  animation: animateBg2 8s infinite linear;
+  background-color: #fff;
+  background-image: linear-gradient(90deg, #da3287, #23a6d5, #da3287, #23a6d5);
+  background-size: 300% 100%;
+  box-shadow: 0 3px 14px #000;
+  border-radius: 1rem;
+}
+@keyframes animateBg2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes chillingball1 {
+  0% {
+    transform: scale(1) translate(0);
+  }
+  65% {
+    transform: scale(0.7, 1.3) translate(0.5vw, -6vh) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) translate(0) rotate(0deg);
+  }
+}
+
+.chillingball1 {
+  animation: chillingball1 14s ease-in-out infinite;
+}
+
+@keyframes chillingball2 {
+  0% {
+    transform: scale(1) translate(0deg);
+  }
+  50% {
+    transform: scale(0.7, 1.1) translate(0.5vw, -6vh) rotate(-160deg);
+  }
+  100% {
+    transform: scale(1) translate(0) rotate(0deg);
+  }
+}
+
+.chillingball2 {
+  animation: chillingball2 17s ease-in-out infinite;
+}
+
+@keyframes chillingball3 {
+  0% {
+    transform: scale(1) translate(-0deg);
+  }
+  50% {
+    transform: scale(0.7, 1) translate(0.5vw, -6vh) rotate(95deg);
+  }
+  100% {
+    transform: scale(1) translate(0) rotate(0deg);
+  }
+}
+
+.chillingball3 {
+  animation: chillingball3 14s ease-in-out infinite;
+}
