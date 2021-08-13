@@ -75,7 +75,7 @@ function rotatexfade(text,target,seds){
 
       updown(text7,textbox1,'19000');
 
-      let text8 = `<P id="textbox1" style="text-align:center;font-size:45px;">Google charts/Google Map Service`
+      let text8 = `<P id="textbox1" style="text-align:center;font-size:45px;">Google Charts/Google Map Service`
 
        updown(text8,textbox1,'21000');
 

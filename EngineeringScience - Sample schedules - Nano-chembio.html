@@ -344,7 +344,7 @@
 			<div id="fixside">
 				
 				<div style="height:10px;"></div>
-				<h3 style="display:inline-block;margin-bottom:5px;">Total Credits:</h3><h3 style="display:inline-block;margin-bottom:5px;"id="total">127</h3>
+				<h3 style="display:inline-block;margin-bottom:5px;">Total Credits:</h3><h3 style="display:inline-block;margin-bottom:5px;"id="total">129</h3>
 				<h3 style="display:inline-block;margin-top:0px;">Additional Classes:</h3><h3 style="display:inline-block;margin-top:0px;"id="addi">0</h3>
 				<button id="ChemB" class="button1">Chemistry Minor</button>
 				<div style="height:2px;"></div>
@@ -456,7 +456,7 @@ document.getElementById("ChemB").onclick = function(){
 				<li>Humanity/Social Science Elective – 3 Credits</li>
 				<li>BIOENG 2 – Core Bioengineering Course</li>
 				<li style="color:#008CBA">CHEM 3 – Core Chemistry Course</li>
-				<li style="color:#008CBA">Chemistry Lab-Additional Class)</li>
+				<li style="color:#008CBA">Chemistry Lab-Additional Lab</li>
 				<li>Nanotechnology Elective  – 3 Credits</li>
 				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
 				
@@ -502,7 +502,7 @@ document.getElementById("ChemB").onclick = function(){
 			const x = document.querySelector(".swap");
 			x.innerHTML = content;
 			document.getElementById('total').innerHTML = Number(document.getElementById('one').innerHTML)+Number(document.getElementById('two').innerHTML)+Number(document.getElementById('three').innerHTML)+Number(document.getElementById('four').innerHTML)+Number(document.getElementById('five').innerHTML)+Number(document.getElementById('six').innerHTML)+Number(document.getElementById('seven').innerHTML)+Number(document.getElementById('eight').innerHTML)
-			document.getElementById('addi').innerHTML = '1';
+			document.getElementById('addi').innerHTML = 'One extra lab';
 
 
 
@@ -636,7 +636,7 @@ document.getElementById("PhysicsB").onclick = function(){
 			const x = document.querySelector(".swap");
 			x.innerHTML = content;
 			document.getElementById('total').innerHTML = Number(document.getElementById('one').innerHTML)+Number(document.getElementById('two').innerHTML)+Number(document.getElementById('three').innerHTML)+Number(document.getElementById('four').innerHTML)+Number(document.getElementById('five').innerHTML)+Number(document.getElementById('six').innerHTML)+Number(document.getElementById('seven').innerHTML)+Number(document.getElementById('eight').innerHTML)
-			document.getElementById('addi').innerHTML = '2';
+			document.getElementById('addi').innerHTML = '1';
  
  
 
@@ -990,7 +990,7 @@ document.getElementById("PC").onclick = function(){
 			<ul style="font-weight:normal;">
 				<li style="color:#5ebcbf">MATH 0290 – DIFFERENTIAL EQUATIONS</li>
 				<li style="color:#5ebcbf">CHEM 1410 – PHYSICAL CHEMISTRY 1 (Core Chem)</li>
-				<li style="color:#5ebcbf">CHEM 1420 – PHYSICAL CHEMISTRY LAB 1-Additional Class</li>
+				<li style="color:#5ebcbf">CHEM 1420 – PHYSICAL CHEMISTRY LAB 1-Additional Lab</li>
 				<li>PHYS 0219 – BASIC LAB PHYSICS 2</li>
 				<li>ENGR 0022 – MATERIAL STRUCTURE & PROPERTIES</li>
 				<li>MEMS 0051 – INTRODUCTION TO THERMODYNAMICS</li>
@@ -1023,7 +1023,7 @@ document.getElementById("PC").onclick = function(){
 				<li>Humanity/Social Science Elective – 3 Credits</li>
 				<li>BIOENG 2 – Core Bioengineering Course</li>
 				<li>CHEM 3 – Core Chemistry Course</li>
-				<li style="color:#5ebcbf">**CHEM 1255 - INSTRUMENTAL ANALYSIS LAB</li>
+				<li style="color:#5ebcbf">**CHEM 1255 - INSTRUMENTAL ANALYSIS LAB - Additional Lab</li>
 				<li>Nanotechnology Elective  – 3 Credits</li>
 				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
 				
@@ -1041,7 +1041,7 @@ document.getElementById("PC").onclick = function(){
 				<li>LIFESCI 2 – Basic Life Science</li>
 				<li>Senior Design 1 – 3 Credits</li>
 				<li>MEMS 1057 – MICRO/NANO MANUFACTURING</li>
-				<li style="color:#5ebcbf">MEMS 1058 – ELECTROMAGNETIC PROPERTIES OF MATERIALS (Other options here)</li>
+				<li style="color:#5ebcbf">MEMS 1058 – ELECTROMAGNETIC PROPERTIES OF MATERIALS - Additional Class</li>
 				<li>Humanity/Social Science Elective – 3 Credits</li>
 				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
 				
@@ -1144,7 +1144,7 @@ $(document).ready(function() {
 				<li>MEMS 1010 – EXPERIMENTAL METHODS IN MSE</li>
 				<li>MEMS 1053 – STRUCTURE OF CRYSTALS & DIFFRACTION</li>
 				<li>BIOENG 1 – Core Bioengineering Course</li>
-				<li style="color:#a473e6">ENGR 1905 – CURRENT ISSUES IN SUSTAINABILITY</li>
+				<li style="color:#a473e6">ENGR 1905 – CURRENT ISSUES IN SUSTAINABILITY - Additional Class</li>
 				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
 				
 			</ul>
@@ -1156,7 +1156,7 @@ $(document).ready(function() {
 			<div class="blockb"></div>
 			<ul style="font-weight:normal;">
 				<li>ENGR 0020 – PROBABILITY & STATISTICS </li>
-				<li style="color:#a473e6">Humanity/Social Science Elective – 3 Credits (Check options here)</li>
+				<li style="color:#a473e6">Humanity/Social Science Elective – 3 Credits</li>
 				<li>BIOENG 2 – Core Bioengineering Course</li>
 				<li>CHEM 3 – Core Chemistry Course</li>
 				<li>Nanotechnology Elective  – 3 Credits</li>
@@ -1176,8 +1176,8 @@ $(document).ready(function() {
 				<li>LIFESCI 2 – Basic Life Science</li>
 				<li>Senior Design 1 – 3 Credits</li>
 				<li>MEMS 1057 – MICRO/NANO MANUFACTURING</li>
-				<li style="color:#a473e6">Humanity/Social Science Elective – 3 Credits (Check options here)</li>
-				<li style="color:#a473e6">Humanity/Social Science Elective – 3 Credits (Check options here)</li>
+				<li style="color:#a473e6">Humanity/Social Science Elective – 3 Credits</li>
+				<li style="color:#a473e6">Humanity/Social Science Elective – 3 Credits</li>
 				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
 				
 				
@@ -1190,8 +1190,8 @@ $(document).ready(function() {
 				<li>Senior Design 2 – 3 Credits</li>
 				<li>Nanotechnology Elective – 3 Credits</li>
 				<li>Nanotechnology Elective – 3 Credits</li>
-				<li style="color:#a473e6">ENGR 1907 – SUSTAINABILITY CAPSTONE EXPERIENCE</li>
-					<li style="color:#a473e6">CEE 1610 – ENGINEERING & SUSTAINABLE DEVELOPMENT</li>
+				<li style="color:#a473e6">ENGR 1907 – SUSTAINABILITY CAPSTONE EXPERIENCE - Additional Class</li>
+					<li style="color:#a473e6">CEE 1610 – ENGINEERING & SUSTAINABLE DEVELOPMENT - Additional Class</li>
 				<li>Humanity/Social Science Elective – 3 Credits</li>
 				<li>ENGSCI 1085 – ENGINEERING SCIENCE SEMINAR</li>
 				
