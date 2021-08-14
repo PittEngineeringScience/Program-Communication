@@ -294,7 +294,7 @@
 </script>
   </head>
   <style>
- .collapsible {
+ .dropdownbar {
   background-color: #1a75ff;
   color: white;
   cursor: pointer;
@@ -308,11 +308,11 @@
   padding-left: 50px;
 }
 
-.active2, .collapsible:hover {
+.initiate2, .dropdownbar:hover {
   background-color: #005ce6;
 }
 
-.collapsible:after {
+.dropdownbar:after {
   content: '\002B';
   color: white;
   font-weight: bold;
@@ -320,7 +320,7 @@
   margin-left: 5px;
 }
 
-.active2:after {
+.initiate2:after {
   content: "\2212";
 }
 
@@ -351,7 +351,7 @@
 			</ul>
 		
 		
-		<button class="collapsible">Course Distribution for Engineering Mechanics</button>
+		<button class="dropdownbar">Course Distribution for Engineering Mechanics</button>
 		<div class="content section-wraper gridcontainer3">
 			<div id="piechart" style="width: 100%;grid-area: 1/1;z-index:999;"></div>
 			<div id="piechart2" style="width: 100%; grid-area: 2/1 "></div>
@@ -360,7 +360,7 @@
 		
 		<div class="blockg"> </div>
 		
-		<button class="collapsible">Course Distribution for Engineering Physics</button>
+		<button class="dropdownbar">Course Distribution for Engineering Physics</button>
 		<div class="content section-wraper gridcontainer3">
 			<div id="piechart3" style="width: 100%; grid-area: 1/1"></div>
 			<div id="piechart4" style="width: 100%; grid-area: 2/1 "></div>
@@ -369,7 +369,7 @@
 		
 		<div class="blockg"> </div>
 		
-		<button class="collapsible">Course Distribution for Nanotechnology – Chemistry and BioEngineering</button>
+		<button class="dropdownbar">Course Distribution for Nanotechnology – Chemistry and BioEngineering</button>
 		<div class="content section-wraper gridcontainer3">
 			<div id="piechart5" style="width: 100%; grid-area: 1/1"></div>
 			<div id="piechart6" style="width: 100%; grid-area: 2/1 "></div>
@@ -378,7 +378,7 @@
 		
 		<div class="blockg"> </div>
 		
-		<button class="collapsible">Course Distribution for Nanotechnology – Physics and Materials Science</button>
+		<button class="dropdownbar">Course Distribution for Nanotechnology – Physics and Materials Science</button>
 		<div class="content section-wraper gridcontainer3">
 			<div id="piechart7" style="width: 100%; grid-area: 1/1"></div>
 			<div id="piechart8" style="width: 100%; grid-area: 2/1 "></div>
@@ -397,12 +397,12 @@
   </body>
   <script>
   
-	  var coll = document.getElementsByClassName("collapsible");
-var i;
+	  var down = document.getElementsByClassName("dropdownbar");
+var q;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active2");
+for (q = 0; q < down.length; q++) {
+  down[q].addEventListener("click", function() {
+    this.classList.toggle("initiate2");
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;

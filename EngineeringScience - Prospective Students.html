@@ -42,7 +42,7 @@
 });
 </script>
 <style>
- .collapsible {
+ .dropdownbar {
   background-color: #1a75ff;
   color: white;
   cursor: pointer;
@@ -56,11 +56,11 @@
   padding-left: 50px;
 }
 
-.active2, .collapsible:hover {
+.initiate2, .dropdownbar:hover {
   background-color: #005ce6;
 }
 
-.collapsible:after {
+.dropdownbar:after {
   content: '\002B';
   color: white;
   font-weight: bold;
@@ -68,7 +68,7 @@
   margin-left: 5px;
 }
 
-.active2:after {
+.initiate2:after {
   content: "\2212";
 }
 
@@ -101,7 +101,7 @@
 				<div style="padding-left:20px;padding-right:20px; padding-top:20px">
 				<h1>How to apply to Engineering Science?</h1>
 				<p style="font-weight: none">There are three ways to get into Engineering Science Program at Pitt:</p>
-				<button class="collapsible">Direct application to ES at Pitt</button>
+				<button class="dropdownbar">Direct application to ES at Pitt</button>
 					<div class="content">
 					<p>After applying to the Swanson School of Engineering, all first-year engineering students will complete the 
 					<a href="https://www.engineering.pitt.edu/First-Year/First-Year/Academic/First-Year-Academic/" target = "_blank">First-Year Engineering curriculum</a>.
@@ -113,8 +113,8 @@
 					<a href="https://admissions.pitt.edu/first-year-student/" class="button">MORE INFORMATION</a>
 			
 					</div>
-					<div class="blockg"></div>
-				<button class="collapsible">External trasnfer to ES at Pitt</button>
+					<div class="blockll"></div>
+				<button class="dropdownbar">External trasnfer to ES at Pitt</button>
 					
 					<div class="content">
 					<p>Transferring from another school? Check out the <a href="https://admissions.pitt.edu/pitt-transfer-tool/" target = "_blank">Transfer Tool</a>
@@ -127,9 +127,9 @@
 					</div>
 			
 					
-					<div class="blockg"></div>
+					<div class="blockll"></div>
 					
-					<button class="collapsible">Internal trasnfer to ES at Pitt</button>
+					<button class="dropdownbar">Internal trasnfer to ES at Pitt</button>
 					
 					<div class="content">
 					<p>If already in the Swanson School of Engineering, students can speak to their academic advisor about switching their major to Engineering Science.  
@@ -143,7 +143,7 @@
 					</div>
 			
 					</div>
-					<div class="blockg"></div>
+					<div class="blockll"></div>
 				</div>
 				
 			</div>	
@@ -158,12 +158,12 @@
 	</main>
   <script>
   
-	  var coll = document.getElementsByClassName("collapsible");
+	  var down = document.getElementsByClassName("dropdownbar");
 var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active2");
+for (q = 0; q < down.length; q++) {
+  down[q].addEventListener("click", function() {
+    this.classList.toggle("initiate2");
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
