@@ -40,7 +40,7 @@ const content1=`<div class="gridcontainer8" style="">
         <button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">Students</button>
         <div class="dropdown-content">
             <a href="EngineeringScience - Prospective Students.html">Prospective Students</a>
-            <a href="EngineeringScience - Current Students.html">Current Students</a>
+            <a href="EngineeringScience - CurrentStudents.html">Current Students</a>
             <a href="EngineeringScience - Sample schedules - Engineering Mechanics.html">Sample Schedule-<br>Engineering Mechanics</a>
             <a href="EngineeringScience - Sample schedules - Engineering Physics.html">Sample Schedule-<br>Engineering Physics</a>
             <a href="EngineeringScience - Sample schedules - Nano-chembio.html">Sample Schedule-<br>Nanotechnology-ChemBio</a>
