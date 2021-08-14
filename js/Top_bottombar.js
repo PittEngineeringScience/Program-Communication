@@ -28,7 +28,7 @@ const content1=`<div class="gridcontainer8" style="">
     <div class="dropdown">
         <button class="dropbtn" style="justify-items: center;align-self:center;align-items: center">People</button>
         <div class="dropdown-content">
-        <a href="EngineeringScience - Aministrative Contacts.html">Administrative Contacts</a>
+        <a href="EngineeringScience - Administrative Contacts.html">Administrative Contacts</a>
         <a href="EngineeringScience - Advisory Boards.html">Advisory Boards</a>
         <a href="https://www.engineering.pitt.edu/People/Staff-Listing/">Complete Staff Directory</a>    
         <a href="https://www.engineering.pitt.edu/People/Faculty-Search/">Faculty</a>
