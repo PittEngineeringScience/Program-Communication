@@ -89,7 +89,7 @@ const content2=`<div class="gridcontainer19">
 <a href="https://find.pitt.edu/" class="" style="margin-right:24px;">Find People at Pitt</a>
 <a href="https://www.join.pitt.edu/" class="" style="margin-right:24px;">Jobs</a>
 <a href="https://my.pitt.edu/" class="" style="margin-right:24px;">MyPitt</a>
-<a href="EngineeringScience - Acknowledgement.html" class="" style="margin-right:24px;">Acknowledgement</a>
+<a href="EngineeringScience - Credits.html" class="" style="margin-right:24px;">Credits</a>
 </div>`
 
 bbar.innerHTML= content2;

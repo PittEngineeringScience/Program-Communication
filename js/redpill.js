@@ -44,7 +44,7 @@ function rotatexfade(text,target,seds){
 
  window.onload = (event) => {
     
-    text1=`<P id="textbox1" style="font-size:26px;">Hi, My name is Shengye Dong, the developer of this website. I would like to thank all the following entities for providing awesome resources!</p>`;
+    text1=`<P id="textbox1" style="font-size:26px;">Thank all the following entities for providing awesome resources!</p>`;
     
         
         updown(text1,textbox1,'0');
