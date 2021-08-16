@@ -1,36 +1,29 @@
-
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engineering Science at University of Pittsburgh</title>
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+	
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-	<script type="module" src="js/Top_bottombar.js"></script>
+   
+  <script type="module" src="js/jquery.csv.js"></script>
+	
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/responsivedesign.css">
-   
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
-	<script
-	src="https://code.jquery.com/jquery-3.6.0.min.js"
-	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-	crossorigin="anonymous"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+ <script type="module" src="js/Advisory.js"></script>
+  <script type="module" src="js/filter.js"></script>
+  <script type="module" src="js/Top_bottombar.js"></script>
 	
-  </head>
-  <script>
-	function Trigger() {
-    var x = document.getElementById("Topnavbar");
-    if (x.className === "navstyle") {
-      x.className += " responsive";
-    } else {
-      x.className = "navstyle";
-    }
-  }
-</script>
-  <script>
+	<script>
+  
+
+    
+
   $(document).ready(function() {
   
   $(window).scroll(function () {
@@ -39,7 +32,7 @@
       //nav bar to stick.  
       console.log($(window).scrollTop())
     if ($(window).scrollTop() > 105) {
-      $('fixbar').addClass('navbar-fixed');
+      $('#fixbar').addClass('navbar-fixed');
 	  $('#bugfix').addClass('blockm');
     }
     else  {
@@ -48,6 +41,17 @@
     }
   });
 });
+
+</script>
+<script>
+	function Trigger() {
+    var x = document.getElementById("Topnavbar");
+    if (x.className === "navstyle") {
+      x.className += " responsive";
+    } else {
+      x.className = "navstyle";
+    }
+  }
 </script>
 
 <script type="module" src="js/Top_bottombar.js"></script>
