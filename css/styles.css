@@ -242,7 +242,7 @@ svg > g > g:last-child { pointer-events: none }
 {
 	display: grid;
 	
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(6,1fr);
 	max-width:100%;
 	grid-auto-rows: auto;
 	
@@ -251,15 +251,26 @@ svg > g > g:last-child { pointer-events: none }
 .inlinegrid1
 {
 	display: grid;
-	
-	grid-template-columns: 1fr;
-	/*grid-template-rows: 1fr 1fr;*/
-	align-items: center;
-	justify-items: center;
 	margin: 7px 2px;
 	background:#b4d2ed;
 	/*linear-gradient(45deg, #063159, #052542);*/
 }
+.ohodnicki-picture{
+	grid-column:1/3;
+}
+.heather-picture{
+	grid-column:3/5;
+}
+.shengye-picture{
+	grid-column:5/7;
+}
+.ellen-picture{
+	grid-column: 2/4;
+}
+.natan-picture{
+	grid-column: 4/6;
+}
+
 .gridcontainer7
 {
 	display: grid;
